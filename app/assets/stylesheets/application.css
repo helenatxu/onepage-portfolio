@@ -15,11 +15,12 @@
 
 html, body {
 	height: 100%;
-	margin: 0px;	
-	background: url(/assets/bg/bg_hindi_pattern.png) repeat scroll top left;
-	
+	margin: 0px;		
 }
 
+body {
+	background: url(/assets/bg/bg_hindi_pattern.png) repeat top left;
+}
 
 fieldset, img {
 	border: none;
@@ -27,4 +28,48 @@ fieldset, img {
 
 ul, ol {
 	list-style: none;
+}
+
+/*************/
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 146px;
+	color: #5fabaf;
+	text-shadow: #ffffff 1px 1px 1px;
+	text-align: center;
+}
+
+#hello {
+	margin: 0 auto;
+	width: 970px;
+	height: 580px;
+}
+
+#hello hgroup {
+	width: 690px;
+	margin: 100px auto 0;
+}
+
+#hello h1 {
+	display: inline;
+	text-align: center;
+/*	amargin: 210px 40px 0 530px; */
+	
+
+}
+
+#hello h2 {
+	display: inline;
+	font-family: 'Times New Roman', regular;
+	font-size: 42px;
+	color: #7db6af;
+	text-shadow: #ffffff 1px 0px 1px;
+	atext-indent: 370px;
+	line-height: 150%;
+	text-align: center;
+	
+	margin-left:auto;
+	margin-right:auto;
+	apadding: 210px 0 0 225px;
 }

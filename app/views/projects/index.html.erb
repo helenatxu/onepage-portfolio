@@ -1,32 +1,34 @@
-<%= render 'home/hello' %>
+<div id="portfolio">
 
-<h1>Portfolio</h1>
+	<h1>Portfolio</h1>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th>What I did</th>
-    <th>Tools &amp; technologies</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+	<table>
+		<tr>
+			<th></th>
+			<th></th>
+			<th>What I did</th>
+			<th>Tools &amp; technologies</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
 
-<% @projects.each do |project| %>
-  <tr>
-    <td><%= link_to  project.name, project %></td>
-    <td><%= project.description %></td>
-    <td><%= project.work %></td>
-    <td><%= project.tools %></td>
-    <td><%= image_tag project.image %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+		<% @projects.each do |project| %>
+		<tr>
+			<td><%= link_to  project.name, project %></td>
+			<td><%= project.description %></td>
+			<td><%= project.work %></td>
+			<td><%= project.tools %></td>
+			<td><%= image_tag project.image %></td>
+			<td><%= link_to 'Show', project %></td>
+			<td><%= link_to 'Edit', edit_project_path(project) %></td>
+			<td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
+		</tr>
+		<% end %>
+	</table>
 
-<br />
 
-<%= link_to 'New Project', new_project_path %>
+
+	<%= link_to 'New Project', new_project_path %>
+
+</div>
