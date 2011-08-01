@@ -18,8 +18,20 @@ html, body {
 	margin: 0px;		
 }
 
+html {
+	
+}
+
 body {
 	background: url(/assets/bg/bg_hindi_pattern.png) repeat top left;
+	
+  	afilter:alpha(opacity=60); 	/* for IE */
+  	aopacity:0.6; /* CSS3 standard */
+}
+
+body background {
+	filter:alpha(opacity=60); 	/* for IE */
+  	opacity:0.6; /* CSS3 standard */
 }
 
 fieldset, img {
@@ -53,10 +65,7 @@ h1 {
 
 #hello h1 {
 	display: inline;
-	text-align: center;
-/*	amargin: 210px 40px 0 530px; */
-	
-
+	text-align: center;	
 }
 
 #hello h2 {
@@ -65,11 +74,18 @@ h1 {
 	font-size: 42px;
 	color: #7db6af;
 	text-shadow: #ffffff 1px 0px 1px;
-	atext-indent: 370px;
 	line-height: 150%;
 	text-align: center;
-	
 	margin-left:auto;
 	margin-right:auto;
-	apadding: 210px 0 0 225px;
+}
+
+#hello h3 {
+	font-family: 'Times New Roman', regular;
+	font-size: 42px;
+	color: #7db6af;
+	text-shadow: #ffffff 1px 0px 1px;
+	line-height: 150%;
+	text-align: center;
+	margin-top: 300px;
 }
