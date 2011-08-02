@@ -6,8 +6,7 @@ class Project < ActiveRecord::Base
   validates :work, :presence => true
   validates :tools, :presence => true
   
-  
-  
+    
   def unique_name? 
     if Project.find_by_name(name) 
       errors.add(:name, "is already being used") 
