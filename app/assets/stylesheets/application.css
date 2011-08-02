@@ -7,111 +7,53 @@
 */
 
 
-* {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+
+Reset Stylesheet
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	border: 0;
 	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-html, body {
-	height: 100%;
-	margin: 0px;		
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-html {
-	
-}
-
 body {
-	background: url(/assets/bg/bg_hindi_pattern_white.png) repeat top left;
+	line-height: 1;
 }
-
-
-fieldset, img {
-	border: none;
-}
-
-ul, ol {
+ol, ul {
 	list-style: none;
 }
-
-/*************/
-
-h1 {
-	font-family: 'Dancing Script', cursive;
-	font-style: cursive !important;
-	font-size: 10.5em;
-	color: #5fabaf;
-	text-shadow: #ffffff 1px 1px 1px;
-	text-align: center;
-	margin-top: 70px;
+blockquote, q {
+	quotes: none;
 }
-
-
-#hello {
-	margin: 0 auto;
-	padding-top: 100px;
-	width: 970px;
-	height: 430px;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-#hello hgroup {
-	width: 580px;
-	margin: 50px auto 0;
-}
-
-#hello h1 {
-	display: inline;
-	text-align: center;	
-}
-
-#hello h2 {
-	display: inline;
-	font-family: 'Times New Roman', regular !important;
-	font-style: regular !important;
-	font-size: 2.5em;
-	color: #5fabaf;
-	text-shadow: #ffffff 1px 0px 1px;
-	line-height: 150%;
-	text-align: center;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-#hello h3 {
-	font-family: 'Times New Roman', regular;
-	font-size: 3em;
-	color: #5fabaf;
-	text-shadow: #ffffff 1px 0px 1px;
-	line-height: 150%;
-	text-align: center;
-}
-
-#arrow img {
-	margin-top: 20px;
-}
-
-.transparency {
-	background: url(/assets/bg/pixel_beige4.png) repeat top left;
-	
-	/* Fallback for web browsers that doesn't support RGBa */
-/*	background: rgb(241, 216, 186); */
-	/* RGBa with 0.8 opacity */
-/*	background: rgba(237, 209, 211, 0.84); */
-/*	background: rgba(249, 233, 201, 0.84); */
-	
-	/* For IE 5.5 - 7*/
-/*	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCF1D8BA, endColorstr=#CCF1D8BA); */
-	/* For IE 8*/
-/*	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCF1D8BA, endColorstr=#CCF1D8BA)"; */
-	
-}
-
-.portfolio {
-	background: url(/assets/bg/pixel_negro.png) repeat top left;
-	padding: 10px;
-}
-
-.portfolio table {
-	
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }

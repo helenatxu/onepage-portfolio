@@ -1,3 +1,104 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+	background: url(/assets/bg/bg_hindi_pattern_white.png) repeat top left;
+}
+
+
+
+h1 {
+	font-family: 'Dancing Script', cursive;
+	font-style: cursive !important;
+	font-size: 9em;
+	color: #5fabaf;
+	text-shadow: #ffffff 1px 1px 1px;
+	text-align: center;
+}
+
+
+#hello {
+	margin: 0 auto;
+	padding-top: 80px;
+	width: 970px;
+/*	height: 430px; */
+}
+
+#hello hgroup {
+	width: 650px;
+	margin: 0 auto 0;
+}
+
+#hello h1 {
+	display: inline;
+	text-align: center;	
+}
+
+#hello h2 {
+	display: inline;
+	font-family: 'Times New Roman', regular;
+	font-size: 2.5em;
+	color: #5fabaf;
+	text-shadow: #ffffff 1px 1px 1px;
+	line-height: 150%;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#hello h3 {
+	font-family: 'Times New Roman', regular;
+	font-size: 2.5em;
+	color: #5fabaf;
+	text-shadow: #ffffff 1px 1px 1px;
+	line-height: 150%;
+	text-align: center;	
+}
+
+#arrow img {
+	margin-top: 20px;	
+}
+
+.transparency {
+	background: url(/assets/bg/pixel_beige4.png) repeat top left;
+	
+	/* Fallback for web browsers that doesn't support RGBa */
+/*	background: rgb(241, 216, 186); */
+	/* RGBa with 0.8 opacity */
+/*	background: rgba(237, 209, 211, 0.84); */
+/*	background: rgba(249, 233, 201, 0.84); */
+	
+	/* For IE 5.5 - 7*/
+/*	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCF1D8BA, endColorstr=#CCF1D8BA); */
+	/* For IE 8*/
+/*	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCF1D8BA, endColorstr=#CCF1D8BA)"; */
+	
+}
+
+.portfolio {
+	background: url(/assets/bg/pixel_negro.png) repeat top left;
+	padding: 10px;
+}
+
+.portfolio table {
+	border: white solid 1px;
+}
+
+table img {
+	width: 400px;
+}
+
+.portfolio th a { 
+/*.portfolio table th { */
+
+	font-family: 'Lobster Two', italic;
+	font-size: 3em;
+	color: #ffffff !important;
+	text-shadow: #000000 2px 2px 2px;
+}
+
+
+
+
