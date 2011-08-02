@@ -44,19 +44,20 @@ h1 {
 	color: #5fabaf;
 	text-shadow: #ffffff 1px 1px 1px;
 	text-align: center;
+	margin-top: 70px;
 }
 
 
 #hello {
 	margin: 0 auto;
-	padding-top: 150px;
+	padding-top: 100px;
 	width: 970px;
-	height: 450px;
+	height: 430px;
 }
 
 #hello hgroup {
 	width: 580px;
-	margin: 100px auto 0;
+	margin: 50px auto 0;
 }
 
 #hello h1 {
@@ -84,7 +85,7 @@ h1 {
 	text-shadow: #ffffff 1px 0px 1px;
 	line-height: 150%;
 	text-align: center;
-	margin-top: 300px;
+	margin-top: 180px;
 }
 
 .transparency {
