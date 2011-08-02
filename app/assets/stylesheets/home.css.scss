@@ -20,7 +20,7 @@ h1 {
 
 #hello {
 	margin: 0 auto;
-	padding-top: 60px;
+	padding-top: -30px;
 	width: 970px;
 /*	height: 430px; */
 }
@@ -41,7 +41,6 @@ h1 {
 	font-size: 2.5em;
 	color: #5fabaf;
 	text-shadow: #ffffff 1px 1px 1px;
-	line-height: 150%;
 	text-align: center;
 	margin-left:auto;
 	margin-right:auto;
@@ -78,6 +77,7 @@ h1 {
 
 .portfolio {
 	background: url(/assets/bg/pixel_negro.png) repeat top left;
+	margin-top: -12px;
 	padding: 10px;
 }
 
@@ -98,6 +98,7 @@ h1 {
 	text-align:center;
 	color: #ffffff;
 	text-shadow: #000000 3px 3px 3px;
+	margin: 0px auto 6px;
 }
 
 .portfolio a { 
@@ -112,7 +113,7 @@ h1 {
 	text-align:left;
 	color: #b1cac8;
 	text-shadow: #000000 1px 1px 1px;
-	margin: 6px auto auto;
+	margin: 12px auto auto;
 }
 
 .portfolio p { 
@@ -132,19 +133,32 @@ h1 {
 
 .container .tv {
 	background: url(/assets/bg/bg_tv.png) no-repeat;
-	width: 380px;
+	width: 360px;
 	height: 220px;
-	padding: 15px 60px 40px 20px;
+	padding: 10px 60px 40px 30px;
 }
 
-.container .image img {
+.container .image {
 	padding: 20px;
 	display: inline;
 	float: right;
-	margin: -1em 10px 5px auto;
+	margin: -1.5em 10px 5px auto;
+}
+
+.shadow {
+	background: url(/assets/bg/shadow.png) repeat-x top left;
+	height: 12px;
+	
+}
+
+.shadow_up {
+	background: url(/assets/bg/shadow_up.png) repeat-x top left;
+	height: 12px;
+	
 }
 
 
-
-
-
+#logo {
+	background: url(/assets/elements/logo.png) no-repeat top left;
+	height: 103px;
+}
