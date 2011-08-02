@@ -11,7 +11,6 @@ body {
 
 h1 {
 	font-family: 'Dancing Script', cursive;
-	font-style: cursive !important;
 	font-size: 9em;
 	color: #5fabaf;
 	text-shadow: #ffffff 1px 1px 1px;
@@ -21,7 +20,7 @@ h1 {
 
 #hello {
 	margin: 0 auto;
-	padding-top: 80px;
+	padding-top: 60px;
 	width: 970px;
 /*	height: 430px; */
 }
@@ -82,23 +81,48 @@ h1 {
 	padding: 10px;
 }
 
-.portfolio table {
-	border: white solid 1px;
-}
 
-table img {
+.portfolio img {
 	width: 400px;
 }
 
-.portfolio th a { 
-/*.portfolio table th { */
 
+.portfolio h1 { 
+	margin: 10px auto 60px;
+}
+	
+.portfolio h2 { 
 	font-family: 'Lobster Two', italic;
+	font-style: italic;
 	font-size: 3em;
-	color: #ffffff !important;
+	text-align:center;
+	color: #ffffff;
 	text-shadow: #000000 2px 2px 2px;
 }
 
+.portfolio a { 
+	color: #ffffff;
+	text-shadow: #000000 2px 2px 2px;
+}
+
+.container {
+	margin: 25px;
+	padding: 5px 80px 5px;
+}
+
+.container .tv {
+	background: url(/assets/bg/bg_tv.png) no-repeat;
+	width: 380px;
+	height: 220px;
+	padding: 15px 60px 40px 20px;
+}
+
+.container .image img {
+	padding: 20px;
+	display: inline;
+	float: right;
+	margin: -1em 10px 5px auto;
+}
 
 
 
