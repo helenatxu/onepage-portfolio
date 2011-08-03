@@ -7,6 +7,10 @@ body {
 	background: url(/assets/bg/bg_hindi_pattern_white.png) repeat top left;
 }
 
+footer {
+	background: url(/assets/bg/bg_hindi_pattern_invert.png) repeat top left;
+	height: 100px;
+}
 
 
 h1 {
@@ -61,14 +65,12 @@ h1 {
 
 .home, .aboutme {
 	background: url(/assets/bg/pixel_beige4.png) repeat top left;
-	z-index: 1;
 }
 
-.portfolio {
+.portfolio, .contact {
 	background: url(/assets/bg/pixel_negro.png) repeat top left;
 	margin-top: -12px;
 	padding: 10px;
-	z-index: -1;
 }
 
 
@@ -103,7 +105,7 @@ h1 {
 	text-align:left;
 	color: #b1cac8;
 	text-shadow: #000000 1px 1px 1px;
-	margin: 12px auto auto;
+	margin: 10px auto auto;
 }
 
 .portfolio p { 
@@ -111,14 +113,15 @@ h1 {
 	font-style: normal;
 	font-size: 0.97em;
 	text-align:left;
-	color: #73aba7;
-	margin: 4px auto 6px;
+	color: #179595;
+	margin: auto auto 6px;
+	line-height:130%;	
 }
 
 
 .container {
-	margin: 25px;
-	padding: 5px 80px 5px;
+	margin: 25px auto 30px;
+	padding: 5px 100px 20px;
 }
 
 .container .tv {
@@ -146,6 +149,12 @@ h1 {
 	margin-top: -12px;
 }
 
+.line {
+	background: url(/assets/bg/line.png) repeat-x top left;
+	margin-top: -1px;
+	height: 2px;
+}
+
 
 #logo {
 	background: url(/assets/elements/logo.png) no-repeat top left;
@@ -156,6 +165,19 @@ h1 {
 	padding: 10px;
 }
 
-a.link:hover {
-	color:#73aba7;
+.aboutme #aboutbox {
+	background: url(/assets/elements/aboutbox.png) no-repeat top left;
+	height: 314px;
+	width: 729px;
 }
+
+a.link:hover {
+	color:#179595;
+}
+
+#contact_form {
+	background: url(/assets/bg/bg_line.png) repeat-x top left;
+	height: 50px;
+	width: 50px;
+}
+
