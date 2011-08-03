@@ -59,26 +59,16 @@ h1 {
 	margin-top: 20px;	
 }
 
-.transparency {
+.home, .aboutme {
 	background: url(/assets/bg/pixel_beige4.png) repeat top left;
-	
-	/* Fallback for web browsers that doesn't support RGBa */
-/*	background: rgb(241, 216, 186); */
-	/* RGBa with 0.8 opacity */
-/*	background: rgba(237, 209, 211, 0.84); */
-/*	background: rgba(249, 233, 201, 0.84); */
-	
-	/* For IE 5.5 - 7*/
-/*	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCF1D8BA, endColorstr=#CCF1D8BA); */
-	/* For IE 8*/
-/*	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCF1D8BA, endColorstr=#CCF1D8BA)"; */
-	
+	z-index: 1;
 }
 
 .portfolio {
 	background: url(/assets/bg/pixel_negro.png) repeat top left;
 	margin-top: -12px;
 	padding: 10px;
+	z-index: -1;
 }
 
 
@@ -148,17 +138,24 @@ h1 {
 .shadow {
 	background: url(/assets/bg/shadow.png) repeat-x top left;
 	height: 12px;
-	
 }
 
 .shadow_up {
 	background: url(/assets/bg/shadow_up.png) repeat-x top left;
 	height: 12px;
-	
+	margin-top: -12px;
 }
 
 
 #logo {
 	background: url(/assets/elements/logo.png) no-repeat top left;
 	height: 103px;
+}
+
+.aboutme {
+	padding: 10px;
+}
+
+a.link:hover {
+	color:#73aba7;
 }
