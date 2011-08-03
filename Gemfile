@@ -5,7 +5,15 @@ gem 'rails', '3.1.0.rc5'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# gem 'sqlite3'  # <---original
+
+# apaño para usar postgres en production y sqlite3 en development
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
+end 
 
 
 # Gems used only for assets and not required
@@ -31,3 +39,5 @@ group :test do
   # Pretty printed test output
   gem 'turn', :require => false
 end
+
+gem 'heroku'
