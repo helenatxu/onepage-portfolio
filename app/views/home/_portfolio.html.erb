@@ -4,7 +4,7 @@
 	<% @projects.each do |project| %>
 	<div class="container">
 
-		<ul id="projects_list">
+		<ul class="projects_list">
 			<li>
 				<div class="image"><%= image_tag project.image %>
 				</div>
@@ -17,7 +17,6 @@
 
 					<h3>Tools &amp; technologies</h3>
 					<p><%= project.tools %></p>
-
 				</div>
 			</li>
 		</ul>
