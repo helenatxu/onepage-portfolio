@@ -59,3 +59,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+i, cite, em, var, address {
+	font-style: italic;
+}
+
+b {
+	font-style: italic;
+}
