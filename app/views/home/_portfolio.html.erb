@@ -6,7 +6,7 @@
 
 		<ul class="projects_list">
 			<li>
-				<div class="image"><%= image_tag project.image %>
+				<div class="image"><%= image_tag project.image, :alt => project.name %>					
 				</div>
 				<div class="tv">
 					<h2><%= link_to  project.name, project.url %></h2>
