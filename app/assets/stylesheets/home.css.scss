@@ -164,11 +164,13 @@ h1 {
 }
 
 #navigation{
-	background: url(/assets/elements/bg_menu2.png) repeat-x top left;
+	background: url(/assets/elements/bg_menu.png) repeat-x top left;
 	height: 32px;
 	width: 477px;
 	text-align: center;
 	margin: 0 10px 0px auto;
+	position: fixed;
+	right: 10px;
 }
 
 #navigation li{
