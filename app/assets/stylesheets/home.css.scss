@@ -200,17 +200,21 @@ h1 {
 	text-shadow: #ffffff 2px 1px 2px;
 }
 
-
-a.link:hover {
+#aboutme a:hover {
 	color:#179595;
 }
 
-#nav_bar a:hover {
+#nav_bar a:link {
 	color: #272522;
 }
 
+
 #nav_bar a:visited {
 	color: #272522;
+}
+
+#nav_bar a:hover {
+	color: #6600cc;
 }
 
 #contact_form {
