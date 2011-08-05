@@ -113,7 +113,7 @@ h1 {
 	text-align:left;
 	color: #179595;
 	margin: auto auto 6px;
-	line-height:130%;	
+	line-height:135%;	
 }
 
 
@@ -186,22 +186,42 @@ h1 {
 }
 
 #aboutme #aboutbox {
-	background: url(/assets/elements/menu/aboutbox.png) no-repeat top left;
-	height: 230px;
-	width: 650px;
-	margin: 0 auto 0;
-	padding: 40px;
+	background: url(/assets/elements/about_box.png) no-repeat top left;
+	height: 510px;
+	width: 640px;
+	margin: 45px auto;
+	padding: 50px;
 }
 
 #aboutme p {
-	font: 200 0.94em/1.62em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: 200 0.99em/1.62em 'Helvetica Neue Regular', 'HelveticaNeue-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #52442f;
 	text-align: left;
-	margin: 15px auto;
+	margin: 10px auto;
+	padding: 8px;
 	text-shadow: #ffffff 2px 1px 2px;
 }
 
-#aboutme a:hover {
+#aboutme #more, #aboutme img {
+	display: inline;
+	padding: 30px 15px;
+}
+
+#aboutme #more {
+	float: right;
+	width: 400px;
+}
+
+#aboutme a:link {
 	color:#179595;
+}
+
+#aboutme a:visited {
+	color:#179595;
+}
+	
+#aboutme a:hover {
+	color:#6600cc;
 }
 
 #nav_bar a:link {
