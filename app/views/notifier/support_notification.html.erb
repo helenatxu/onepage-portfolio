@@ -1,2 +1,13 @@
-hello world!
-<%= @sender.content %>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>The user <%= @sender.sender_name %> sent a message.</h1>
+    <p>The Message was:</p>
+	<p><%= @sender.content %></p>
+  </body>
+</html>
