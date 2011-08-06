@@ -1,7 +1,11 @@
 Myportfolio::Application.routes.draw do
-  get "home/hello"
+  resources :supports
 
-  resources :projects
+  get "home/hello"
+  
+  resources :supports, :only => [:new, :create]
+  
+  # config/routes.rb
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -125,6 +125,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.0.rc)
   heroku
   jquery-rails
+  mail
   pg
   rails (= 3.1.0.rc5)
   sass-rails (~> 3.1.0.rc)

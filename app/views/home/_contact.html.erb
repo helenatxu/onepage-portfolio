@@ -3,7 +3,39 @@
 
 
 	<div id="contact_form">
-		<p>Contact Me</p>
+		
+		<h2>Contact me</h2>
+		<%= form_for @support, :url => { :controller => "supports", :action => "create" }, :html => { :method => :post } do |f| %>
+		
+		  <p>
+		    <%= f.label "Name" %>
+		  </p>
+		  <p>
+		    <%= f.text_field :sender_name %>
+		  </p>
+		  <p>
+		    <%= f.label "Email" %>
+		  </p>
+		  <p>
+		    <%= f.text_field :email %>
+		  </p>
+		  <p>
+		    <%= f.label "Type" %>
+		  </p>
+		  <p>
+		    <%= f.select :support_type, options_for_select(["Bug", "Ask", "Idea"]) %>
+		  </p>
+		  <p>
+		    <%= f.label "Details" %>
+		  </p>
+		  <p>
+		    <%= f.text_area :content %>
+		  </p>
+		  <p>
+		    <%= f.submit "Submit" %>
+		  </p>
+		<% end %>
+				
 	</div>
 	
 </div>
