@@ -6,19 +6,19 @@
 		<%= form_for @support, :url => { :controller => "supports", :action => "create" }, :html => { :method => :post } do |f| %>
 
 		<p>
-			<%= f.label "Type" %>
+			<%= f.label :support_type, "Type" %>
 
-			<%= f.select :support_type, options_for_select(["Ask", "Idea", "Bug"]), :id => "support_Type" %>
+			<%= f.select :support_type, options_for_select(["Ask", "Idea", "Bug"]) %>
 			</p>
 			<p>
-			<%= f.label "Name" %>
+			<%= f.label :sender_name, "Name" %>
 
-			<%= f.text_field :sender_name, :id => "support_Name" %>
+			<%= f.text_field :sender_name %>
 		</p>
 		<p>
-			<%= f.label "Email" %>
+			<%= f.label :email, "Email" %>
 
-			<%= f.text_field :email, :id => "support_Email" %>
+			<%= f.text_field :email %>
 
 		</p>
 		<p>
