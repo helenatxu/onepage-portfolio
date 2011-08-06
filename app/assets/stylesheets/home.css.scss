@@ -159,7 +159,7 @@ h1 {
 }
 
 #navigation{
-	background: url(/assets/elements/bg_menu.png) repeat-x top left;
+	background: url(/assets/elements/bg_menu.png) no-repeat top left;
 	height: 32px;
 	width: 477px;
 	text-align: center;
@@ -243,10 +243,29 @@ h1 {
 }
 
 #contact_form {
+	background: url(/assets/bg/bg_brown2.png) repeat top left;
 	margin: 45px auto;
-	padding: 50px;
-	width: 400px;
-	background-color: #864A16;
+	padding: 35px 45px 55px;
+	width: 500px;
+	height: 275px;
+	font: 200 0.94em/1.62em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align:left;
+	color: #179595;	
+}
+
+#contact_form p {
+	padding: 1px 0;
+}
+
+#contact_form input, #contact_form textarea {
+	background-color: #ede8e0;
+}
+
+
+
+#contact_form textarea {
+	width: 470px;
+	height: 200px;
 }
 
 #footer {
