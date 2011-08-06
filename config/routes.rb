@@ -3,6 +3,8 @@ Myportfolio::Application.routes.draw do
 
   get "home/hello"
   
+  resources :projects
+  
   resources :supports, :only => [:new, :create]
   
   # config/routes.rb
