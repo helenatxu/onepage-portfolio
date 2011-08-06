@@ -10,7 +10,7 @@ class SupportsController < ApplicationController
     if @support.save
       redirect_to('#contact', :notice => "Support was successfully sent.")
     else
-      redirect_to('#contact')
+      redirect_to('#contact', :notice => "Caca.")
       flash[:alert] = "You must fill all fields."
     end
   end

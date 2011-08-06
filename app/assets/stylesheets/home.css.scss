@@ -243,9 +243,10 @@ h1 {
 }
 
 #contact_form {
-	background: url(/assets/bg/bg_line.png) repeat-x top left;
-	height: 50px;
-	width: 50px;
+	margin: 45px auto;
+	padding: 50px;
+	width: 400px;
+	background-color: #864A16;
 }
 
 #footer {
@@ -255,4 +256,10 @@ h1 {
 	color: #272523;
 	text-shadow: #ffffff 1px 0px 1px;
 }
- 
+
+.notices {
+	float:right;
+	font-size:90%;
+	color: green;
+	margin: 5px 20px 0 0;
+}
