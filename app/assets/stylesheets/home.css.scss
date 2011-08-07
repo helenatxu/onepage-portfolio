@@ -83,13 +83,15 @@ h1 {
 }
 
 #portfolio h2 { 
-	font-family: 'Lobster Two', italic;
+	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-style: italic;
-	font-size: 3em;
+	font-weight: 200;
+	font-size: 2.1em;
 	text-align:center;
 	color: #ffffff;
 	text-shadow: #000000 3px 3px 3px;
 	margin: 0px auto 6px;
+	padding: 7px;
 }
 
 #portfolio a { 
@@ -98,8 +100,9 @@ h1 {
 
 
 #portfolio h3 { 
-	font-family: 'Lobster Two', bold;
-	font-size: 1.5em;
+	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: bold;
+	font-size: 1.2em;
 	text-align:left;
 	color: #b1cac8;
 	text-shadow: #000000 1px 1px 1px;
@@ -116,8 +119,8 @@ h1 {
 
 
 .container {
-	margin: 25px auto 30px;
-	padding: 5px 100px 20px;
+	margin: 30px auto 80px;	
+	padding: 5px 150px 20px;
 }
 
 .container .tv {
