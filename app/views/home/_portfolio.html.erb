@@ -10,11 +10,10 @@
 
 			<div class="tv">
 				<h2><%= link_to  project.name, project.url %></h2>
-				<p><span class="text"><%= project.description %></span>
+				<p><%= project.description %></p>
+				<p><span class="h3">What I did: </span><%= project.work %>
 				</p>
-				<p>What I did: <span class="text"><%= project.work %></span>
-				</p>
-				<p>Tools &amp; technologies: <span class="text"><%= project.tools %>
+				<p><span class="h3">Tools &amp; technologies: </span><%= project.tools %>
 				</p>
 			</div>
 

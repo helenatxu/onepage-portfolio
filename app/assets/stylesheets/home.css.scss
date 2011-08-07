@@ -97,10 +97,10 @@ h1 {
 }
 
 
-#portfolio p { 
+#portfolio .h3 { 
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	font-size: 0.96em;
+	font-size: 1em;
 	text-align:left;
 	color: #b1cac8;
 	text-shadow: #000000 1px 1px 1px;
@@ -109,8 +109,10 @@ h1 {
 	
 }
 
-#portfolio span.text { 
-	font: 200 0.96em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+#portfolio p { 
+	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight:200 !important;
+	font-size: 1em;
 	text-align:left;
 	color: #179595;
 	margin: auto auto 6px;
@@ -118,9 +120,9 @@ h1 {
 }
 
 
+
 .projects_list {
 	margin: 30px auto 125px;	
-	apadding: 5px 150px 20px;
 	height: 250px;
 }
 
@@ -130,7 +132,8 @@ h1 {
 }
 
 .projects_list .projects_images {
-	amargin: -1.5em 10px 5px auto;
+	-webkit-box-shadow: 6px 6px 3px #191817; /* Safari */
+	box-shadow: 6px 6px 3px #191817;
 }
 
 .projects_list .tv {
