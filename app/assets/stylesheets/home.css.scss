@@ -84,13 +84,12 @@ h1 {
 
 #portfolio h2 { 
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: italic;
+	font-style: bold;
 	font-weight: 200;
 	font-size: 2.1em;
 	text-align:center;
 	color: #ffffff;
 	text-shadow: #000000 3px 3px 3px;
-	margin: 0px auto 6px;
 	padding: 7px;
 }
 
@@ -99,18 +98,20 @@ h1 {
 }
 
 
-#portfolio h3 { 
+#portfolio p { 
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: bold;
-	font-size: 1.2em;
+	font-weight: bold;
+	font-size: 0.96em;
 	text-align:left;
 	color: #b1cac8;
 	text-shadow: #000000 1px 1px 1px;
-	margin: 10px auto auto;
+	margin: 0 auto auto;
+	padding: 6px;
+	
 }
 
-#portfolio p { 
-	font: 200 0.94em/1.62em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+#portfolio span.text { 
+	font: 200 0.96em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align:left;
 	color: #179595;
 	margin: auto auto 6px;
@@ -125,9 +126,10 @@ h1 {
 
 .container .tv {
 	background: url(/assets/bg/bg_tv.png) no-repeat;
-	width: 360px;
+    padding: 10px 20px 20px;    
+	width: 370px;
 	height: 220px;
-	padding: 10px 60px 40px 30px;
+
 }
 
 .container .image {
