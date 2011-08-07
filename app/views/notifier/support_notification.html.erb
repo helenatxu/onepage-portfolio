@@ -1,13 +1,12 @@
-
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    <h1>The user <%= @sender.sender_name %> sent a message.</h1>
-    <p>The Message was:</p>
+    <h1>The user <b><%= @sender.sender_name %></b> sent a message.</h1>
+    <h2>The Message was:</h2>
 	<p><%= @sender.content %></p>
+	<p>E-mail sender: <b><%= @sender.email %></b></p>
   </body>
 </html>

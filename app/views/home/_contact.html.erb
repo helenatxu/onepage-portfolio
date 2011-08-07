@@ -3,13 +3,9 @@
 
 	<div id="contact_form">
 
+		<h2>Send me a message!</h2>
 		<%= form_for @support, :url => { :controller => "supports", :action => "create" }, :html => { :method => :post } do |f| %>
 
-		<p>
-			<%= f.label :support_type, "Type" %>
-
-			<%= f.select :support_type, options_for_select(["Ask", "Idea", "Bug"]) %>
-			</p>
 			<p>
 			<%= f.label :sender_name, "Name" %>
 
@@ -24,8 +20,8 @@
 		<p>
 			<%= f.text_area :content %>
 		</p>
-		<p>
-			<%= f.submit "Submit" %>
+		<p class="button">
+			<%= f.submit "Send" %>
 		</p>
 		<% end %>
 
