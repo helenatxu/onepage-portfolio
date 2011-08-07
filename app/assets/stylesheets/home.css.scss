@@ -45,8 +45,7 @@ h1 {
 	color: #5fabaf;
 	text-shadow: #ffffff 1px 1px 1px;
 	text-align: center;
-	margin-left:auto;
-	margin-right:auto;
+	margin: 0 auto;
 }
 
 #hello h3 {
@@ -119,25 +118,30 @@ h1 {
 }
 
 
-.container {
-	margin: 30px auto 80px;	
-	padding: 5px 150px 20px;
+.projects_list {
+	margin: 30px auto 125px;	
+	apadding: 5px 150px 20px;
+	height: 250px;
 }
 
-.container .tv {
-	background: url(/assets/bg/bg_tv.png) no-repeat;
-    padding: 10px 20px 20px;    
-	width: 370px;
+.projects_list .thumbnail {
+	float: left;
+	margin-left: 100px;
+}
+
+.projects_list .projects_images {
+	amargin: -1.5em 10px 5px auto;
+}
+
+.projects_list .tv {
+	background: url(/assets/elements/portfolio_box.png) no-repeat;
+	float: left;
+	margin: 10px auto auto 50px;
+	padding: 10px 20px 20px;    
+	width: 470px;
 	height: 220px;
-
 }
 
-.container .image {
-	padding: 20px;
-	display: inline;
-	float: right;
-	margin: -1.5em 10px 5px auto;
-}
 
 .shadow {
 	background: url(/assets/bg/shadow.png) repeat-x top left;
