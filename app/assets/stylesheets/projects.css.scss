@@ -2,43 +2,80 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.portfolio_admin{
-	border: solid 1px #FF5E99;
-	background: url(/assets/bg/bg_brown2.png) repeat;
-	
+.portfolio_admin .projects-list{
+	border: solid 1px #F0E8D9;
+	background: url(/assets/bg/bg_brown2.png) repeat;	
 }
 
+#show, #edit {
+	background-color: #493F5B;
+}
 
 .portfolio_admin a { 
 	color: #ffffff;
 }
 
 
-.portfolio_admin th { 
+.portfolio_admin .data { 
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 200;
 	font-size: 1em;
 	text-align:left;
-	color: #b1cac8;
-	text-shadow: #000000 1px 1px 1px;
+	color: #ffffff !important;
 	margin: 0 auto auto;
 }
 
-.portfolio_admin td { 
+.portfolio_admin p { 
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight:200 !important;
+	font-weight: bolder !important;
 	font-size: 1em;
 	text-align:left;
-	color: #179595;
+	color: #179595 !important;
 	margin: auto auto 6px;
-	line-height:135%;
+	line-height:100%;
 	padding: 6px;	
 }
 
-.portfolio_admin img { 
-	width: 100px !important;
+
+.portfolio_admin .thumb { 
+	float: right;
 }
 
-.portfolio_admin .description {
-	width: 200px;
+.portfolio_admin img { 
+	width: 150px !important;
+}
+
+.portfolio_admin .text {
+	width: 800px !important;
+	margin-left: 0;
+	border: solid 1px #000000;
+
+}
+
+#show, #edit {
+	width: 400px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+#newproject {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+	background: -moz-linear-gradient(19% 75% 90deg, #FF5E99, #F0E8D9);
+	background: -webkit-gradient(linear, left top, left bottom, from(#F0E8D9), to(#FF5E99));
+
+	font: 400 0.94em/1.62em "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 100px !important;
+	padding: 0 20px;
+	margin: 10px 20px;
+}
+
+#edit input, #edit textarea {
+	width: 400px;
+}
+
+#edit p{
+	margin-right: 0;
 }

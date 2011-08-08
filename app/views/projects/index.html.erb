@@ -2,28 +2,26 @@
 
 	<h1>Portfolio Admin</h1>
 
-	<ul>
+	<p id="newproject"><%= link_to 'New Project', new_project_path %></p>
+
+	<ul class="portfolio_admin">
 		<% @projects.each do |project| %>
-		<li class="portfolio_admin">
-			<div class="data">
-			<p>Name: <%= link_to  project.name, project %></p>
-			<p class="adescription">Description: <%= project.description %></p>
-			<p>What I did: <%= project.work %></p>
-			<p>Tools &amp; technologies: <%= project.tools %></p>
-			</div>
-
+		<li class="projects-list">
 			<div class="thumb">
-				<p>Image: <%= image_tag project.image %></p>
-				<p><%= link_to 'Show', project %> |
-					<%= link_to 'Edit', edit_project_path(project) %> |
-					<%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></p>
-				</div>
-			</li>
-			<% end %>
-		</ul>
+				<p><%= image_tag project.image %></p>
+				<p><%= link_to 'Show', project %> | <%= link_to 'Edit', edit_project_path(project) %> | <%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></p>
+			</div>
+			
+			<div class="text">
+				<p>Name: <span class="data"><%= link_to  project.name, project %></span></p>
+				<p>Description: <span class="data"><%= project.description %></span></p>
+				<p>What I did: <span class="data"><%= project.work %></span></p>
+				<p>Tools &amp; technologies: <span class="data"><%= project.tools %></span></p>
+
+			</div>
+		</li>
+		<% end %>
+	</ul>
 
 
-
-		<p><%= link_to 'New Project', new_project_path %></p>
-
-	</div>
+</div>

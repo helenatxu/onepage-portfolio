@@ -1,3 +1,4 @@
+	<div id="edit" class="portfolio_admin">
 <%= form_for(@project) do |f| %>
   <% if @project.errors.any? %>
     <div id="error_explanation">
@@ -11,31 +12,37 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
+  <p class="field">
+    <%= f.label :name %>   </p>
+  <p class="field">
     <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :work %><br />
+  </p>
+  <p class="field">
+    <%= f.label :description %></p>
+  <p class="field"><%= f.text_area :description %>
+  </p>
+  <p class="field">
+    <%= f.label :work %> </p>
+  <p class="field">
     <%= f.text_field :work %>
-  </div>
-  <div class="field">
-    <%= f.label :tools %><br />
+  </p>
+  <p class="field">
+    <%= f.label :tools %> </p>
+  <p class="field">
     <%= f.text_field :tools %>
-  </div>
-  <div class="field">
-    <%= f.label :image %><br />
+  </p>
+  <p class="field">
+    <%= f.label :image %> </p>
+  <p class="field">
     <%= f.text_field :image %>
-  </div>
-  <div class="field">
-    <%= f.label :url %><br />
+  </p>
+  <p class="field">
+    <%= f.label :url %> </p>
+  <p class="field">
     <%= f.text_field :url %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  </p>
+  <p class="actions button">
+    <%= f.submit "Save"%>
+  </p>
 <% end %>
+</div>

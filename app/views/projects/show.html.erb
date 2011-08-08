@@ -1,41 +1,25 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @project.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @project.description %>
-</p>
-
-<p>
-  <b>Work:</b>
-  <%= @project.work %>
-</p>
-
-<p>
-  <b>Tools:</b>
-  <%= @project.tools %>
-</p>
-
-<p>
-  <b>URL:</b>
-  <%= @project.url %>
-</p>
-<p>
-	
-<p>
-  <b>Image:</b>
-  <%= @project.image %>
-</p>
-
-<p>
-  <b>Image:</b>
-  <%= image_tag @project.image %>
-</p>
+<div id="portfolio">
+	<p id="notice"><%= notice %></p>
 
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+	<h1><%= @project.name %></h1>
+
+
+	<div id="show" class="portfolio_admin">
+
+		<p>Description: <span class="data"><%= @project.description %></span></p>
+
+		<p>Work: <span class="data"><%= @project.work %></span></p>
+
+		<p>Tools: <span class="data"><%= @project.tools %></span></p>
+
+		<p>URL: <span class="data"><%= @project.url %></span></p>
+
+		<p>Image: <span class="data"><%= @project.image %></span></p>
+		
+		<p>Image: <span class="data"><%= image_tag @project.image %></span></p>
+
+		<p><%= link_to 'Edit', edit_project_path(@project) %> | <%= link_to 'Back', projects_path %></p>
+
+		</div>
+	</div>
