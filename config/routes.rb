@@ -1,7 +1,8 @@
 Myportfolio::Application.routes.draw do
   resources :supports
 
-  get "home/hello"
+    get "home/hello"  
+
   
   resources :projects
   
@@ -56,10 +57,13 @@ Myportfolio::Application.routes.draw do
   #     resources :products
   #   end
 
+  match '/:locale' => 'home#hello'
+
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
   root :to => "home#hello"
+
 
   # See how all your routes lay out with "rake routes"
 
