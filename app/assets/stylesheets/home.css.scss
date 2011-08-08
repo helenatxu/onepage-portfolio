@@ -164,9 +164,13 @@ h1 {
 
 
 #logo {
-	background: url(/assets/elements/logo.png) no-repeat top left;
+	abackground: url(/assets/elements/logo.png) no-repeat top left;
 	height: 103px;
 	width: 260px;
+}
+
+#logo {
+	display: block;
 }
 
 #navigation{
