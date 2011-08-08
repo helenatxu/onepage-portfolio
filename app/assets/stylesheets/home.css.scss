@@ -105,8 +105,6 @@ h1 {
 	color: #b1cac8;
 	text-shadow: #000000 1px 1px 1px;
 	margin: 0 auto auto;
-	padding: 6px;
-	
 }
 
 #portfolio p { 
@@ -116,7 +114,8 @@ h1 {
 	text-align:left;
 	color: #179595;
 	margin: auto auto 6px;
-	line-height:135%;	
+	line-height:135%;
+	padding: 6px;	
 }
 
 
@@ -140,8 +139,8 @@ h1 {
 	background: url(/assets/elements/portfolio_box.png) no-repeat;
 	float: left;
 	margin: 10px auto auto 50px;
-	padding: 10px 20px 20px;    
-	width: 470px;
+	padding: 10px 30px 20px 20px;	
+	width: 450px;
 	height: 220px;
 }
 
