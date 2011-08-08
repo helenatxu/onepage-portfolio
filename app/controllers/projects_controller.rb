@@ -1,6 +1,9 @@
 class ProjectsController < ApplicationController
+
+  before_filter :authenticate
+
   # GET /projects
-  # GET /projects.json
+  # GET /projects.json  
   def index
     @projects = Project.all
 
@@ -80,4 +83,15 @@ class ProjectsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+
+  protected
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "admin" && password == "Hola.1234"
+    end
+  end
+
+
 end
