@@ -4,9 +4,23 @@
 es:
 
     hello_big :  "Hola,"
-    hello_small : "me llamo Helena y soy diseñadora y desarrolladora web."
+    hello_small1 : "me llamo Helena y "
+    hello_small2 : "soy diseñadora y desarrolladora web."
     checkout : "Echa un vistazo a mi..."
-    
+
+
+# Menu
+    hello : "hola"
+    portfolio : "portafolio"
+    aboutme : "sobre mí"
+    contact : "contacto"
+
+# Sections    
+    hello_section : "Hola"
+    portfolio_section : "Portafolio"
+    aboutme_section : "Sobre Mí"
+    contact_section : "Contacto"
+
 
 # Spanish translations for Rails
 # by Francisco Fernando García Nieto (ffgarcianieto@gmail.com)

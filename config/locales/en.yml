@@ -4,8 +4,24 @@
 en:
 
     hello_big :  "Hello,"
-    hello_small : "my name is Helena and I am a web designer & developer."
+    hello_small1 : "my name is Helena "
+    hello_small2 : "and I am a web designer & developer."
     checkout : "Check out my..."
+    
+    
+# Menu    
+    hello : "hello"
+    portfolio : "portfolio"
+    aboutme : "about me"
+    contact : "contact"
+    
+# Sections
+    hello_section : "Hello"
+    portfolio_section : "Portfolio"
+    aboutme_section : "About Me"
+    contact_section : "Contact"
+
+    
 
 date:
         formats:

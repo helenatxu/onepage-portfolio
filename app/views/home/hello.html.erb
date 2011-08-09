@@ -1,5 +1,4 @@
 <div id="home">
-
 	<div id="navigation">
 		<ul id="nav_bar"> 
 			<li id="hello_link"><a href="#home" class="anchorLink" title="hello I am Helena Moreno Chacon">hello</a></li> 
@@ -28,7 +27,7 @@
 	<header id="hello">
 		<hgroup id="hgroup">
 			<h1><%=t :hello_big %></h1>
-			<h2><%=t :hello_small %></h2>
+			<h2><%=t :hello_small1 %><br /><%=t :hello_small2 %></h2>
 
 			<h3><a id="arrow" href="#portfolio" class="anchorLink" title="skip to my portfolio!">
 				<%= image_tag "/assets/elements/arrow_down.png", :alt => "Skip to my Portfolio" %>
@@ -45,6 +44,13 @@
 
 <%= render 'portfolio' %>
 
-<%= render 'aboutme' %>
+<% if params[:locale] == 'es'%>
+	<%=  render 'aboutme_es'%>
+	<% else %>
+		<% if params[:locale] == 'en'%>
+		<%=  render 'aboutme_en'%>
+	<% end %>
+<% end %>
+
 
 <%= render 'contact' %>
