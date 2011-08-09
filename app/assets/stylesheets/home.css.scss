@@ -174,9 +174,9 @@ h1 {
 }
 
 #navigation{
-	background: url(/assets/elements/bg_menu.png) no-repeat top left;
+	background: url(/assets/elements/bg_menu6.png) no-repeat top left;
 	height: 32px;
-	width: 477px;
+	width: 535px;
 	text-align: center;
 	margin: 0 10px 0px auto;
 	position: fixed;
@@ -192,6 +192,16 @@ h1 {
 	font-size: 1em;
 	text-align: center;
 	text-shadow: #ffffff 2px 1px 2px;
+}
+
+#navigation #lang_menu {
+		padding: 1px 10px;
+}
+
+#navigation #lang_menu li {
+	float: none;
+	padding: 1px 5px;
+	font-size: 0.8em;
 }
 
 #aboutme {

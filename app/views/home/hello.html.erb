@@ -6,15 +6,23 @@
 			<li id="portfolio_link"><a href="#portfolio" class="anchorLink" title="web design &amp; development portfolio">portfolio</a></li> 
 			<li id="aboutme_link"><a href="#aboutme" class="anchorLink" title="about Helena Moreno Chacon">about me</a></li> 
 			<li id="contact_link"><a href="#contact" class="anchorLink" title="contact me!">contact</a></li> 
-		</ul>
-		<ul class="lang_menu">
-			<li><%= link_to("English", :locale => "en") %></li>
-			<li><%= link_to("Español", :locale => "es") %></li>
+			<li id="lang_menu">
+				<ul>
+					<li>
+						<%= link_to(image_tag("/assets/flags/us.png", :alt => "change to english", :class => 'flag_images'), :locale => "en") %>
+						<%= link_to("en", :locale => "en") %>
+					</li>
+					<li>
+						<%= link_to(image_tag("/assets/flags/es.png", :alt => "cambiar a español", :class => 'flag_images'), :locale => "es") %>
+						<%= link_to("es", :locale => "es") %>
+					</li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 
 	<div id="logo"><a href="http://helenaweb.herokuapp.com/" class="anchorLink" title="Helena Moreno Chacon. Freelance web designer &amp; developer">
-	<%= image_tag "/assets/elements/logo.png", :alt => "Helena Moreno Chacon. Freelance web designer &amp; developer" %>
+		<%= image_tag "/assets/elements/logo.png", :alt => "Helena Moreno Chacon. Freelance web designer &amp; developer" %>
 	</a></div>
 
 	<header id="hello">

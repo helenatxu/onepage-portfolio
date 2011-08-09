@@ -7,7 +7,7 @@ en:
     hello_small : "my name is Helena and I am a web designer & developer."
     checkout : "Check out my..."
 
-    date:
+date:
         formats:
           default: "%Y-%m-%d"
           short: "%b %d"
@@ -63,7 +63,7 @@ en:
           - :month
           - :day
 
-    time:
+time:
         formats:
           default: "%a, %d %b %Y %H:%M:%S %z"
           short: "%d %b %H:%M"
@@ -71,7 +71,7 @@ en:
         am: "am"
         pm: "pm"
 
-    support:
+support:
         array:
           words_connector: ", "
           two_words_connector: " and "
@@ -80,7 +80,7 @@ en:
         select:
           prompt: "Please select"
 
-    number:
+number:
         format:
           separator: "."
           delimiter: ","
@@ -132,7 +132,7 @@ en:
               trillion: Trillion
               quadrillion: Quadrillion
 
-    datetime:
+datetime:
         distance_in_words:
           half_a_minute: "half a minute"
           less_than_x_seconds:
@@ -176,7 +176,7 @@ en:
           minute: "Minute"
           second: "Seconds"
 
-    helpers:
+helpers:
         select:
           prompt: "Please select"
 
@@ -185,7 +185,7 @@ en:
           update: 'Update %{model}'
           submit: 'Save %{model}'
 
-    errors:
+errors:
         format: "%{attribute} %{message}"
 
         messages: &errors_messages
@@ -209,7 +209,7 @@ en:
           odd: "must be odd"
           even: "must be even"
 
-    activerecord:
+activerecord:
         errors:
           template:
             header:
