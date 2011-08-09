@@ -1,13 +1,13 @@
 <div id="contact">
-	<h1>Contact</h1>
+	<h1><%=t :contact_section %></h1>
 
 	<div id="contact_form">
 
-		<h2>Send me a message!</h2>
+		<h2><%=t :send_me %></h2>
 		<%= form_for @support, :url => { :controller => "supports", :action => "create" }, :html => { :method => :post } do |f| %>
 
 			<p>
-			<%= f.label :sender_name, "Name:" %>
+			<%= f.label :sender_name, t(:name) %>
 
 			<%= f.text_field :sender_name %>
 		</p>
@@ -21,7 +21,7 @@
 			<%= f.text_area :content %>
 		</p>
 		<p class="button">
-			<%= f.submit "Send" %>
+			<%= f.submit t(:send) %>
 		</p>
 		<% end %>
 

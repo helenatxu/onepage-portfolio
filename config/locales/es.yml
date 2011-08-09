@@ -3,6 +3,12 @@
 
 es:
 
+# main layout
+    title :  "Helena Moreno Chacón - diseño y desarrollo Web"
+    footer1 :  "diseño y desarrollo Web"
+    footer2 :  "HTML5 válido"
+
+# Hello section
     hello_big :  "Hola,"
     hello_small1 : "me llamo Helena y "
     hello_small2 : "soy diseñadora y desarrolladora web."
@@ -20,6 +26,18 @@ es:
     portfolio_section : "Portafolio"
     aboutme_section : "Sobre Mí"
     contact_section : "Contacto"
+
+# Portfolio section
+    what : "Qué he hecho: "
+    tools : "Herramientas y tecnologías: "
+ 
+        
+# Contact section
+    send_me : "Envíame un mensaje!"
+    name : "Nombre:"
+    send : "Enviar"
+
+
 
 
 # Spanish translations for Rails

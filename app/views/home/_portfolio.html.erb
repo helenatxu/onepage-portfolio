@@ -1,5 +1,5 @@
 <div id="portfolio">
-	<h1>Portfolio</h1>
+	<h1><%=t :portfolio_section %></h1>
 
 	<ul>
 		<% @projects.each do |project| %>
@@ -11,9 +11,9 @@
 			<div class="tv">
 				<h2><%= link_to  project.name, project.url %></h2>
 				<p><%= project.description %></p>
-				<p><span class="h3">What I did: </span><%= project.work %>
+				<p><span class="h3"><%=t :what %></span><%= project.work %>
 				</p>
-				<p><span class="h3">Tools &amp; technologies: </span><%= project.tools %>
+				<p><span class="h3"><%=t :tools %></span><%= project.tools %>
 				</p>
 			</div>
 

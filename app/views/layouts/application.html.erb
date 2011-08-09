@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Helena Moreno Chacón - Web design &amp; development</title>
+	<title><%=t :title %></title>
 	<link href='http://fonts.googleapis.com/css?family=Dancing+Script|Lobster+Two:700italic,700|Delius' rel='stylesheet' type='text/css'>
 	<%= stylesheet_link_tag    "application" %>
 	<%= javascript_include_tag "application" %>
@@ -15,8 +15,8 @@
 <footer>
 	<div id="footer">
 		<p>Helena Moreno Chacón 2011</p> 
-		<p>web design &amp; development</p>
-		<p><a href="http://html5.validator.nu/?doc=http%3A%2F%2Fhelenaweb.herokuapp.com" title="validate HTML5 here">Valid HTML5</a>
+		<p><%=t :footer1 %></p>
+		<p><a href="http://html5.validator.nu/?doc=http%3A%2F%2Fhelenaweb.herokuapp.com" title="validate HTML5 here"><%=t :footer2 %></a>
 	</div>
 </footer>
 

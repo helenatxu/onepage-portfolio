@@ -3,6 +3,13 @@
 
 en:
 
+# main layout
+    title :  "Helena Moreno Chacón - Web design & development"
+    footer1 :  "web design & development"
+    footer2 :  "Valid HTML5"
+
+
+# Hello section
     hello_big :  "Hello,"
     hello_small1 : "my name is Helena "
     hello_small2 : "and I am a web designer & developer."
@@ -20,7 +27,15 @@ en:
     portfolio_section : "Portfolio"
     aboutme_section : "About Me"
     contact_section : "Contact"
+    
+# Portfolio section
+    what : "What I did: "
+    tools : "Tools & technologies: "    
 
+# Contact section
+    send_me : "Send me a message!"
+    name : "Name:"
+    send : "Send"
     
 
 date:
