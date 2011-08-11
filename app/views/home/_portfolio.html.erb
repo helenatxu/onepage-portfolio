@@ -9,8 +9,6 @@
 		<li class="projects_list">
 
 			<div class="thumbnail">
-				<!-- <%= link_to(image_tag(project.image, :alt => project.name, :class => 'projects_images'), project.url) %> -->
-
 				<%= link_to(image_tag(project.image), project.image_big1, :alt => "click me!", :class => 'project_gallery', :rel => "project_#{count}" ) %>
 				<%= link_to("", project.image_big2, :class => 'project_gallery', :rel => "project_#{count}") %>
 				<%= link_to("", project.image_big3, :class => 'project_gallery', :rel => "project_#{count}") %>
