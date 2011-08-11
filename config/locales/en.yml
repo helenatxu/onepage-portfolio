@@ -22,6 +22,12 @@ en:
     aboutme : "about me"
     contact : "contact"
     
+# Menu alt
+    hello_alt : "hello!_I_am_Helena Moreno Chacon"
+    portfolio_alt : "check out my portfolio!"
+    aboutme_alt : "read about me"
+    contact_alt : "contact me!"
+    
 # Sections
     hello_section : "Hello"
     portfolio_section : "Portfolio"
