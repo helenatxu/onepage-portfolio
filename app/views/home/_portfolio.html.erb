@@ -2,61 +2,58 @@
 	<h1><%=t :portfolio_section %></h1>
 
 	<ul>
+		<% count = 0 %>
 		<% @projects.each do |project| %>
-
+		<% count = count + 1 %>
+		
 		<li class="projects_list">
 
-			<div class="thumbnail"><%= link_to(image_tag(project.image, :alt => project.name, :class => 'projects_images'), project.url) %></div>
+			<div class="thumbnail">
+				<!-- <%= link_to(image_tag(project.image, :alt => project.name, :class => 'projects_images'), project.url) %> -->
+
+				<%= link_to(image_tag(project.image), project.image_big1, :alt => "click me!", :class => 'project_gallery', :rel => "project_#{count}" ) %>
+				<%= link_to("", project.image_big2, :class => 'project_gallery', :rel => "project_#{count}") %>
+				<%= link_to("", project.image_big3, :class => 'project_gallery', :rel => "project_#{count}") %>
+			</div>
+
 			<div class="tv">
 				<% if params[:locale] == 'es'%>
-		
+
 				<h2><%= link_to  project.nombre, project.url %></h2>
 				<p><%= project.descripcion %></p>
 				<p><span class="h3"><%=t :what %></span><%= project.trabajo %>
 				</p>
 				<p><span class="h3"><%=t :tools %></span><%= project.herramientas %>
 				</p>
-				
-					<% else %>
-						
-						<h2><%= link_to  project.name, project.url %></h2>
-						<p><%= project.description %></p>
-						<p><span class="h3"><%=t :what %></span><%= project.work %>
-						</p>
-						<p><span class="h3"><%=t :tools %></span><%= project.tools %>
-						</p>
-						
+
+				<% else %>
+
+				<h2><%= link_to  project.name, project.url %></h2>
+				<p><%= project.description %></p>
+				<p><span class="h3"><%=t :what %></span><%= project.work %>
+				</p>
+				<p><span class="h3"><%=t :tools %></span><%= project.tools %>
+				</p>
+
 				<% end %>
-								
+
 			</div>
 
 		</li>
 		<% end %>
 	</ul>
-	
-		<p><a class="fancybox" id="example2" href="/assets/projects/yourgarden.png" title="Lorem ipsum"><img alt="" src="/assets/projects/yourgarden_small.png" /></a></p>
-		
-		
-	<a rel="example_group" href="/assets/projects/yourgarden.png" title="Lorem ipsum"><img alt="" src="/assets/projects/yourgarden_small.png" /></a>
 
-	<a rel="example_group" href="/assets/projects/routefinder.png" title=""><img alt="" src="/assets/projects/routefinder_small.png" /></a>
+<!--	
+<div class="thumbnail">
+<%= link_to(image_tag("/assets/projects/yourgarden_small.png"), "/assets/projects/yourgarden.png", :alt => "pepe", :class => 'project_gallery', :rel =>"project1") %>
+<%= link_to("","/assets/projects/yourgarden.png", :class => 'project_gallery', :rel =>"project1" ) %>
+<%= link_to("","/assets/projects/yourgarden.png", :class => 'project_gallery', :rel =>"project1" ) %>
+-->
 
-	<a rel="example_group" href="/assets/projects/myportfolio.png" title=""><img alt="" src="/assets/projects/myportfolio_small.png" /></a>
-	
-	<a rel="example_group" href="/assets/projects/handbageshop.png" title=""><img class="last" alt="" src="/assets/projects/handbageshop_small.png" /></a>
-	
-	<p>
-		Different animations<br />
 
-		<a id="example1" href="./assets/example/1_b.jpg"><img alt="example1" src="./assets/example/1_s.jpg" /></a>
+</div>
 
-		<a id="example2" href="./assets/example/2_b.jpg"><img alt="example2" src="./assets/example/2_s.jpg" /></a>
 
-		<a id="example3" href="./assets/example/3_b.jpg"><img alt="example3" src="./assets/example/3_s.jpg" /></a>
-		
-		<a id="example4" href="./assets/example/4_b.jpg"><img class="last" alt="example4" src="./assets/example/4_s.jpg" /></a>
-	</p>
-	
 </div>
 <p class="shadow_up"></p>
 
