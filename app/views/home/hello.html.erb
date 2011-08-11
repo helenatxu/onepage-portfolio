@@ -44,12 +44,14 @@
 
 <%= render 'portfolio' %>
 
+<!-- <%= params[:locale] %> -->
+<!-- <%= I18n.locale %> -->
+<!-- <%= locale %> -->
+
 <% if params[:locale] == 'es'%>
 	<%=  render 'aboutme_es'%>
 	<% else %>
-		<% if params[:locale] == 'en'%>
 		<%=  render 'aboutme_en'%>
-	<% end %>
 <% end %>
 
 
