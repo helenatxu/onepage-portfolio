@@ -5,10 +5,9 @@
 // the compiled file.
 //
 //= require jquery
-//= require jquery_ujs
+// require jquery_ujs
 //= require_tree .
 
-// Application javascript
 
 $(document).ready(function() {	
 	
@@ -22,14 +21,12 @@ $(document).ready(function() {
 		'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
 			return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
 		}
-	});
-	
+	});	
 
 	$("a#my_photo").fancybox({
 		'overlayShow'	: false,
 		'transitionIn'	: 'elastic',
 		'transitionOut'	: 'elastic'
 	});
-
 
 });
