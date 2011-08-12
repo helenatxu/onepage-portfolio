@@ -224,7 +224,7 @@ h1 {
 	text-shadow: #ffffff 2px 1px 2px;
 }
 
-#aboutme #more, #aboutme img {
+#aboutme #more, #aboutme #myphoto {
 	display: inline;
 	padding: 10px;
 }
@@ -236,8 +236,14 @@ h1 {
 	line-height:170%;
 }
 
-#aboutme img {
+#aboutme #myphoto {
 	width:150px;
+}
+
+#aboutme #lkdn {
+	width:160px;
+	border: 0 !important;
+	margin-top: 10px;
 }
 
 
