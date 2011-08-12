@@ -72,8 +72,20 @@
 	margin: 10px 20px;
 }
 
+#edit p {
+	padding: 20px 0 20px;
+}
 #edit input, #edit textarea {
 	width: 400px;
+	float: right;
+}
+
+#edit .short input {
+	width: 270px;
+	float: right;
+}
+#edit textarea {
+	height: 80px;
 }
 
 #edit p{

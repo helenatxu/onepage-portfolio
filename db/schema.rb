@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110811142956) do
+ActiveRecord::Schema.define(:version => 20110812213911) do
 
   create_table "projects", :force => true do |t|
     t.string   "name"
@@ -28,7 +28,12 @@ ActiveRecord::Schema.define(:version => 20110811142956) do
     t.string   "image_big1"
     t.string   "image_big2"
     t.string   "image_big3"
+    t.string   "desc_image_big1"
+    t.string   "desc_image_big2"
+    t.string   "desc_image_big3"
+    t.string   "desc_image_big1_es"
+    t.string   "desc_image_big2_es"
+    t.string   "desc_image_big3_es"
   end
 
 end
-

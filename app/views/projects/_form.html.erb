@@ -1,83 +1,96 @@
-	<div id="edit" class="portfolio_admin">
+<div id="edit" class="portfolio_admin">
 <%= form_for(@project) do |f| %>
-  <% if @project.errors.any? %>
-    <div id="error_explanation">
-      <h2> Oops! There are at least <%= pluralize(@project.errors.count, "error") %>.</h2>
+	<% if @project.errors.any? %>
+	<div id="error_explanation">
+		<h2> Oops! There are at least <%= pluralize(@project.errors.count, "error") %>.</h2>
 
-      <ul>
-      <% @project.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+		<ul>
+			<% @project.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
 
-  <p class="field">
-    <%= f.label :name %>   </p>
-  <p class="field">
-    <%= f.text_field :name %>
-  </p>
-  <p class="field">
-    <%= f.label :nombre %>   </p>
-  <p class="field">
-    <%= f.text_field :nombre %>
-  </p>
-  <p class="field">
-    <%= f.label :description %></p>
-  <p class="field"><%= f.text_area :description %>
-  </p>
-</p>
-<p class="field">
-  <%= f.label :descripcion %></p>
-<p class="field"><%= f.text_area :descripcion %>
-</p>
-  <p class="field">
-    <%= f.label :work %> </p>
-  <p class="field">
-    <%= f.text_field :work %>
-  </p>
-  <p class="field">
-    <%= f.label :trabajo %> </p>
-  <p class="field">
-    <%= f.text_field :trabajo %>
-  </p>
-  <p class="field">
-    <%= f.label :tools %> </p>
-  <p class="field">
-    <%= f.text_field :tools %>
-  </p>
-  <p class="field">
-    <%= f.label :herramientas %> </p>
-  <p class="field">
-    <%= f.text_field :herramientas %>
-  </p>
-  <p class="field">
-    <%= f.label :image %> </p>
-  <p class="field">
-    <%= f.text_field :image %>
-  </p>
-  <p class="field">
-    <%= f.label :image_big1 %> </p>
-  <p class="field">
-    <%= f.text_field :image_big1 %>
-  </p>
-  <p class="field">
-    <%= f.label :image_big2 %> </p>
-  <p class="field">
-    <%= f.text_field :image_big2 %>
-  </p>
-  <p class="field">
-    <%= f.label :image_big3 %> </p>
-  <p class="field">
-    <%= f.text_field :image_big3 %>
-  </p>
-  <p class="field">
-    <%= f.label :url %> </p>
-  <p class="field">
-    <%= f.text_field :url %>
-  </p>
-  <p class="actions button">
-    <%= f.submit "Save"%>
-  </p>
-<% end %>
+	<p class="field short">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p class="field short">
+		<%= f.label :nombre %> 
+		<%= f.text_field :nombre %>
+	</p>
+	<p class="field">
+		<%= f.label :description, "English description:" %>
+		<%= f.text_area :description %>
+	</p>
+
+	<p class="field">
+		<%= f.label :descripcion, "Spanish description:" %>
+		<%= f.text_area :descripcion %>
+	</p>
+	<p class="field short">   
+		<%= f.label :work %> 
+		<%= f.text_field :work %>
+	</p>
+	<p class="field short">
+		<%= f.label :trabajo %> 
+		<%= f.text_field :trabajo %>
+	</p>
+	<p class="field short">
+		<%= f.label :tools %> 
+		<%= f.text_field :tools %>
+	</p>
+	<p class="field short">
+		<%= f.label :herramientas %> 
+		<%= f.text_field :herramientas %>
+	</p>
+	<p class="field short">
+		<%= f.label :image, "URL for thumbnail" %> 
+		<%= f.text_field :image %>
+	</p>
+	<p class="field short">
+		<%= f.label :image_big1, "URL for Image 1:" %> 
+		<%= f.text_field :image_big1 %>
+	</p>
+	<p class="field">
+		<%= f.label :desc_image_big1, "English description for image 1:" %> 
+		<%= f.text_field :desc_image_big1 %>
+	</p>
+	<p class="field">
+		<%= f.label :desc_image_big1_es, "Spanish description for image 1:" %> 
+		<%= f.text_field :desc_image_big1_es %>
+	</p>
+	<p class="field short">
+		<%= f.label :image_big2, "URL for Image 2:" %> 
+		<%= f.text_field :image_big2 %>
+	</p>
+	<p class="field">
+		<%= f.label :desc_image_big2, "English description for image 2:" %> 
+		<%= f.text_field :desc_image_big2 %>
+	</p>
+	<p class="field">
+		<%= f.label :desc_image_big2_es, "Spanish description for image 2:" %> 
+		<%= f.text_field :desc_image_big2_es %>
+	</p>
+	<p class="field short">
+		<%= f.label :image_big3, "URL for Image 3:" %> 
+		<%= f.text_field :image_big3 %>
+	</p>
+	<p class="field">
+		<%= f.label :desc_image_big3, "English description for image 3:" %> 
+		<%= f.text_field :desc_image_big3 %>
+	</p>
+	<p class="field">
+		<%= f.label :desc_image_big3_es, "Spanish description for image 3:" %> 
+		<%= f.text_field :desc_image_big3_es %>
+	</p>
+	<p class="field short">
+		<%= f.label :url, "URL of the project" %> 
+		<%= f.text_field :url %>
+	</p>
+	<p class="actions button">
+		<%= f.submit "Save"%>
+	</p>
+	<% end %>
 </div>

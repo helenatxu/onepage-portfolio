@@ -284,6 +284,7 @@
 	padding: 10px;
 	background-image: url('fancy_title_over.png');
 	display: block;
+	font-size: 1.2em;
 }
 
 .fancybox-title-float {
