@@ -209,10 +209,10 @@ h1 {
 
 #aboutme #aboutbox {
 	background: url(/assets/elements/about_box.png) no-repeat top left;
-	height: 510px;
+	height: 540px;
 	width: 640px;
 	margin: 45px auto;
-	padding: 50px;
+	padding: 25px 50px 50px;
 }
 
 #aboutme p {
@@ -221,7 +221,8 @@ h1 {
 	color: #52442f;
 	margin: 10px auto;
 	padding: 8px;
-	text-shadow: #ffffff 2px 1px 2px;
+	text-shadow: white 0px 2px 1px;
+	line-height:185%;
 }
 
 #aboutme #more, #aboutme #myphoto {
@@ -233,7 +234,7 @@ h1 {
 	float: right;
 	margin-right: 20px;
 	width: 410px;
-	line-height:170%;
+	line-height:190%;
 }
 
 #aboutme #myphoto {
@@ -241,9 +242,8 @@ h1 {
 }
 
 #aboutme #lkdn {
-	width:160px;
+	width: 150px;
 	border: 0 !important;
-	margin-top: 10px;
 }
 
 
