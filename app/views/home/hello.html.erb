@@ -1,7 +1,7 @@
 <div id="home">
 	<div id="navigation">
 		<ul id="nav_bar"> 
-			<li id="hello_link"><a href="#home" class="anchorLink" title="hello! I am Helena Moreno Chacon"><%=t :hello %></a></li> 
+			<li id="hello_link"><%= link_to  t(:hello), "#home", :alt => "go to hello section", :class => 'anchorLink', :title => "hello! I am Helena Moreno Chacon" %></li> 
 			<li id="portfolio_link"><a href="#portfolio" class="anchorLink" title="check out my portfolio!"><%=t :portfolio %></a></li> 
 			<li id="aboutme_link"><a href="#aboutme" class="anchorLink" title="read about me"><%=t :aboutme %></a></li> 
 			<li id="contact_link"><a href="#contact" class="anchorLink" title="contact me!"><%=t :contact %></a></li> 
