@@ -21,12 +21,21 @@ en:
     portfolio : "portfolio"
     aboutme : "about me"
     contact : "contact"
-    
+
+
 # Menu alt
-    hello_alt : "hello!_I_am_Helena Moreno Chacon"
-    portfolio_alt : "check out my portfolio!"
-    aboutme_alt : "read about me"
-    contact_alt : "contact me!"
+    hello_alt : "skip to hello section"
+    portfolio_alt : "skip to portfolio section"
+    aboutme_alt : "skip to about me section"
+    contact_alt : "skip to contact section"
+
+
+# Menu title
+    hello_title : "hello! I am Helena Moreno Chacon"
+    portfolio_title : "check out my portfolio!"
+    aboutme_title : "read about me"
+    contact_title : "contact me!"
+
     
 # Sections
     hello_section : "Hello"

@@ -20,9 +20,15 @@
 		</ul>
 	</div>
 
-	<div id="logo"><a href="http://helenaweb.herokuapp.com/" class="anchorLink" title="Helena Moreno Chacon. Freelance web designer &amp; developer">
-		<%= image_tag "/assets/elements/logo.png", :alt => "Helena Moreno Chacon. Freelance web designer &amp; developer" %>
+	<% if params[:locale] == 'es'%>
+	<div id="logo"><a href="http://helenaweb.herokuapp.com/" class="anchorLink" title="Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance">
+		<%= image_tag "/assets/elements/logo_es.png", :alt => "Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance" %>
 	</a></div>
+		<% else %>
+		<div id="logo"><a href="http://helenaweb.herokuapp.com/" class="anchorLink" title="Helena Moreno Chacon. Freelance web designer &amp; developer">
+			<%= image_tag "/assets/elements/logo_eng.png", :alt => "Helena Moreno Chacon. Freelance web designer &amp; developer" %>
+		</a></div>
+	<% end %>
 
 	<header id="hello">
 		<hgroup id="hgroup">
