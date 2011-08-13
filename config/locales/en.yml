@@ -7,6 +7,9 @@ en:
     title :  "Helena Moreno Chacón - Web design & development"
     footer1 :  "web design & development"
     footer2 :  "Valid HTML5"
+    error404_title : "The page you were looking for doesn't exist (404)"
+    error404_h1 : "The page you were looking for doesn't exist."
+    error404_p : "You may have mistyped the address or the page may have moved."
 
 
 # Hello section

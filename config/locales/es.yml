@@ -7,6 +7,9 @@ es:
     title :  "Helena Moreno Chacón - diseño y desarrollo Web"
     footer1 :  "diseño y desarrollo Web"
     footer2 :  "HTML5 válido"
+    error404_title : "La página que buscas no existe (404)"
+    error404_h1 : "La página que buscas no existe."
+    error404_p : "Quizá hayas escrito mal dirección ó la página ha sido movida."
 
 # Hello section
     hello_big :  "Hola,"
