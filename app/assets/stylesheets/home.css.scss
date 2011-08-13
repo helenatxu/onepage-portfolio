@@ -219,10 +219,19 @@ h1 {
 	font: 200 0.99em/1.62em 'Helvetica Neue Regular', 'HelveticaNeue-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align: justify;
 	color: #52442f;
+	text-shadow: white 0px 2px 1px;
+}
+
+#aboutme p.eng {
 	margin: 10px auto;
 	padding: 8px;
-	text-shadow: white 0px 2px 1px;
-	line-height:185%;
+	line-height: 185%;
+}
+
+#aboutme p.es {
+	margin: 0 auto;
+	padding: 8px;
+	line-height: 175%;
 }
 
 #aboutme #more, #aboutme #myphoto {
