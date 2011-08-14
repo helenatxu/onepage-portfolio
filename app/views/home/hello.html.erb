@@ -45,12 +45,12 @@
 </div>
 <p class="shadow"></p>
 
-<%= render 'portfolio' %>
+<%= render 'home/portfolio' %>
 
 <% if params[:locale] == 'es'%>
-	<%=  render 'aboutme_es'%>
+	<%=  render 'home/aboutme_es'%>
 	<% else %>
-		<%=  render 'aboutme_en'%>
+		<%=  render 'home/aboutme_en'%>
 <% end %>
 
-<%= render 'contact' %>
+<%= render 'home/contact' %>

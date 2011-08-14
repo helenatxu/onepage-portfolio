@@ -4,7 +4,7 @@
 	<div id="contact_form">
 
 		<h2><%=t :send_me %></h2>
-		<%= form_for @support, :url => { :controller => "supports", :action => "create" }, :html => { :method => :post } do |f| %>
+		<%= form_for @support, :url => { :controller => "supports", :action => "create", :anchor => "contact" }, :html => { :method => :post } do |f| %>
 
 		<% if flash[:notice_sent] %>
 		<p class="notice"><%= flash[:notice_sent] %></p>
@@ -38,7 +38,5 @@
 		<% end %>
 
 	</div>
-
 </div>
-
 <p class="line"></p>
