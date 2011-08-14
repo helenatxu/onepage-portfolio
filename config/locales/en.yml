@@ -53,7 +53,9 @@ en:
 
 # Contact section
     send_me : "Send me a message!"
-    name : "Name:"
+    name : "Name"
+    email : "E-mail address"
+    message : "Message"
     send : "Send"
     sent : "Thanks! I will read it very soon."
     

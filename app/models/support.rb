@@ -30,9 +30,9 @@ class Support
   end
   
   HUMANIZED_ATTRIBUTES = {
-      :email => "E-mail address",
-      :sender_name => "Name",
-      :content => "Message"
+      :email => I18n.t(:email),
+      :sender_name => I18n.t(:name),
+      :content => I18n.t(:message)
     }
 
     def self.human_attribute_name(attr, options={})
