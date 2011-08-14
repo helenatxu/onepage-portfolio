@@ -1,6 +1,5 @@
 <div id="portfolio">
 	<h1><%=t :portfolio_section %></h1>
-
 	<ul>
 		<% count = 0 %>
 		<% @projects.each do |project| %>
@@ -16,15 +15,12 @@
 			</div>
 
 			<div class="tv">
-
-
 				<h2><%= link_to  project.nombre, project.url %></h2>
 				<p><%= project.descripcion %></p>
 				<p><span class="h3"><%=t :what %></span><%= project.trabajo %>
 				</p>
 				<p><span class="h3"><%=t :tools %></span><%= project.herramientas %>
 				</p>
-
 			</div>
 
 			<% else %>
@@ -36,7 +32,6 @@
 			</div>
 
 			<div class="tv">
-
 				<h2><%= link_to  project.name, project.url %></h2>
 				<p><%= project.description %></p>
 				<p><span class="h3"><%=t :what %></span><%= project.work %>
@@ -50,6 +45,5 @@
 		</li>
 		<% end %>
 	</ul>
-
 </div>
 <p class="shadow_up"></p>

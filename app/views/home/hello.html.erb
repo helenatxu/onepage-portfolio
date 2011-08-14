@@ -29,6 +29,10 @@
 			<%= image_tag "/assets/elements/logo_eng.png", :alt => "Helena Moreno Chacon. Freelance web designer &amp; developer" %>
 		</a></div>
 	<% end %>
+	
+	<% if flash[:notice] %>
+	      <p class="notice"><%= flash[:notice] %></p>
+	    <% end %>
 
 	<header id="hello">
 		<hgroup id="hgroup">
@@ -42,23 +46,15 @@
 			<h3><%=t :checkout %></h3>
 		</hgroup>
 	</header>
-
-
 </div>
-
 <p class="shadow"></p>
 
 <%= render 'portfolio' %>
-
-<!-- <%= params[:locale] %> -->
-<!-- <%= I18n.locale %> -->
-<!-- <%= locale %> -->
 
 <% if params[:locale] == 'es'%>
 	<%=  render 'aboutme_es'%>
 	<% else %>
 		<%=  render 'aboutme_en'%>
 <% end %>
-
 
 <%= render 'contact' %>
