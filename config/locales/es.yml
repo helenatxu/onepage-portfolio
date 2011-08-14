@@ -55,7 +55,7 @@ es:
     send_me : "Envíame un mensaje!"
     name : "Nombre:"
     send : "Enviar"
-
+    sent : "¡Gracias! Leeré el mensaje muy pronto."
 
 
 

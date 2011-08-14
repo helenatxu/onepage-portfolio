@@ -1,4 +1,9 @@
 Myportfolio::Application.routes.draw do
+
+  scope "(:locale)", :locale => /en|es/ do
+    resources :projects
+  end
+
   resources :supports
 
   get "home/hello"  
@@ -6,6 +11,7 @@ Myportfolio::Application.routes.draw do
 #  scope "/:locale" do
 #    resources :projects
 #  end
+
 
 
   resources :projects

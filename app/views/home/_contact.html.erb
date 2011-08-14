@@ -5,11 +5,14 @@
 
 		<h2><%=t :send_me %></h2>
 		<%= form_for @support, :url => { :controller => "supports", :action => "create" }, :html => { :method => :post } do |f| %>
-			
+
+		<% if flash[:notice_sent] %>
+		<p class="notice"><%= flash[:notice_sent] %></p>
+		<% end %>	
 		<p>
 			<%= f.label :sender_name, t(:name) %>	
 			<% if flash[:error_name] %>
-					<span class="error"><%= flash[:error_name] %></span>
+			<span class="notice"><%= flash[:error_name] %></span>
 			<% end %>
 
 			<%= f.text_field :sender_name %>
@@ -17,16 +20,16 @@
 		<p>
 			<%= f.label :email, "E-mail:" %>
 			<% if flash[:error_email] %>
-				<span class="error"><%= flash[:error_email] %></span>
+			<span class="notice"><%= flash[:error_email] %></span>
 			<% end %>
 			<%= f.text_field :email %>
 
 		</p>
 		<p>
-		<%= f.label :error_content, "Message:" %>
-		<% if flash[:error_content] %>
-				<span class="error"><%= flash[:error_content] %></span>
-		<% end %>
+			<%= f.label :error_content, "Message:" %>
+			<% if flash[:error_content] %>
+			<span class="notice"><%= flash[:error_content] %></span>
+			<% end %>
 			<%= f.text_area :content %>
 		</p>
 		<p class="button">

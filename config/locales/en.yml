@@ -55,6 +55,7 @@ en:
     send_me : "Send me a message!"
     name : "Name:"
     send : "Send"
+    sent : "Thanks! I will read it very soon."
     
 
 date:
