@@ -1,13 +1,17 @@
 Myportfolio::Application.routes.draw do
   resources :supports
 
-    get "home/hello"  
+  get "home/hello"  
 
-  
+#  scope "/:locale" do
+#    resources :projects
+#  end
+
+
   resources :projects
-  
+
   resources :supports, :only => [:new, :create]
-  
+
   # config/routes.rb
 
   # The priority is based upon order of creation:
@@ -57,7 +61,9 @@ Myportfolio::Application.routes.draw do
   #     resources :products
   #   end
 
-  match '/:locale' => 'home#hello'
+   match '/:locale' => 'home#hello'
+
+
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
