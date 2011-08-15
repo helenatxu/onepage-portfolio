@@ -32,7 +32,7 @@ class Support
 
   HUMANIZED_ATTRIBUTES = {
     :email => I18n.t(:email),
-    :sender_name => I18n.t(:name),
+     :sender_name => I18n.t(:name),
     :content => I18n.t(:message)
   }
 

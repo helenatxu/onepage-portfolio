@@ -53,7 +53,7 @@ es:
         
 # Contact section
     send_me : "Envíame un mensaje!"
-    name : "Nombre"
+    name : "Tu nombre"
     email : "Dirección de e-mail"
     message : "Mensaje"
     send : "Enviar"

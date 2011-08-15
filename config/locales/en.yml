@@ -53,13 +53,13 @@ en:
 
 # Contact section
     send_me : "Send me a message!"
-    name : "Name"
+    name : "Your name"
     email : "E-mail address"
-    message : "Message"
+    message : "The message"
     send : "Send"
     sent : "Thanks! I will read it very soon."
     error_explanation : "But before send the message, take into account that:"
-    
+
 
 date:
         formats:
@@ -263,7 +263,7 @@ errors:
           odd: "must be odd"
           even: "must be even"
 
-activerecord:
+activerecord:                
         errors:
           template:
             header:

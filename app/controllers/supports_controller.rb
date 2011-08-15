@@ -22,6 +22,7 @@ class SupportsController < ApplicationController
       end 
 
     else
+      # I18n.locale = locale
       @projects = Project.all    
       render :template => 'home/hello'
     end 
