@@ -8,12 +8,12 @@
 			<li id="lang_menu">
 				<ul>
 					<li>
-						<%= link_to(image_tag("/assets/flags/us.png", :alt => "change to english", :class => 'flag_images'), :locale => "en") %>
-						<%= link_to("en", :locale => "en") %>
+						<%= link_to(image_tag("/assets/flags/us.png", :alt => "change to english", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'en' )) %>
+						<%= link_to 'en', url_for(:action => 'hello', :controller => 'home', :locale => 'en' )%>
 					</li>
 					<li>
-						<%= link_to(image_tag("/assets/flags/es.png", :alt => "cambiar a español", :class => 'flag_images'), :locale => "es") %>
-						<%= link_to("es", root_path, :locale => "es") %>
+						<%= link_to(image_tag("/assets/flags/es.png", :alt => "cambiar a español", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'es' )) %>
+						<%= link_to 'es', url_for(:action => 'hello', :controller => 'home', :locale => 'es' )%>
 					</li>
 				</ul>
 			</li>
