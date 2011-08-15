@@ -14,28 +14,20 @@
 				<%= msg + ". "%> 
 				<% end %>
 			</p>
-
 		</div>
 		<% end %>
 
 		<p>
 			<%= f.label :sender_name, t(:name) %>	
-
 			<%= f.text_field :sender_name %>
 		</p>
 		<p>
 			<%= f.label :email, t(:email) %>
-			<!-- <% if flash[:error_email] %>
-			<span class="notice"><%= flash[:error_email] %></span>
-			<% end %> -->
 			<%= f.text_field :email %>
 
 		</p>
 		<p>
 			<%= f.label :content, t(:message) %>
-			<!-- <% if flash[:error_content] %>
-			<span class="notice"><%= flash[:error_content] %></span>
-			<% end %> -->
 			<%= f.text_area :content %>
 		</p>
 		<p class="button">
