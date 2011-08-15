@@ -327,6 +327,10 @@ h1 {
 	margin: 0px auto 5px;
 }
 
+#contact_form .field_with_errors input, #contact_form .field_with_errors textarea, {
+	border: dotted 1px #60C;
+}
+
 #contact_form .field_with_errors textarea {
 	height: 50px;
 }
