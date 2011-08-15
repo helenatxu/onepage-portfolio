@@ -5,6 +5,11 @@
 
 		<h2><%=t :send_me %></h2>
 		<%= form_for @support, :url => { :controller => "supports", :action => "create", :anchor => "contact" }, :html => { :method => :post } do |f| %>
+		
+		<% if flash[:notice_sent] %>
+		<p class="notice"><%= flash[:notice_sent] %></p>
+		<% end %>	
+		
 
 		<% if @support.errors.any? %>
 		<div id="error_explanation">

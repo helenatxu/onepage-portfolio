@@ -41,8 +41,6 @@ class Support
   # end
 
   def self.human_attribute_name(attribute_key_name, options={})
-    # Get all the columns in the Model's DB table as symbols
-
     localized_name = ""
 
     attribute_key_name.to_sym == :email ? localized_name = I18n.translate(:email) : super 
