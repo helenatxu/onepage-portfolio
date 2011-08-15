@@ -58,6 +58,7 @@ es:
     message : "Mensaje"
     send : "Enviar"
     sent : "¡Gracias! Leeré el mensaje muy pronto."
+    error_explanation : "Pero antes de enviar el mensaje, ten en cuenta que:"
 
 
 

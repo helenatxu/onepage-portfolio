@@ -5,44 +5,44 @@
 
 		<h2><%=t :send_me %></h2>
 		<%= form_for @support, :url => { :controller => "supports", :action => "create", :anchor => "contact" }, :html => { :method => :post } do |f| %>
-		
+
 		<% if @support.errors.any? %>
-		    <div id="error_explanation">
-		      <h2><%= pluralize(@support.errors.count, "error") %> prohibited this page from being saved:</h2>
-
-		      <ul>
-		      <% @support.errors.full_messages.each do |msg| %>
-		        <li><%= msg %></li>
-		      <% end %>
-		      </ul>
-		    </div>
-		  <% end %>
-	
-			<p>
-				<%= f.label :sender_name, t(:name) %>	
-
-				<%= f.text_field :sender_name %>
+		<div id="error_explanation">
+			<p id="explanation"><%=t :error_explanation %></p>
+			<p class="errors">
+				<% @support.errors.full_messages.each do |msg| %>
+				<%= msg + ". "%> 
+				<% end %>
 			</p>
-			<p>
-				<%= f.label :email, t(:email) %>
-				<!-- <% if flash[:error_email] %>
-				<span class="notice"><%= flash[:error_email] %></span>
-				<% end %> -->
-				<%= f.text_field :email %>
-
-			</p>
-			<p>
-				<%= f.label :error, t(:message) %>
-				<!-- <% if flash[:error_content] %>
-				<span class="notice"><%= flash[:error_content] %></span>
-				<% end %> -->
-				<%= f.text_area :content %>
-			</p>
-			<p class="button">
-				<%= f.submit t(:send) %>			
-			</p>
-			<% end %>
 
 		</div>
+		<% end %>
+
+		<p>
+			<%= f.label :sender_name, t(:name) %>	
+
+			<%= f.text_field :sender_name %>
+		</p>
+		<p>
+			<%= f.label :email, t(:email) %>
+			<!-- <% if flash[:error_email] %>
+			<span class="notice"><%= flash[:error_email] %></span>
+			<% end %> -->
+			<%= f.text_field :email %>
+
+		</p>
+		<p>
+			<%= f.label :content, t(:message) %>
+			<!-- <% if flash[:error_content] %>
+			<span class="notice"><%= flash[:error_content] %></span>
+			<% end %> -->
+			<%= f.text_area :content %>
+		</p>
+		<p class="button">
+			<%= f.submit t(:send) %>			
+		</p>
+		<% end %>
+
 	</div>
-	<p class="line"></p>
+</div>
+<p class="line"></p>

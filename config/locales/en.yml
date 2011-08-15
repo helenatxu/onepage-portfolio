@@ -58,6 +58,7 @@ en:
     message : "Message"
     send : "Send"
     sent : "Thanks! I will read it very soon."
+    error_explanation : "But before send the message, take into account that:"
     
 
 date:

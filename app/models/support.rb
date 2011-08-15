@@ -2,10 +2,11 @@
 class Support
   include ActiveModel::Validations
 
-  validates_presence_of :email, :sender_name, :content
-  # to deal with form, you must have an id attribute
-  attr_accessor :id, :email, :sender_name, :content
+  validates_presence_of :email, :content
+  validates :email, :format => {:with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i}
 
+  #to deal with form, you must have an id attribute
+  attr_accessor :id, :email, :sender_name, :content
 
   def initialize(attributes = {})
     attributes.each do |key, value|
@@ -28,15 +29,15 @@ class Support
     end
     return false
   end
-  
-  HUMANIZED_ATTRIBUTES = {
-      :email => I18n.t(:email),
-      :sender_name => I18n.t(:name),
-      :content => I18n.t(:message)
-    }
 
-    def self.human_attribute_name(attr, options={})
-      HUMANIZED_ATTRIBUTES[attr.to_sym] || super
-    end
+  HUMANIZED_ATTRIBUTES = {
+    :email => I18n.t(:email),
+    :sender_name => I18n.t(:name),
+    :content => I18n.t(:message)
+  }
+
+  def self.human_attribute_name(attr, options={})
+    HUMANIZED_ATTRIBUTES[attr.to_sym] || super
+  end
 
 end
