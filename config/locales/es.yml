@@ -53,9 +53,9 @@ es:
         
 # Contact section
     send_me : "Envíame un mensaje!"
-    name : "Tu nombre"
+    sender_name : "Tu nombre"
     email : "Dirección de e-mail"
-    message : "Mensaje"
+    content : "Mensaje"
     send : "Enviar"
     sent : "¡Gracias! Leeré el mensaje muy pronto."
     error_explanation : "Pero antes de enviar el mensaje, ten en cuenta que:"

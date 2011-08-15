@@ -26,9 +26,9 @@
 			<% else %>
 
 			<div class="thumbnail">
-				<%= link_to(image_tag(project.image), project.image_big1, :class => 'project_gallery', :rel => "lightbox_#{count}", :title =>project.desc_image_big1 ) %>
-				<%= link_to("", project.image_big2, :class => 'project_gallery', :rel => "lightbox_#{count}", :title =>project.desc_image_big2) %>
-				<%= link_to("", project.image_big3, :class => 'project_gallery', :rel => "lightbox_#{count}", :title =>project.desc_image_big3) %>
+				<%= link_to(image_tag(project.image), project.image_big1, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big1 ) %>
+				<%= link_to("", project.image_big2, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big2) %>
+				<%= link_to("", project.image_big3, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big3) %>
 			</div>
 
 			<div class="tv">

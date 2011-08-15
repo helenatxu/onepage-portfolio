@@ -30,14 +30,26 @@ class Support
     return false
   end
 
-  HUMANIZED_ATTRIBUTES = {
-    :email => I18n.t(:email),
-     :sender_name => I18n.t(:name),
-    :content => I18n.t(:message)
-  }
+  # HUMANIZED_ATTRIBUTES = {
+  #   :email => I18n.t(:email),
+  #    :sender_name => I18n.t(:name),
+  #   :content => I18n.t(:message)
+  # }
+  # 
+  # def self.human_attribute_name(attr, options={})
+  #   HUMANIZED_ATTRIBUTES[attr.to_sym] || super
+  # end
 
-  def self.human_attribute_name(attr, options={})
-    HUMANIZED_ATTRIBUTES[attr.to_sym] || super
+  def self.human_attribute_name(attribute_key_name, options={})
+    # Get all the columns in the Model's DB table as symbols
+
+    localized_name = ""
+
+    attribute_key_name.to_sym == :email ? localized_name = I18n.translate(:email) : super 
+    attribute_key_name.to_sym == :content ? localized_name = I18n.translate(:content) : super 
+    attribute_key_name.to_sym == :sender_name ? localized_name = I18n.translate(:sender_name) : super 
+
+    return localized_name
   end
 
 end

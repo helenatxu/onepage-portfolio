@@ -28,5 +28,7 @@ $(document).ready(function() {
 		'transitionIn'	: 'elastic',
 		'transitionOut'	: 'elastic'
 	});
+	
+	$("a.fancybox").attr('class', 'lightbox_1').fancybox();
 
 });
