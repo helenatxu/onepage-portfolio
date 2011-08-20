@@ -10,23 +10,12 @@
 
 
 $(document).ready(function() {	
-	
-	$("a[class=project_gallery]").fancybox({
-		'opacity'			: true,
-		'transitionIn'		: 'elastic',
-		'transitionOut'		: 'elastic',
-		'overlayOpacity'	: 0.9,
-		'overlayColor'		: '#000',
-		'titlePosition' 	: 'over',
-		'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-			return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-		}
-	});	
-
-	$("a#my_photo").fancybox({
-		'overlayShow'	: false,
-		'transitionIn'	: 'elastic',
-		'transitionOut'	: 'elastic'
-	});
-	
+	$("a[class=project_gallery]").colorbox({
+		transition:'elastic', 
+		speed:500, 
+		opacity: 0.9, 
+		slideshow:true,
+		slideshowSpeed: 2500, 
+		slideshowAuto: true
+		});
 });
