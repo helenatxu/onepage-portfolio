@@ -21,6 +21,8 @@ $(document).ready(function() {
 		// 	maxWidth: "900px",
 		// 	scalePhotos: true,
 		// 	});
+		
+		$('ul#myRoundabout').roundabout({shape:'lazySusan', clickToFocus: true, minScale:0.2});
 
 		$("a[class=project_gallery]").fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
 		
@@ -37,5 +39,6 @@ $(document).ready(function() {
 			$('img#magnify').hide();
 			loadGlass = 2;
 		});
+		
 
 	});

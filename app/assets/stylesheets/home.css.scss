@@ -71,9 +71,12 @@ h1 {
 	padding: 10px;
 }
 
+#portfolio {
+	height: 1000px;
+}
 
 #portfolio img {
-	width: 400px;
+/*	width: 400px; */
 }
 
 
@@ -194,7 +197,7 @@ h1 {
 }
 
 #navigation #lang_menu {
-		padding: 1px 10px;
+	padding: 1px 10px;
 }
 
 #navigation #lang_menu li {
@@ -337,7 +340,7 @@ h1 {
 
 #contact_form input {
 /*	background-color: #ede8e0; */
-	width: 517px;
+width: 517px;
 }
 
 
@@ -399,4 +402,43 @@ h1 {
 	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D6D6D6));
 }
 
+/* Rountabout CSS */
 
+.aroundabout-holder { 
+	padding: 0; height: 5em; list-style: none 
+}
+.aroundabout-moveable-item { 
+	height: 4em; 
+	width: 4em; 
+	cursor: pointer;
+	background-color: #ffc;
+	border: 1px solid #999;
+}
+.roundabout-in-focus { 
+	cursor: auto;
+}
+
+.roundabout-in-focus img { 
+	awidth: 20em !important;
+}
+
+.roundabout-holder {
+	list-style: none;
+	width: 40em;
+	height: 10em;
+	margin: 1em auto;
+}
+
+.roundabout-moveable-item {
+	height: 10em;
+	width: 15em;
+	cursor: pointer;
+}
+
+.roundabout-moveable-item img {
+	width: 20em;
+}
+
+.roundabout-in-focus {
+	cursor: auto;
+}
