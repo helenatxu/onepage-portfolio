@@ -9,16 +9,18 @@
 //= require_tree .
 
 $(document).ready(function() {	
-	$("a[class=project_gallery]").colorbox({
-		transition:'elastic', 
-		speed:500, 
-		opacity: 0.9, 
-		slideshow:true,
-		slideshowSpeed: 5000, 
-		slideshowAuto: true,
-		current: "image {current} of {total}",
-		overlayClose: true,
-		maxWidth: "900px",
-		scalePhotos: true,
-		});
-});
+	// $("a[class=project_gallery]").fancybox({
+		// 	transition:'elastic', 
+		// 	speed:500, 
+		// 	opacity: 0.9, 
+		// 	slideshow:true,
+		// 	slideshowSpeed: 5000, 
+		// 	slideshowAuto: true,
+		// 	current: "image {current} of {total}",
+		// 	overlayClose: true,
+		// 	maxWidth: "900px",
+		// 	scalePhotos: true,
+		// 	});
+
+		$("a[class=project_gallery]").fancybox({opacity: 0.9, overlayColor: '#000'});
+	});
