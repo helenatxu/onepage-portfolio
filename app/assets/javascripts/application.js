@@ -23,4 +23,19 @@ $(document).ready(function() {
 		// 	});
 
 		$("a[class=project_gallery]").fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
+		
+		var loadGlass = 1;
+		$('a.project_gallery img').hover(function(){
+			if(loadGlass == 1) {
+				$('body').prepend('<img id="magnify" style="position: absolute;" src="/assets/elements/magnify.png" alt="" width="32" height="32" />');
+			}
+			var p = $(this);
+			var position = p.position();
+			$('img#magnify').css({'top' : position.top+20, 'left' : position.left+20});
+			$('img#magnify').show();
+		},function(){
+			$('img#magnify').hide();
+			loadGlass = 2;
+		});
+
 	});
