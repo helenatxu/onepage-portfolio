@@ -22,5 +22,5 @@ $(document).ready(function() {
 		// 	scalePhotos: true,
 		// 	});
 
-		$("a[class=project_gallery]").fancybox({opacity: 0.9, overlayColor: '#000'});
+		$("a[class=project_gallery]").fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
 	});
