@@ -498,15 +498,7 @@ width: 517px;
 */
 
 
-/* Roundabut copy */
-
-
-.lthumbnail {
-    float: left;
-    width: 950px;
-    margin-top: 30px;
-    height: 350px;
-}
+/* Roundabut CSS */
 
 .roundabout-holder {
     list-style:none; 
@@ -516,9 +508,11 @@ width: 517px;
 }
 
 .roundabout-moveable-item {
-    font-size:12px!important;
-    height:280px; width:560px;
-    cursor:pointer; padding:5px;
+    font-size: 12px!important;
+    height: 280px; 
+	width: 500px;
+    cursor: pointer; 
+	padding: 5px;
 }
 
 .roundabout-moveable-item img {
@@ -529,6 +523,7 @@ width: 517px;
 
 .roundabout-in-focus {
     cursor:auto;
+	opacity: 1 !important;
 }
 
 .roundabout-in-focus:hover {
@@ -540,18 +535,17 @@ width: 517px;
 }
 
 .roundabout-in-focus:hover span {
-    display:inline;
-    position:absolute;
-    bottom:60px;
-    right:33px;
-    padding:8px 20px;
-    background:#ececec;
-    color:#638694;
+    display: inline;
+    position: absolute;
+    bottom: 60px;
+    right: 33px;
+    padding: 8px 20px;
+    background: #ececec;
+    color: #638694;
     z-index:999;
     -webkit-border-top-left-radius: 5px;
     -moz-border-radius-topLeft: 5px;
     font-size : 11px;
-
     border-left:1px solid #aaaaaa;
     border-top:1px solid #aaaaaa;
 }

@@ -22,13 +22,12 @@ $(document).ready(function() {
 		// 	scalePhotos: true,
 		// 	});
 		
-		$('ul#myRoundabout').roundabout({shape:'lazySusan', clickToFocus: true, minScale:0.2});
 		$('ul.myRoundabout').roundabout({shape:'lazySusan', clickToFocus: true, minScale:0.2});
-		
-		// $("li.roundabout-in-focus a.project_gallery ").fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
+
+		$('li.roundabout-in-focus a.project_gallery').fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
 		
 		var loadGlass = 1;
-		$('li.roundabout-in-focus a.project_gallery img').hover(function(){
+		$('a.project_gallery img').hover(function(){
 			if(loadGlass == 1) {
 				$('body').prepend('<img id="magnify" style="position: absolute;" src="/assets/elements/magnify.png" alt="" width="32" height="32" />');
 			}
@@ -41,11 +40,5 @@ $(document).ready(function() {
 			loadGlass = 2;
 		});
 		
-		$(".portfolio-item")
-	        .css("opacity","0.8")
-	       .hover(function(){
-	           $(this).css("opacity","1");
-	       }, function() {
-	           $(this).css("opacity","0.8");
-	       });
+
 	});
