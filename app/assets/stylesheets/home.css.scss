@@ -93,6 +93,7 @@ h1 {
 	color: #ffffff;
 	text-shadow: #000000 3px 3px 3px;
 	padding: 7px;
+	margin-bottom: 20px;
 	border-bottom: 1px solid #61514C;
 }
 
@@ -118,7 +119,7 @@ h1 {
 	font-size: 0.95em;	
 	text-align: justify;
 	color: #CBC4C2;
-	line-height:135%;
+	line-height:150%;
 	padding: 6px;	
 }
 
@@ -129,15 +130,13 @@ h1 {
 	height: 400px;	
 	margin: 40px 20px;
 	padding: 20px;
-	box-shadow: 2px 2px 4px #000000;
-	-webkit-box-shadow: 4px 4px 2px #000000; /* Safari */
+	box-shadow: 1px 1px 3px #000000;	
+	-webkit-box-shadow: 1px 1px 3px #000000; /* Safari */
 }
 
 .projects_list .thumbnail {
-/*	float: left;*/
 	margin: auto 50px;
-/*	display: inline;*/
-		width: 450px;
+	width: 450px;
 }
 
 .projects_list .project_gallery img {
@@ -173,7 +172,7 @@ h1 {
 .bubble {
 	position:relative;
 	padding:15px;
-	margin:100px 0 0.5em;
+	margin: 30px 0 10px;
 	color:#333;
 /*	background:#eee;*/
 	background:#333;
@@ -181,6 +180,8 @@ h1 {
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
+	box-shadow: 1px 1px 0px #251D1B;
+	-webkit-box-shadow: 1px 1px 0px #251D1B; /* Safari */
 }
 
 
