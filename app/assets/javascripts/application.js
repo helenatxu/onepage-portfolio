@@ -10,13 +10,20 @@
 
 $(document).ready(function() {	
 
-	$('ul.myRoundabout').roundabout({shape:'lazySusan', clickToFocus: true, minScale:0.2});
+	$(function() {
+		$('ul.myRoundabout').roundabout({shape:'lazySusan', clickToFocus: true, minScale:0.2});
+	});
+	
+	$('ul.myRoundabout .roundabout-in-focus a').live('click',function(event){
+	event.preventDefault();
+	$.fancybox({'href':$(this).attr('href'), opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
+	})
 
 	// $('li.roundabout-in-focus a.project_gallery').fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
 
-	$('ul.myRoundabout').delegate( 'li.roundabout-in-focus a.project_gallery', 'hover', function(){
-		$('li.roundabout-in-focus a.project_gallery').fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
-	});
+	// $('ul.myRoundabout').delegate( 'li.roundabout-in-focus a.project_gallery', 'onclick', function(){
+	// 	$('li.roundabout-in-focus a.project_gallery').fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
+	// });
 
 	// var loadGlass = 1;
 	// $('a.project_gallery img').hover(function(){
