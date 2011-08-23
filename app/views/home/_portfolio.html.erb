@@ -8,6 +8,18 @@
 		<li class="projects_list">
 
 			<% if params[:locale] == 'es'%>
+
+			<div class="tv">
+				<h2><%= link_to  project.nombre, project.url %></h2>
+				<p><%= project.descripcion %></p>
+				<div class="bubble">
+					<p><span class="h3"><%=t :what %></span><%= project.trabajo %>
+					</p>
+					<p><span class="h3"><%=t :tools %></span><%= project.herramientas %>
+					</p>
+				</div>
+			</div>
+
 			<div class="thumbnail">
 				<ul class="myRoundabout">
 					<li class="portfolio-item">
@@ -20,15 +32,6 @@
 						<%= link_to(image_tag(project.image_big3), project.image_big3, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big3_es) %>
 					</li>
 				</ul>
-			</div>
-
-			<div class="tv">
-				<h2><%= link_to  project.nombre, project.url %></h2>
-				<p><%= project.descripcion %></p>
-				<p><span class="h3"><%=t :what %></span><%= project.trabajo %>
-				</p>
-				<p><span class="h3"><%=t :tools %></span><%= project.herramientas %>
-				</p>
 			</div>
 
 			<% else %>
