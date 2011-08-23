@@ -72,7 +72,7 @@ h1 {
 }
 
 #portfolio {
-	height: 1000px;
+/*	height: 1000px;*/
 }
 
 #portfolio img {
@@ -123,16 +123,21 @@ h1 {
 
 
 .projects_list {
-	margin: 30px auto 125px;	
-	height: 250px;
+	amargin: 30px auto 125px;	
+	height: 400px;	
+	border-bottom-width: 3px;
+	border-bottom-style: ridge;
+	border-bottom-color: #179595;
+	margin-bottom: 40px;
+	padding-bottom: 0;
 }
 
 .projects_list .thumbnail {
-	float: left;
+	float: right;
 	margin-left: 100px;
 }
 
-.projects_list .project_gallery {
+.projects_list .project_gallery img {
 	-webkit-box-shadow: 4px 4px 2px #191817; /* Safari */
 	box-shadow: 2px 2px 1px #191817;
 }
@@ -140,10 +145,14 @@ h1 {
 .projects_list .tv {
 	background: url(/assets/elements/portfolio_box.png) no-repeat;
 	float: left;
-	margin: 10px auto auto 50px;
+	margin: 10px auto auto;
 	padding: 10px 30px 20px 20px;	
 	width: 450px;
 	height: 220px;
+}
+
+.separador {
+	margin: 0 auto !important;
 }
 
 
@@ -404,7 +413,7 @@ width: 517px;
 
 /* Rountabout CSS */
 
-.aroundabout-holder { 
+/*.aroundabout-holder { 
 	padding: 0; height: 5em; list-style: none 
 }
 .aroundabout-moveable-item { 
@@ -441,4 +450,73 @@ width: 517px;
 
 .roundabout-in-focus {
 	cursor: auto;
+}
+*/
+
+
+/* Roundabut copy */
+
+
+.lthumbnail {
+    float: left;
+    width: 950px;
+    margin-top: 30px;
+    height: 350px;
+}
+
+.roundabout-holder {
+    list-style:none; 
+    width:626px; 
+    height:350px; 
+    margin:0px auto;
+}
+
+.roundabout-moveable-item {
+    font-size:12px!important;
+    height:280px; width:560px;
+    cursor:pointer; padding:5px;
+}
+
+.roundabout-moveable-item img {
+    height:100%;
+    width:100%;
+    margin:0;
+}
+
+.roundabout-in-focus {
+    cursor:auto;
+}
+
+.roundabout-in-focus:hover {
+}
+
+.roundabout-holder span  {
+    display:none;
+    font-size:11px;
+}
+
+.roundabout-in-focus:hover span {
+    display:inline;
+    position:absolute;
+    bottom:60px;
+    right:33px;
+    padding:8px 20px;
+    background:#ececec;
+    color:#638694;
+    z-index:999;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topLeft: 5px;
+    font-size : 11px;
+
+    border-left:1px solid #aaaaaa;
+    border-top:1px solid #aaaaaa;
+}
+
+.roundabout a:active, .roundabout a:focus, .roundabout a:visited {
+    outline:none;
+    text-decoration:none;
+}
+
+.roundabout li {
+    margin:0
 }

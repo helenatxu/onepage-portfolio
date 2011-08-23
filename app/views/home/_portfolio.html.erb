@@ -1,6 +1,6 @@
 <div id="portfolio">
 	<h1><%=t :portfolio_section %></h1>
-	<ul id="myRoundabout">
+	<ul>
 		<% count = 0 %>
 		<% @projects.each do |project| %>
 		<% count = count + 1 %>
@@ -9,9 +9,17 @@
 
 			<% if params[:locale] == 'es'%>
 			<div class="thumbnail">
-				<%= link_to(image_tag(project.image), project.image_big1, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big1_es ) %>
-				<%= link_to("", project.image_big2, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big2_es) %>
-				<%= link_to("", project.image_big3, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big3_es) %>
+				<ul class="myRoundabout">
+					<li class="portfolio-item">
+						<%= link_to(image_tag(project.image_big1), project.image_big1, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big1_es ) %>
+					</li>
+					<li class="portfolio-item">
+						<%= link_to(image_tag(project.image_big2), project.image_big2, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big2_es) %>
+					</li>
+					<li class="portfolio-item">
+						<%= link_to(image_tag(project.image_big3), project.image_big3, :class => 'project_gallery', :rel => "project_#{count}", :title =>project.desc_image_big3_es) %>
+					</li>
+				</ul>
 			</div>
 
 			<div class="tv">
