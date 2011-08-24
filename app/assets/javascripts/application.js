@@ -11,12 +11,25 @@
 $(document).ready(function() {	
 
 	$(function() {
-		$('ul.myRoundabout').roundabout({shape:'lazySusan', clickToFocus: true, minScale:0.2, easing: 'easeOutInCirc', duration: 1200, tilt: -1.5});
+		$('ul.myRoundabout').roundabout({
+			shape:'lazySusan', 
+			clickToFocus: true, 
+			minScale:0.2, 
+			easing: 'easeOutInCirc', 
+			duration: 1200, 
+			tilt: -1.5
+		});
 	});
 
 	$('ul.myRoundabout .roundabout-in-focus a').live('click',function(event){
 		event.preventDefault();
-		$.fancybox({'href':$(this).attr('href'), opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
+		$.fancybox({
+			'href':$(this).attr('href'), 
+			opacity: 0.9, 
+			overlayColor: '#000', 
+			transitionIn: 'elastic', 
+			transitionOut: 'elastic'
+		});
 	});
 
 });
