@@ -10,14 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110812213911) do
+ActiveRecord::Schema.define(:version => 20110824164803) do
 
   create_table "projects", :force => true do |t|
     t.string   "name"
     t.text     "description"
     t.string   "work"
     t.string   "tools"
-    t.string   "image"
+    t.string   "thumb1"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "url"
@@ -25,15 +25,17 @@ ActiveRecord::Schema.define(:version => 20110812213911) do
     t.string   "descripcion"
     t.string   "trabajo"
     t.string   "herramientas"
-    t.string   "image_big1"
-    t.string   "image_big2"
-    t.string   "image_big3"
+    t.string   "image1"
+    t.string   "image2"
+    t.string   "image3"
     t.string   "desc_image_big1"
     t.string   "desc_image_big2"
     t.string   "desc_image_big3"
     t.string   "desc_image_big1_es"
     t.string   "desc_image_big2_es"
     t.string   "desc_image_big3_es"
+    t.string   "thumb2"
+    t.string   "thumb3"
   end
 
 end
