@@ -71,7 +71,7 @@ i, cite, em, var, address {
 }
 
 strong, b {
-	font-weight: bold !important;
+	font-weight: bold;
 }
 
 

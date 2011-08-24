@@ -145,19 +145,9 @@ h1 {
 }
 
 .projects_list .tv {
-/*		background: url(/assets/elements/portfolio_box.png) no-repeat;
-	float: left;
-	margin: 10px auto auto;
-	padding: 10px 30px 20px 20px;	
-	width: 450px;
-	height: 220px;*/
-	
-/*	float: left;*/
-/*	margin: 10px 20px auto auto;*/
 	padding: 10px 10px;
 	width: 350px;
-	height: 350px;
-/*	display: inline;*/
+	height: 425px;
 }
 
 .tv, .thumbnail {
@@ -200,6 +190,10 @@ h1 {
 
 /* End of bubble ---------------------------- */
 
+.bubble strong {
+	font-weight: normal !important;
+}
+
 .shadow {
 	background: url(/assets/bg/shadow.png) repeat-x top left;
 	height: 12px;
@@ -236,13 +230,14 @@ h1 {
 	margin: 0 10px 0px auto;
 	position: fixed;
 	right: 10px;
+
 }
+
 
 #navigation li{
 	display: block;
 	float: left;
 	padding: 8px 31px;
-
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	text-align: center;
@@ -456,21 +451,9 @@ width: 517px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D6D6D6));
 }
 
-
-/*#portfolio .button {
-	border: 1px solid #D9D9D9;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-	margin-top: 20px;
-	color: #525252 !important;
-	display: block;
-	height: 40px;
-	line-height: 40px;
-	padding: 0 20px;
-	float: left;
-	text-decoration: none;
-}*/
+#portfolio .button {
+	margin: 10px;
+}
 
 #portfolio .button a {
 	background: url(/assets/elements/button_sprite_blue.png) no-repeat 0 0;
@@ -491,64 +474,18 @@ width: 517px;
 }
 
 
-/* End of Button ----------------------------------- */
-
-
-/* Rountabout CSS */
-
-/*.aroundabout-holder { 
-	padding: 0; height: 5em; list-style: none 
-}
-.aroundabout-moveable-item { 
-	height: 4em; 
-	width: 4em; 
-	cursor: pointer;
-	background-color: #ffc;
-	border: 1px solid #999;
-}
-.roundabout-in-focus { 
-	cursor: auto;
-}
-
-.roundabout-in-focus img { 
-	awidth: 20em !important;
-}
-
-.roundabout-holder {
-	list-style: none;
-	width: 40em;
-	height: 10em;
-	margin: 1em auto;
-}
-
-.roundabout-moveable-item {
-	height: 10em;
-	width: 15em;
-	cursor: pointer;
-}
-
-.roundabout-moveable-item img {
-	width: 20em;
-}
-
-.roundabout-in-focus {
-	cursor: auto;
-}
-*/
-
-
-/* Roundabut CSS */
+/* Roundabut CSS  ----------------------------------- */ 
 
 .roundabout-holder {
     list-style:none; 
-    width:626px; 
+    width:530px; 
     height:350px; 
     margin:0px auto;
 }
 
 .roundabout-moveable-item {
     font-size: 12px!important;
-    height: 280px; 
+    height: 300px; 
 	width: 500px;
     cursor: pointer; 
 	padding: 5px;
@@ -581,7 +518,7 @@ width: 517px;
     padding: 8px 20px;
     background: #ececec;
     color: #638694;
-    z-index:999;
+    z-index:450;
     -webkit-border-top-left-radius: 5px;
     -moz-border-radius-topLeft: 5px;
     font-size : 11px;

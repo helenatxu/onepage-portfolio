@@ -11,31 +11,12 @@
 $(document).ready(function() {	
 
 	$(function() {
-		$('ul.myRoundabout').roundabout({shape:'lazySusan', clickToFocus: true, minScale:0.2});
+		$('ul.myRoundabout').roundabout({shape:'lazySusan', clickToFocus: true, minScale:0.2, easing: 'easeOutInCirc', duration: 1200, tilt: -1.5});
 	});
-	
+
 	$('ul.myRoundabout .roundabout-in-focus a').live('click',function(event){
-	event.preventDefault();
-	$.fancybox({'href':$(this).attr('href'), opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
-	})
+		event.preventDefault();
+		$.fancybox({'href':$(this).attr('href'), opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
+	});
 
-	// $('li.roundabout-in-focus a.project_gallery').fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
-
-	// $('ul.myRoundabout').delegate( 'li.roundabout-in-focus a.project_gallery', 'onclick', function(){
-	// 	$('li.roundabout-in-focus a.project_gallery').fancybox({opacity: 0.9, overlayColor: '#000', transitionIn: 'elastic', transitionOut: 'elastic'});
-	// });
-
-	// var loadGlass = 1;
-	// $('a.project_gallery img').hover(function(){
-	// 	if(loadGlass == 1) {
-	// 		$('body').prepend('<img id="magnify" style="position: absolute;" src="/assets/elements/magnify.png" alt="" width="32" height="32" />');
-	// 	}
-	// 	var p = $(this);
-	// 	var position = p.position();
-	// 	$('img#magnify').css({'top' : position.top+20, 'left' : position.left+20});
-	// 	$('img#magnify').show();
-	// },function(){
-	// 	$('img#magnify').hide();
-	// 	loadGlass = 2;
-	// });
 });
