@@ -8,7 +8,7 @@
 		<% @projects.each do |project| %>
 		<li class="projects-list">
 			<div class="thumb">
-				<p><%= image_tag project.image %></p>
+				<p><%= image_tag project.thumb1 %></p>
 				<p><%= link_to 'Show', project %> | <%= link_to 'Edit', edit_project_path(project) %> | <%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></p>
 			</div>
 			

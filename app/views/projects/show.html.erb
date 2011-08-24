@@ -15,9 +15,9 @@
 
 		<p>URL: <span class="data"><%= @project.url %></span></p>
 
-		<p>Image: <span class="data"><%= @project.image %></span></p>
+		<p>Image: <span class="data"><%= @project.thumb1 %></span></p>
 		
-		<p>Image: <span class="data"><%= image_tag @project.image %></span></p>
+		<p>Image: <span class="data"><%= image_tag @project.thumb1 %></span></p>
 
 		<p><%= link_to 'Edit', edit_project_path(@project) %> | <%= link_to 'Back', projects_path %></p>
 
