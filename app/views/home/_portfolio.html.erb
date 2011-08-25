@@ -53,13 +53,13 @@
 			<div class="thumbnail">
 				<ul class="myRoundabout">
 					<li class="portfolio-item">
-						<%= link_to(image_tag(project.thumb1), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1, :alt => "Image of the Project: "+project.name) %>
+						<%= link_to(image_tag(project.thumb1, :alt => "Image of the Project: "+project.name), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1) %>
 					</li>
 					<li class="portfolio-item">
-						<%= link_to(image_tag(project.thumb2), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2, :alt => "Image of the Project: "+project.name) %>
+						<%= link_to(image_tag(project.thumb2, :alt => "Image of the Project: "+project.name), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2) %>
 					</li>
 					<li class="portfolio-item">
-						<%= link_to(image_tag(project.thumb3), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3, :alt => "Image of the Project: "+project.name) %>
+						<%= link_to(image_tag(project.thumb3, :alt => "Image of the Project: "+project.name), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3) %>
 					</li>
 				</ul>
 			</div>
