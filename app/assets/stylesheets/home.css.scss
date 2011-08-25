@@ -156,43 +156,7 @@ h1 {
 	margin-right: 20px;
 }
 
-/* Bubble -------------------------- */
-
-.bubble {
-	position:relative;
-	padding:15px;
-	margin: 20px 0 10px;
-	color:#333;
-/*	background:#eee;*/
-	background:#333;
-	/* css3 */
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
-	box-shadow: 1px 1px 0px #251D1B;
-	-webkit-box-shadow: 1px 1px 0px #251D1B; /* Safari */
-}
-
-
-/* creates the triangle */
-.bubble:after {
-	content:"";
-	position:absolute;
-	top:-30px;
-	left:50px;
-	border:15px solid transparent;
-	border-bottom-color:#333;
-    /* reduce the damage in FF3.0 */
-    display:block; 
-    width:0;
-}
-
-/* End of bubble ---------------------------- */
-
-.bubble strong {
-	font-weight: normal !important;
-}
-
+	
 .shadow {
 	background: url(/assets/bg/shadow.png) repeat-x top left;
 	height: 12px;
@@ -215,6 +179,21 @@ h1 {
 	height: 103px;
 	width: 260px;
 	display: block;
+}
+
+/* Nav bar menu */
+
+#nav_bar a:link {
+	color: #272522;
+}
+
+
+#nav_bar a:visited {
+	color: #272522;
+}
+
+#nav_bar a:hover {
+	color: #6600cc;
 }
 
 
@@ -249,6 +228,8 @@ h1 {
 	padding: 1px 5px;
 	font-size: 0.8em;
 }
+
+/* End of nav bar menu */
 
 #aboutme {
 	padding: 10px;
@@ -315,23 +296,32 @@ h1 {
 	color:#6600cc;
 }
 
-#nav_bar a:link {
-	color: #272522;
+
+#contact {
+	height: 600px;
+}	
+
+#contact_content{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
 }
 
-
-#nav_bar a:visited {
-	color: #272522;
+#textbubble, #contact_form {
+	display: inline;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-#nav_bar a:hover {
-	color: #6600cc;
+#textbubble {
+	width: 225px;
+	height: 310px;
+	margin: 3.5em 2.1em 1em;
 }
 
 #contact_form {
-	abackground: url(/assets/bg/bg_brown2.png) repeat top left;
 	background: url(/assets/elements/contactbox2.png) no-repeat top left;
-
 	abackground-color: #f1eae3;
 	abackground-color: #bababb;	
 	aborder: 2px solid #a4a3ae;
@@ -468,6 +458,65 @@ width: 517px;
 {
     background-position:0 -37px;
 }
+
+
+/* Portfolio Bubble  -------------------------- */
+
+#portfolio .bubble {
+	position:relative;
+	padding:15px;
+	margin: 20px 0 10px;
+	color:#333;
+/*	background:#eee;*/
+	background:#333;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	box-shadow: 1px 1px 0px #251D1B;
+	-webkit-box-shadow: 1px 1px 0px #251D1B; /* Safari */
+}
+
+
+/* creates the triangle */
+#portfolio .bubble:after {
+	content:"";
+	position:absolute;
+	top:-30px;
+	left:50px;
+	border:15px solid transparent;
+	border-bottom-color:#333;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+
+
+#portfolio .bubble strong {
+	font-weight: normal !important;
+}
+
+/* Contact Bubble  -------------------------- */
+
+#textbubble {
+	position:relative;
+	padding:15px;
+	color:#fff;
+	background:#179595;
+	/* css3 */
+/*	background:-webkit-gradient(linear, 0 0, 0 100%, from(#93bfbd), to(#179595));
+	background:-moz-linear-gradient(#93bfbd, #179595);
+	background:-o-linear-gradient(#93bfbd, #179595);
+	background:linear-gradient(#93bfbd, #179595);*/
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	box-shadow: 1px 1px 0px #251D1B;
+	-webkit-box-shadow: 1px 1px 0px #251D1B;
+}
+
+/* End of bubbles ---------------------------- */
 
 
 /* Roundabut CSS  ----------------------------------- */ 

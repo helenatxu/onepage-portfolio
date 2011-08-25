@@ -1,45 +1,53 @@
 <div id="contact">
 	<h1><%=t :contact_section %></h1>
 
-	<div id="contact_form">
-
-		<h2><%=t :send_me %></h2>
-		<%= form_for @support, :url => { :controller => "supports", :action => "create", :anchor => "contact" }, :html => { :method => :post } do |f| %>
-		
-		<% if flash[:notice_sent] %>
-		<p class="notice"><%= flash[:notice_sent] %></p>
-		<% end %>	
-		
-
-		<% if @support.errors.any? %>
-		<div id="error_explanation">
-			<p id="explanation"><%=t :error_explanation %></p>
-			<p class="errors">
-				<% @support.errors.full_messages.each do |msg| %>
-				<%= msg + ". "%> 
-				<% end %>
+	<div id="contact_content">
+		<div id="textbubble">
+			<p>
+				Write me!
 			</p>
+
 		</div>
-		<% end %>
 
-		<p>
-			<%= f.label :sender_name %>	
-			<%= f.text_field :sender_name %>
-		</p>
-		<p>
-			<%= f.label :email %>
-			<%= f.text_field :email %>
+		<div id="contact_form">
+			<h2><%=t :send_me %></h2>
+			<%= form_for @support, :url => { :controller => "supports", :action => "create", :anchor => "contact" }, :html => { :method => :post } do |f| %>
 
-		</p>
-		<p>
-			<%= f.label :content %>
-			<%= f.text_area :content %>
-		</p>
-		<p class="button">
-			<%= f.submit t(:send) %>			
-		</p>
-		<% end %>
+			<% if flash[:notice_sent] %>
+			<p class="notice"><%= flash[:notice_sent] %></p>
+			<% end %>	
 
+
+			<% if @support.errors.any? %>
+			<div id="error_explanation">
+				<p id="explanation"><%=t :error_explanation %></p>
+				<p class="errors">
+					<% @support.errors.full_messages.each do |msg| %>
+					<%= msg + ". "%> 
+					<% end %>
+				</p>
+			</div>
+			<% end %>
+
+			<p>
+				<%= f.label :sender_name %>	
+				<%= f.text_field :sender_name %>
+			</p>
+			<p>
+				<%= f.label :email %>
+				<%= f.text_field :email %>
+
+			</p>
+			<p>
+				<%= f.label :content %>
+				<%= f.text_area :content %>
+			</p>
+			<p class="button">
+				<%= f.submit t(:send) %>			
+			</p>
+			<% end %>
+
+		</div>
 	</div>
 </div>
 <p class="line"></p>
