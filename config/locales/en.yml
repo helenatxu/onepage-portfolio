@@ -59,6 +59,9 @@ en:
     send : "Send"
     sent : "Thanks! I will read it very soon."
     error_explanation : "But before send the message, take into account that:"
+    text1: "Do you want to hire me for a project, got questions about my work or just want to say hello?"
+    text2: "Even if you only want to report a bug, I would be happy to read your message."
+    getintounch: "Get in touch!"
 
 
 date:
