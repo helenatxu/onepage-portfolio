@@ -316,18 +316,29 @@ h1 {
 }
 
 #textbubble {
-	width: 225px;
+	width: 200px;
 	height: 310px;
 	margin: 3.5em 2.1em 1em;
+	border: 4px dotted #2f2726;
+	padding: 25px;
+}
+
+#textbubble h2 { 
+	font: italic 400 1.3em/1.9em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align:left;
+	color: #179595;
+	text-shadow: #000000 0px 1px 1px;
+	margin: 0 auto 15px;
+	border-bottom: 1px solid #CBC4C2;
 }
 
 #textbubble p {
-	font: 200 0.9em "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #fff;
+	font: 200 1em/1.52em "Helvetica Neue Light","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #CBC4C2;
 	text-align: justify;
-	font-weight: normal;
 	margin: 0px auto 5px;
 	text-shadow: #000 1px 1px 1px;
+	margin: 10px auto;
 }
 
 
@@ -335,7 +346,7 @@ h1 {
 	background: url(/assets/elements/contactbox2.png) no-repeat top left;
 	abackground-color: #f1eae3;
 	abackground-color: #bababb;	
-	aborder: 2px solid #a4a3ae;
+
 	margin: 45px auto 25px;
 	padding: 20px 45px 70px;
 	width: 540px;
@@ -511,7 +522,6 @@ width: 517px;
 
 #textbubble {
 	position:relative;
-	padding:15px;
 	color:#fff;
 	background: #3A2E2B;
 	/* css3 */
