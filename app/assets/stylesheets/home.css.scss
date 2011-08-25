@@ -215,8 +215,9 @@ h1 {
 	padding: 8px 31px;
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1em;
+	font-weight: normal;
 	text-align: center;
-	text-shadow: #ffffff 2px 1px 2px;
+	text-shadow: #ffffff 1px 1px 1px;
 }
 
 #navigation #lang_menu {
@@ -319,6 +320,16 @@ h1 {
 	height: 310px;
 	margin: 3.5em 2.1em 1em;
 }
+
+#textbubble p {
+	font: 200 0.9em "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-align: justify;
+	font-weight: normal;
+	margin: 0px auto 5px;
+	text-shadow: #000 1px 1px 1px;
+}
+
 
 #contact_form {
 	background: url(/assets/elements/contactbox2.png) no-repeat top left;
@@ -502,7 +513,7 @@ width: 517px;
 	position:relative;
 	padding:15px;
 	color:#fff;
-	background:#179595;
+	background: #3A2E2B;
 	/* css3 */
 /*	background:-webkit-gradient(linear, 0 0, 0 100%, from(#93bfbd), to(#179595));
 	background:-moz-linear-gradient(#93bfbd, #179595);
@@ -512,8 +523,8 @@ width: 517px;
 	-moz-border-radius:10px;
 	border-radius:10px;
 	
-	box-shadow: 1px 1px 0px #251D1B;
-	-webkit-box-shadow: 1px 1px 0px #251D1B;
+	box-shadow: 0px 3px 3px #000;
+	-webkit-box-shadow: 0px 3px 3px #000;
 }
 
 /* End of bubbles ---------------------------- */
