@@ -86,8 +86,7 @@ h1 {
 
 #portfolio h2 { 
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: bold;
-	font-weight: 200;
+	font-weight: 400;
 	font-size: 2.1em;
 	text-align:center;
 	color: #ffffff;
@@ -213,14 +212,11 @@ h1 {
 
 
 #logo {
-	abackground: url(/assets/elements/logo.png) no-repeat top left;
 	height: 103px;
 	width: 260px;
-}
-
-#logo {
 	display: block;
 }
+
 
 #navigation{
 	background: url(/assets/elements/bg_menu6.png) no-repeat top left;
