@@ -9,9 +9,13 @@ body {
 
 footer {
 	background: url(/assets/bg/bg_hindi_pattern_invert.png) repeat top left;
-	height: 100px;
+	height: 60px;
+	text-align: center;
+	font: 400 0.9em/1.22em 'Helvetica Neue Regular', 'HelveticaNeue-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #272523;
+	text-shadow: #ffffff 1px 0px 1px;
+	padding: 20px;
 }
-
 
 h1 {
 	font-family: 'Dancing Script', cursive;
@@ -156,81 +160,44 @@ h1 {
 	margin-right: 20px;
 }
 
-	
-.shadow {
-	background: url(/assets/bg/shadow.png) repeat-x top left;
-	height: 12px;
+
+/* Portfolio Bubble  -------------------------- */
+
+#portfolio .bubble {
+	position:relative;
+	padding:15px;
+	margin: 20px 0 10px;
+	color:#333;
+/*	background:#eee;*/
+	background:#333;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	box-shadow: 1px 1px 0px #251D1B;
+	-webkit-box-shadow: 1px 1px 0px #251D1B; /* Safari */
 }
 
-.shadow_up {
-	background: url(/assets/bg/shadow_up.png) repeat-x top left;
-	height: 12px;
-	margin-top: -12px;
+/* creates the triangle */
+#portfolio .bubble:after {
+	content:"";
+	position:absolute;
+	top:-30px;
+	left:50px;
+	border:15px solid transparent;
+	border-bottom-color:#333;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
 }
 
-.line {
-	background: url(/assets/bg/line.png) repeat-x top left;
-	margin-top: -1px;
-	height: 2px;
-}
-
-
-#logo {
-	height: 103px;
-	width: 260px;
-	display: block;
-}
-
-/* Nav bar menu */
-
-#nav_bar a:link {
-	color: #272522;
-}
-
-
-#nav_bar a:visited {
-	color: #272522;
-}
-
-#nav_bar a:hover {
-	color: #6600cc;
+#portfolio .bubble strong {
+	font-weight: normal !important;
 }
 
 
-#navigation{
-	background: url(/assets/elements/bg_menu6.png) no-repeat top left;
-	height: 32px;
-	width: 535px;
-	text-align: center;
-	margin: 0 10px 0px auto;
-	position: fixed;
-	right: 10px;
+/* End of bubbles ---------------------------- */
 
-}
-
-
-#navigation li{
-	display: block;
-	float: left;
-	padding: 8px 31px;
-	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	font-weight: normal;
-	text-align: center;
-	text-shadow: #ffffff 1px 1px 1px;
-}
-
-#navigation #lang_menu {
-	padding: 1px 10px;
-}
-
-#navigation #lang_menu li {
-	float: none;
-	padding: 1px 5px;
-	font-size: 0.8em;
-}
-
-/* End of nav bar menu */
 
 #aboutme {
 	padding: 10px;
@@ -297,28 +264,79 @@ h1 {
 	color:#6600cc;
 }
 
+/* Contact form */
 
 #contact {
-	height: 600px;
-}	
+	height: 625px;
+	margin-left: auto;
+    margin-right: auto;
+position: relative;
+}
+
+/* Bubble of sticky bubble --------- */
+
+#stickybubble {
+	padding: 5px 15px;
+	margin: 0.1em 2.1em 1em;
+	float: left;
+	position: relative;
+	width: 205px;
+	border: outset 3px #5fabaf;
+	background: #5fabaf; 
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	box-shadow: 0px 3px 3px #000;
+	-webkit-box-shadow: 0px 3px 3px #000;
+}
+
+#stickybubble strong {
+/*	font-weight: normal !important;*/
+}
+
+#stickybubble h2 {
+/*	display: block;*/
+	font: 1.1em "Helvetica Neue Regular","HelveticaNeue-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style: italic;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px black;
+}
 
 #contact_content{
-	margin-left: auto;
-	margin-right: auto;
+	margin: 1.5em auto;
 	width: 960px;
+	height: 490px;
+	display: block;
 }
 
-#textbubble, #contact_form {
+#getintouch, #contact_form {
 	display: inline;
 	float: left;
-	margin-left: 20px;
-	margin-right: 20px;
 }
 
+/* Contact Bubble  -------------------------- */
+
 #textbubble {
-	width: 190px;
-	height: 290px;
-	margin: 3.5em 2.1em 1em;
+	position:relative;
+	color:#fff;
+	background: #3A2E2B;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	
+	box-shadow: 0px 3px 3px #000;
+	-webkit-box-shadow: 0px 3px 3px #000;
+}
+
+
+#textbubble {
+	width: 185px;
+	height: 270px;
+	margin: 1em 2.1em 1em;
 	border: 4px dotted #2f2726;
 	padding: 15px 25px;
 }
@@ -343,13 +361,10 @@ h1 {
 
 #contact_form {
 	background: url(/assets/elements/contactbox2.png) no-repeat top left;
-	abackground-color: #f1eae3;
-	abackground-color: #bababb;	
-
-	margin: 45px auto 25px;
-	padding: 20px 45px 70px;
+	margin: 1em auto 1em;
+	padding: 20px 45px 30px;
 	width: 540px;
-	height: 290px;
+	height: 310px;
 }
 
 #contact_form h2 {
@@ -414,13 +429,8 @@ width: 517px;
 	font-size: 0.95em;
 }
 
-#footer {
-	padding: 20px;
-	text-align: center;
-	font: 500 0.90em/1.22em 'Helvetica Neue Regular', 'HelveticaNeue-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #272523;
-	text-shadow: #ffffff 1px 0px 1px;
-}
+
+/* Some elements ----------------------------- */
 
 .notices {
 	float:right;
@@ -429,6 +439,77 @@ width: 517px;
 	margin: 5px 20px 0 0;
 }
 
+.shadow {
+	background: url(/assets/bg/shadow.png) repeat-x top left;
+	height: 12px;
+}
+
+.shadow_up {
+	background: url(/assets/bg/shadow_up.png) repeat-x top left;
+	height: 12px;
+	margin-top: -12px;
+}
+
+.line {
+	background: url(/assets/bg/line.png) repeat-x top left;
+	margin-top: -1px;
+	height: 2px;
+}
+
+
+#logo {
+	height: 103px;
+	width: 260px;
+	display: block;
+}
+
+/* Nav bar menu */
+
+#nav_bar a:link {
+	color: #272522;
+}
+
+
+#nav_bar a:visited {
+	color: #272522;
+}
+
+#nav_bar a:hover {
+	color: #6600cc;
+}
+
+
+#navigation{
+	background: url(/assets/elements/bg_menu6.png) no-repeat top left;
+	height: 32px;
+	width: 535px;
+	text-align: center;
+	margin: 0 10px 0px auto;
+	position: fixed;
+	right: 10px;
+}
+
+
+#navigation li{
+	display: block;
+	float: left;
+	padding: 8px 31px;
+	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: #ffffff 1px 1px 1px;
+}
+
+#navigation #lang_menu {
+	padding: 1px 10px;
+}
+
+#navigation #lang_menu li {
+	float: none;
+	padding: 1px 5px;
+	font-size: 0.8em;
+}
 
 /* Buttons ----------------------------------- */
 
@@ -475,95 +556,9 @@ width: 517px;
 	width: 132px;
 }
 
-#portfolio .button a:hover
-{
+#portfolio .button a:hover {
     background-position:0 -37px;
 }
-
-
-/* Portfolio Bubble  -------------------------- */
-
-#portfolio .bubble {
-	position:relative;
-	padding:15px;
-	margin: 20px 0 10px;
-	color:#333;
-/*	background:#eee;*/
-	background:#333;
-	/* css3 */
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
-	box-shadow: 1px 1px 0px #251D1B;
-	-webkit-box-shadow: 1px 1px 0px #251D1B; /* Safari */
-}
-
-
-/* creates the triangle */
-#portfolio .bubble:after {
-	content:"";
-	position:absolute;
-	top:-30px;
-	left:50px;
-	border:15px solid transparent;
-	border-bottom-color:#333;
-    /* reduce the damage in FF3.0 */
-    display:block; 
-    width:0;
-}
-
-
-#portfolio .bubble strong {
-	font-weight: normal !important;
-}
-
-/* Contact Bubble  -------------------------- */
-
-#textbubble {
-	position:relative;
-	color:#fff;
-	background: #3A2E2B;
-	/* css3 */
-/*	background:-webkit-gradient(linear, 0 0, 0 100%, from(#93bfbd), to(#179595));
-	background:-moz-linear-gradient(#93bfbd, #179595);
-	background:-o-linear-gradient(#93bfbd, #179595);
-	background:linear-gradient(#93bfbd, #179595);*/
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
-	border-radius:10px;
-	
-	box-shadow: 0px 3px 3px #000;
-	-webkit-box-shadow: 0px 3px 3px #000;
-}
-
-/* Bubble of sticky bubble ----------------------- */
-
-#stickybubble {
-	display: block;
-	width: 250px;
-	float:left;
-	position:relative;
-	padding:15px 30px;
-	margin: 30px auto auto 20px;
-	color:#000;
-	background:#efeae4; /* default background for browsers without gradient support */
-	/* css3 */
-	background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#efeae4));
-	background:-moz-linear-gradient(#ffffff, #efeae4);
-	background:-o-linear-gradient(#ffffff, #efeae4);
-	background:linear-gradient(#ffffff, #efeae4);
-	/* Using longhand to avoid inconsistencies between Safari 4 and Chrome 4 */
-	-webkit-border-top-left-radius:25px 50px;
-	-webkit-border-top-right-radius:25px 50px;
-	-webkit-border-bottom-right-radius:25px 50px;
-	-webkit-border-bottom-left-radius:25px 50px;
-	-moz-border-radius:25px / 50px;
-	border-radius:25px / 50px;
-}
-
-
-
-/* End of bubbles ---------------------------- */
 
 
 /* Roundabut CSS  ----------------------------------- */ 
