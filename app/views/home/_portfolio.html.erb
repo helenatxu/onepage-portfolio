@@ -33,6 +33,7 @@
 					<li class="portfolio-item">
 						<%= link_to(image_tag(project.thumb3), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3_es, :alt => "Proyecto: "+project.nombre) %>
 					</li>
+					<div class="clear"></div>
 				</ul>
 			</div>
 			<% else %>
@@ -61,11 +62,14 @@
 					<li class="portfolio-item">
 						<%= link_to(image_tag(project.thumb3, :alt => "Project: "+project.name), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3) %>
 					</li>
+					<div class="clear"></div>
 				</ul>
 			</div>
 			<% end %>
 		</li>
+		<div class="clear"></div>
 		<% end %>
 	</ul>
 </div>
+<div class="clear"></div>
 <p class="shadow_up"></p>
