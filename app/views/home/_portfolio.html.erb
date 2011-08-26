@@ -1,80 +1,82 @@
 <div id="portfolio">
 	<h1><%=t :portfolio_section %></h1>
-	<ul>
-		<% count = 0 %>
-		<% @projects.each do |project| %>
-		<% count = count + 1 %>
+	<div class="portfolio_container">
+		<ul>
+			<% count = 0 %>
+			<% @projects.each do |project| %>
+			<% count = count + 1 %>
 
-		<li class="projects_list">
-			<div class="project_container">
-				<% if params[:locale] == 'es'%>
+			<li class="projects_list">
+				<div class="project_container">
+					<% if params[:locale] == 'es'%>
 
-				<div class="tv">
-					<h2><%= link_to  project.nombre, project.url %></h2>
-					<p><%= project.descripcion %></p>
-					<div class="bubble">
-						<p><span class="h3"><%=t :what %></span><strong><%= project.trabajo %></strong>
-						</p>
-						<p><span class="h3"><%=t :tools %></span><strong><%= project.herramientas %></strong>
+					<div class="tv">
+						<h2><%= link_to  project.nombre, project.url %></h2>
+						<p><%= project.descripcion %></p>
+						<div class="bubble">
+							<p><span class="h3"><%=t :what %></span><strong><%= project.trabajo %></strong>
+							</p>
+							<p><span class="h3"><%=t :tools %></span><strong><%= project.herramientas %></strong>
+							</p>
+						</div>
+						<p class="button">
+							<%= link_to  'Ver demo', project.url %>			
 						</p>
 					</div>
-					<p class="button">
-						<%= link_to  'Ver demo', project.url %>			
-					</p>
-				</div>
-								
-				<div class="thumbnail">
-					<ul class="myRoundabout">
-						<li class="portfolio-item">
-							<%= link_to(image_tag(project.thumb1), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1_es , :alt => "Proyecto: "+project.nombre) %>
-						</li>
-						<li class="portfolio-item">
-							<%= link_to(image_tag(project.thumb2), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2_es, :alt => "Proyecto: "+project.nombre) %>
-						</li>
-						<li class="portfolio-item">
-							<%= link_to(image_tag(project.thumb3), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3_es, :alt => "Proyecto: "+project.nombre) %>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="clear"></div>
-				
-				<% else %>
-				<div class="tv">
-					<h2><%= link_to  project.name, project.url %></h2>
-					<p><%= project.description %></p>
-					<div class="bubble">
-						<p><span class="h3"><%=t :what %></span><%= project.work %>
-						</p>
-						<p><span class="h3"><%=t :tools %></span><%= project.tools %>
+
+					<div class="thumbnail">
+						<ul class="myRoundabout">
+							<li class="portfolio-item">
+								<%= link_to(image_tag(project.thumb1), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1_es , :alt => "Proyecto: "+project.nombre) %>
+							</li>
+							<li class="portfolio-item">
+								<%= link_to(image_tag(project.thumb2), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2_es, :alt => "Proyecto: "+project.nombre) %>
+							</li>
+							<li class="portfolio-item">
+								<%= link_to(image_tag(project.thumb3), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3_es, :alt => "Proyecto: "+project.nombre) %>
+							</li>
+						</ul>
+					</div>
+
+					<div class="clear"></div>
+
+					<% else %>
+					<div class="tv">
+						<h2><%= link_to  project.name, project.url %></h2>
+						<p><%= project.description %></p>
+						<div class="bubble">
+							<p><span class="h3"><%=t :what %></span><%= project.work %>
+							</p>
+							<p><span class="h3"><%=t :tools %></span><%= project.tools %>
+							</p>
+						</div>
+						<p class="button">
+							<%= link_to  'View demo', project.url %>			
 						</p>
 					</div>
-					<p class="button">
-						<%= link_to  'View demo', project.url %>			
-					</p>
-				</div>
 
-				<div class="thumbnail">
-					<ul class="myRoundabout">
-						<li class="portfolio-item">
-							<%= link_to(image_tag(project.thumb1, :alt => "Project: "+project.name), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1) %>
-						</li>
-						<li class="portfolio-item">
-							<%= link_to(image_tag(project.thumb2, :alt => "Project: "+project.name), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2) %>
-						</li>
-						<li class="portfolio-item">
-							<%= link_to(image_tag(project.thumb3, :alt => "Project: "+project.name), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3) %>
-						</li>
-					</ul>
+					<div class="thumbnail">
+						<ul class="myRoundabout">
+							<li class="portfolio-item">
+								<%= link_to(image_tag(project.thumb1, :alt => "Project: "+project.name), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1) %>
+							</li>
+							<li class="portfolio-item">
+								<%= link_to(image_tag(project.thumb2, :alt => "Project: "+project.name), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2) %>
+							</li>
+							<li class="portfolio-item">
+								<%= link_to(image_tag(project.thumb3, :alt => "Project: "+project.name), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3) %>
+							</li>
+						</ul>
+					</div>
+
+					<div class="clear"></div>
+					<% end %>
 				</div>
-				
-				<div class="clear"></div>
-				<% end %>
-			</div>
-		</li>
-		<div class="clear"></div>
-		<% end %>
-	</ul>
+			</li>
+			<div class="clear"></div>
+			<% end %>
+		</ul>
+	</div>
 </div>
 <div class="clear"></div>
 <p class="shadow_up"></p>
