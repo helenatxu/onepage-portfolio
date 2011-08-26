@@ -126,16 +126,28 @@ h1 {
 	padding: 6px;	
 }
 
-
-
 .projects_list {
 	background: none repeat scroll 0 0 #3A2E2B;
-	height: 450px;	
+/*	height: 450px;	*/
 	margin: 40px 20px;
 	padding: 20px;
 	box-shadow: 1px 1px 3px #000000;	
 	-webkit-box-shadow: 1px 1px 3px #000000; /* Safari */
 }
+
+.project_container {
+	margin: 1.5em auto;
+	display: block;
+	width: 960px;
+}
+
+.tv, .thumbnail {
+	display: inline;
+	float: left;
+/*	margin-left: 20px;
+	margin-right: 20px;*/
+}
+
 
 .projects_list .thumbnail {
 	margin: auto 70px;
@@ -153,12 +165,6 @@ h1 {
 	height: 425px;
 }
 
-.tv, .thumbnail {
-	display: inline;
-	float: left;
-	margin-left: 20px;
-	margin-right: 20px;
-}
 
 
 /* Portfolio Bubble  -------------------------- */
