@@ -110,7 +110,7 @@ h1 {
 	font-weight: 400 !important;
 	font-size: 1.1em;
 	text-align:left;
-/*	color: #b1cac8;*/
+	/*	color: #b1cac8;*/
 	color: #179595;
 	text-shadow: #000000 0px 1px 1px;
 	margin: 0 auto auto;
@@ -168,7 +168,7 @@ h1 {
 	padding:15px;
 	margin: 20px 0 10px;
 	color:#333;
-/*	background:#eee;*/
+	/*	background:#eee;*/
 	background:#333;
 	/* css3 */
 	-webkit-border-radius:10px;
@@ -186,9 +186,9 @@ h1 {
 	left:50px;
 	border:15px solid transparent;
 	border-bottom-color:#333;
-    /* reduce the damage in FF3.0 */
-    display:block; 
-    width:0;
+	/* reduce the damage in FF3.0 */
+	display:block; 
+	width:0;
 }
 
 #portfolio .bubble strong {
@@ -269,7 +269,7 @@ h1 {
 #contact {
 	height: 625px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 }
 
 /* Bubble of sticky bubble --------- */
@@ -286,22 +286,22 @@ h1 {
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
-	
+
 	box-shadow: 0px 3px 3px #000;
 	-webkit-box-shadow: 0px 3px 3px #000;
 }
 
 #stickybubble strong {
-/*	font-weight: normal !important;*/
+	
 }
 
 #stickybubble h2 {
-/*	display: block;*/
+
 	font: 1.1em "Helvetica Neue Regular","HelveticaNeue-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-style: italic;
 	color: white;
-	text-align: center;
-	text-shadow: 0 1px 2px black;
+	text-align: center;	
+	text-shadow: 1px 1px 1px black;
 }
 
 #contact_content{
@@ -326,7 +326,7 @@ h1 {
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
-	
+
 	box-shadow: 0px 3px 3px #000;
 	-webkit-box-shadow: 0px 3px 3px #000;
 }
@@ -497,7 +497,7 @@ width: 517px;
 	font-size: 1em;
 	font-weight: normal;
 	text-align: center;
-	text-shadow: #ffffff 1px 1px 1px;
+	text-shadow: #ffffff 1px 1px 0px;
 }
 
 #navigation #lang_menu {
@@ -556,35 +556,35 @@ width: 517px;
 }
 
 #portfolio .button a:hover {
-    background-position:0 -37px;
+	background-position:0 -37px;
 }
 
 
 /* Roundabut CSS  ----------------------------------- */ 
 
 .roundabout-holder {
-    list-style:none; 
-    width:530px; 
-    height:350px; 
-    margin:0px auto;
+	list-style:none; 
+	width:530px; 
+	height:350px; 
+	margin:0px auto;
 }
 
 .roundabout-moveable-item {
-    font-size: 12px!important;
-    height: 300px; 
+	font-size: 12px!important;
+	height: 300px; 
 	width: 500px;
-    cursor: pointer; 
+	cursor: pointer; 
 	padding: 5px;
 }
 
 .roundabout-moveable-item img {
-    height:100%;
-    width:100%;
-    margin:0;
+	height:100%;
+	width:100%;
+	margin:0;
 }
 
 .roundabout-in-focus {
-    cursor:auto;
+	cursor:auto;
 	opacity: 1 !important;
 }
 
@@ -592,31 +592,31 @@ width: 517px;
 }
 
 .roundabout-holder span  {
-    display:none;
-    font-size:11px;
+	display:none;
+	font-size:11px;
 }
 
 .roundabout-in-focus:hover span {
-    display: inline;
-    position: absolute;
-    bottom: 60px;
-    right: 33px;
-    padding: 8px 20px;
-    background: #ececec;
-    color: #638694;
-    z-index:450;
-    -webkit-border-top-left-radius: 5px;
-    -moz-border-radius-topLeft: 5px;
-    font-size : 11px;
-    border-left:1px solid #aaaaaa;
-    border-top:1px solid #aaaaaa;
+	display: inline;
+	position: absolute;
+	bottom: 60px;
+	right: 33px;
+	padding: 8px 20px;
+	background: #ececec;
+	color: #638694;
+	z-index:450;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topLeft: 5px;
+	font-size : 11px;
+	border-left:1px solid #aaaaaa;
+	border-top:1px solid #aaaaaa;
 }
 
 .roundabout a:active, .roundabout a:focus, .roundabout a:visited {
-    outline:none;
-    text-decoration:none;
+	outline:none;
+	text-decoration:none;
 }
 
 .roundabout li {
-    margin:0
+	margin:0
 }
