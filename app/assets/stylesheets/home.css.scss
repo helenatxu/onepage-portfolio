@@ -30,7 +30,8 @@ h1 {
 	}
 	
 #portfolio, #contact { 
-	color: #5fabaf;
+	color: #039c9c;
+/*	color: #5fabaf;*/
 	}
 
 #main_container {
@@ -80,7 +81,7 @@ h1 {
 }
 
 #home, #aboutme {
-	background: url(/assets/bg/pixel_beige4.png) repeat top left;
+	background: url(/assets/bg/pixel_beige.png) repeat top left;
 }
 
 #portfolio, #contact {
@@ -295,8 +296,8 @@ h1 {
 	float: left;
 	position: relative;
 	width: 205px;
-	border: outset 2px #5fabaf;
-	background: #5fabaf; 
+	border: outset 2px #039c9c;
+	background: #039c9c; 
 	/* css3 */
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
