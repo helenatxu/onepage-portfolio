@@ -21,10 +21,17 @@ footer {
 h1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 9em;
-	color: #5fabaf;
 	text-shadow: #ffffff 1px 1px 1px;
 	text-align: center;
 }
+
+#hello h1, #aboutme h1 { 
+	color: #0f8498;
+	}
+	
+#portfolio, #contact { 
+	color: #5fabaf;
+	}
 
 #main_container {
 	margin: 0 auto;
@@ -53,7 +60,7 @@ h1 {
 	display: inline;
 	font-family: 'Times New Roman', Times, Georgia, regular;
 	font-size: 2.5em;
-	color: #5fabaf;
+	color: #0a7182;
 	text-shadow: #ffffff 1px 1px 1px;
 	text-align: center;
 	margin: 0 auto;
@@ -62,7 +69,7 @@ h1 {
 #hello h3 {
 	font-family: 'Times New Roman', regular;
 	font-size: 2.5em;
-	color: #5fabaf;
+	color: #0a7182;
 	text-shadow: #ffffff 1px 1px 1px;
 	line-height: 150%;
 	text-align: center;	
@@ -288,7 +295,7 @@ h1 {
 	float: left;
 	position: relative;
 	width: 205px;
-	border: outset 3px #5fabaf;
+	border: outset 2px #5fabaf;
 	background: #5fabaf; 
 	/* css3 */
 	-webkit-border-radius:10px;

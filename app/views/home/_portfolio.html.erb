@@ -11,7 +11,7 @@
 					<% if params[:locale] == 'es'%>
 
 					<div class="tv">
-						<h2><%= link_to  project.nombre, project.url %></h2>
+						<h2><%= link_to  project.nombre, project.url, :target =>"_blank" %></h2>
 						<p><%= project.descripcion %></p>
 						<div class="bubble">
 							<p><span class="h3"><%=t :what %></span><strong><%= project.trabajo %></strong>
@@ -20,7 +20,7 @@
 							</p>
 						</div>
 						<p class="button">
-							<%= link_to  'Ver demo', project.url %>			
+							<%= link_to  'Ver demo', project.url, :target =>"_blank" %>			
 						</p>
 					</div>
 
@@ -42,7 +42,7 @@
 
 					<% else %>
 					<div class="tv">
-						<h2><%= link_to  project.name, project.url %></h2>
+						<h2><%= link_to  project.name, project.url, :target =>"_blank" %></h2>
 						<p><%= project.description %></p>
 						<div class="bubble">
 							<p><span class="h3"><%=t :what %></span><%= project.work %>
@@ -51,7 +51,7 @@
 							</p>
 						</div>
 						<p class="button">
-							<%= link_to  'View demo', project.url %>			
+							<%= link_to  'View demo', project.url, :target =>"_blank" %>			
 						</p>
 					</div>
 
