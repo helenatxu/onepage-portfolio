@@ -601,12 +601,17 @@ width: 517px;
 	margin:0;
 }
 
-.roundabout-in-focus {
-	cursor:auto;
-	opacity: 1 !important;
+.roundabout-moveable-item img:hover {
 }
 
-.roundabout-in-focus:hover {
+.roundabout-in-focus img{
+	cursor:auto;
+	opacity: 1 !important;
+	border: 4px solid #CBC4C2;
+}
+
+.roundabout-in-focus img:hover {
+	border: 4px dashed #6600cc;
 }
 
 .roundabout-holder span  {
@@ -628,6 +633,7 @@ width: 517px;
 	font-size : 11px;
 	border-left:1px solid #aaaaaa;
 	border-top:1px solid #aaaaaa;
+
 }
 
 .roundabout a:active, .roundabout a:focus, .roundabout a:visited {
