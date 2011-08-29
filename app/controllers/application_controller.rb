@@ -18,8 +18,8 @@ class ApplicationController < ActionController::Base
     I18n.available_locales.include?(parsed_locale.to_sym) ? parsed_locale  : nil
   end
   
-  def what_locale
-    extract_locale_from_tld
+  def re_set_locale
+    :set_locale
   end
     
   
