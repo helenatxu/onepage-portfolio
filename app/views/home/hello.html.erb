@@ -42,13 +42,12 @@
 	</header>
 </div>
 <p class="shadow"></p>
-<%=I18n.locale %>
-<% :re_set_locale %>
-<%=I18n.locale %>
+
+<%= mylocale = I18n.locale %>
 
 <%= render 'home/portfolio' %>
 
-<% if  I18n.locale == "es"%>
+<% if  mylocale == "es"%>
 	<%=  render 'home/aboutme_es'%>
 	<% else %>
 		<%=  render 'home/aboutme_en'%>
