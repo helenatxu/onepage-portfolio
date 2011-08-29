@@ -608,7 +608,19 @@ width: 517px;
 .roundabout-in-focus img{
 	cursor:auto;
 	opacity: 1 !important;
-	
+
+}
+
+.roundabout-moveable-item .button_thumb{
+	opacity: 0 !important;
+}
+
+.roundabout-in-focus .button_thumb:hover{
+	opacity: 1 !important;
+}
+
+.roundabout-in-focus .button_thumb{
+	opacity: 0.5 !important;
 }
 
 .roundabout-in-focus img:hover {

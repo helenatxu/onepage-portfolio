@@ -16,10 +16,10 @@ $(document).ready(function() {
 			clickToFocus: true, 
 			minScale:0.2, 
 			easing: 'easeOutInCirc', 
-			duration: 1200, 
+			duration: 800, 
 			tilt: -1.5,
-			btnNext: '.button_next',
-			btnPrev: '.button_prev'
+			btnNext: '.button_prev',
+			btnPrev: '.button_next'
 		});
 	});
 
@@ -34,5 +34,11 @@ $(document).ready(function() {
 		});
 	});
 
+	
+	// $(".button_thumb")
+	// 	.css("opacity","0.0 !important")
+	// 	.hover(function(){ $(this).css("opacity","1 !important"); }, 
+	// 		function() { $(this).css("opacity","0.1 !important"); }
+	// 		);
 
-});
+	});
