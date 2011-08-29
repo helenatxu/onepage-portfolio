@@ -59,6 +59,12 @@
 						<ul class="myRoundabout">
 							<li class="portfolio-item">
 								<%= link_to(image_tag(project.thumb1, :alt => "Project: "+project.name), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1) %>
+								<p class="button_prev">
+									&larr;			
+								</p>
+								<p class="button_next">
+									&rarr;			
+								</p>
 							</li>
 							<li class="portfolio-item">
 								<%= link_to(image_tag(project.thumb2, :alt => "Project: "+project.name), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2) %>
