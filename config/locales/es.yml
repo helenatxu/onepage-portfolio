@@ -255,7 +255,7 @@ helpers:
       submit: 'Guardar %{model}'
 
 errors:
-    format: "%{attribute} %{message}"
+    format: "El campo de %{attribute} %{message}"
 
 messages: &errors_messages
       inclusion: "no está incluido en la lista"
@@ -293,4 +293,4 @@ activerecord:
         <<: *errors_messages
 
       full_messages:
-        format: "%{attribute} %{message}"
+        format: "El campo de %{attribute} %{message}"
