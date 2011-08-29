@@ -47,7 +47,13 @@
 
 <%= render 'home/portfolio' %>
 
-<% mylocale == 'es' ? %>ES<% : %>EN
+
+<% if mylocale == 'es' %>
+ES
+<% else %>
+EN
+<% end %>
+
 <% if  mylocale == 'es'%>
 	<%=  render 'home/aboutme_es'%>
 	<% else %>
