@@ -8,8 +8,7 @@
 
 			<li class="projects_list">
 				<div class="project_container">
-					<%= I18n.locale%>
-					<% if  I18n.locale == 'es'%>
+					<% if params[:locale] == 'es'%>
 
 					<div class="tv">
 						<h2><%= link_to  project.nombre, project.url, :target =>"_blank" %></h2>
@@ -56,6 +55,7 @@
 							</li>
 						</ul>
 					</div>
+
 					<p class="clear"></p>
 
 					<% else %>

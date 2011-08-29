@@ -1,5 +1,4 @@
 <div id="home">
-	<%= I18n.locale %>
 	<div id="navigation">
 		<ul id="nav_bar"> 
 			<li id="hello_link"><%= link_to  t(:hello), "#home", :class => 'anchorLink', :title => t(:hello_title) %></li>
@@ -9,22 +8,19 @@
 			<li id="lang_menu">
 				<ul>
 					<li>
-						<%=link_to("Español", "#{"http://www.helenamoreno.es"}")%>
-						
-						<!-- <%= link_to(image_tag("/assets/flags/us.png", :alt => "change to english", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'en' )) %>
-						<%= link_to 'en', url_for(:action => 'hello', :controller => 'home', :locale => 'en' )%> -->
+						<%= link_to(image_tag("/assets/flags/us.png", :alt => "change to english", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'en' )) %>
+						<%= link_to 'en', url_for(:action => 'hello', :controller => 'home', :locale => 'en' )%>
 					</li>
 					<li>
-						<%=link_to("English", "#{"http://www.helenamoreno.com"}")%>
-						<!-- <%= link_to(image_tag("/assets/flags/es.png", :alt => "cambiar a español", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'es' )) %>
-						<%= link_to 'es', url_for(:action => 'hello', :controller => 'home', :locale => 'es' )%> -->
+						<%= link_to(image_tag("/assets/flags/es.png", :alt => "cambiar a español", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'es' )) %>
+						<%= link_to 'es', url_for(:action => 'hello', :controller => 'home', :locale => 'es' )%>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
-<%= I18n.locale %>
-	<% if  I18n.locale == 'es'%>
+
+	<% if params[:locale] == 'es'%>
 	<div id="logo"><a href="http://www.helenamoreno.es" class="anchorLink" title="Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance">
 		<%= image_tag "/assets/elements/logo_es.png", :alt => "Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance" %>
 	</a></div>
@@ -42,26 +38,19 @@
 			<h3><a id="arrow" href="#portfolio" class="anchorLink">
 				<%= image_tag "/assets/elements/arrow_down.png", :alt => t(:skip) %>
 			</a></h3>
-<%= I18n.locale %>
+
 			<h3><%=t :checkout %></h3>
 		</hgroup>
 	</header>
 </div>
 <p class="shadow"></p>
-<%= I18n.locale %>
-<% mylocale = I18n.locale %>
 
 <%= render 'home/portfolio' %>
 
-<% if mylocale == 'es' %>
-ES
-<% else %>
-EN
-<% end %>
-
-<% if  mylocale == 'es'%>
+<% if params[:locale] == 'es'%>
 	<%=  render 'home/aboutme_es'%>
 	<% else %>
 		<%=  render 'home/aboutme_en'%>
 <% end %>
+
 <%= render 'home/contact' %>
