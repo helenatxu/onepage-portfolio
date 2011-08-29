@@ -20,7 +20,7 @@
 		</ul>
 	</div>
 
-	<% if mylocale == 'es'%>
+	<% if locale.to_s == 'es'%>
 	<div id="logo"><a href="http://www.helenamoreno.es" class="anchorLink" title="Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance">
 		<%= image_tag "/assets/elements/logo_es.png", :alt => "Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance" %>
 	</a></div>
@@ -47,11 +47,10 @@
 
 <%= render 'home/portfolio' %>
 
-<% if mylocale == 'es'%>
+<% if locale.to_s == 'es'%>
 	<%=  render 'home/aboutme_es'%>
 	<% else %>
 		<%=  render 'home/aboutme_en'%>
 <% end %>
 
 <%= render 'home/contact' %>
-<%=mylocale%>

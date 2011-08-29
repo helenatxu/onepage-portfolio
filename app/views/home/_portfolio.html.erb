@@ -8,8 +8,7 @@
 
 			<li class="projects_list">
 				<div class="project_container">
-					<% if mylocale == 'es'%>
-
+					<% if locale.to_s == "es" %>
 					<div class="tv">
 						<h2><%= link_to  project.nombre, project.url, :target =>"_blank" %></h2>
 						<p><%= project.descripcion %></p>
@@ -29,19 +28,19 @@
 							<li class="portfolio-item">
 								<%= link_to(image_tag(project.thumb1), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1_es , :alt => "Proyecto: "+project.nombre) %>
 								<p class="button_prev button_thumb">
-									&larr;			
+									ant			
 								</p>
 								<p class="button_next button_thumb">
-									&rarr;			
+									sig			
 								</p>
 							</li>
 							<li class="portfolio-item">
 								<%= link_to(image_tag(project.thumb2), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2_es, :alt => "Proyecto: "+project.nombre) %>
 								<p class="button_prev button_thumb">
-									&larr;			
+									before			
 								</p>
 								<p class="button_next button_thumb">
-									&rarr;			
+									next			
 								</p>
 							</li>
 							<li class="portfolio-item">
