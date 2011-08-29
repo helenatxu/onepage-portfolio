@@ -18,7 +18,7 @@
 			</li>
 		</ul>
 	</div>
-
+<%= I18n.locale %>
 	<% if  I18n.locale == 'es'%>
 	<div id="logo"><a href="http://www.helenamoreno.es" class="anchorLink" title="Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance">
 		<%= image_tag "/assets/elements/logo_es.png", :alt => "Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance" %>
@@ -37,13 +37,13 @@
 			<h3><a id="arrow" href="#portfolio" class="anchorLink">
 				<%= image_tag "/assets/elements/arrow_down.png", :alt => t(:skip) %>
 			</a></h3>
-
+<%= I18n.locale %>
 			<h3><%=t :checkout %></h3>
 		</hgroup>
 	</header>
 </div>
 <p class="shadow"></p>
-
+<%= I18n.locale %>
 <% mylocale = I18n.locale %>
 
 <%= render 'home/portfolio' %>
