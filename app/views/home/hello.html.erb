@@ -18,7 +18,7 @@
 		</ul>
 	</div>
 
-	<% if params[:locale] == 'es'%>
+	<% if  I18n.locale == 'es'%>
 	<div id="logo"><a href="http://www.helenamoreno.es" class="anchorLink" title="Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance">
 		<%= image_tag "/assets/elements/logo_es.png", :alt => "Helena Moreno Chacon. Diseñador &amp; desarrollador web freelance" %>
 	</a></div>
@@ -45,7 +45,7 @@
 
 <%= render 'home/portfolio' %>
 
-<% if params[:locale] == 'es'%>
+<% if  I18n.locale == 'es'%>
 	<%=  render 'home/aboutme_es'%>
 	<% else %>
 		<%=  render 'home/aboutme_en'%>

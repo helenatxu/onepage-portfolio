@@ -6,11 +6,6 @@ class SupportsController < ApplicationController
   end
 
   def create
-    if I18n.locale == 'es'
-      locale = 'es'
-    else
-      locale = 'en'
-    end
     @support = Support.new(params[:support])
     if @support.save
 #      if locale == 'es'
@@ -21,7 +16,6 @@ class SupportsController < ApplicationController
         # redirect_to(root_path, :locale => "en")
         # flash[:notice_sent] = t(:sent) 
       # end 
-
     else
       # I18n.locale = locale
       @projects = Project.all    
