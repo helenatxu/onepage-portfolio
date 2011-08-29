@@ -18,6 +18,10 @@ class ApplicationController < ActionController::Base
     I18n.available_locales.include?(parsed_locale.to_sym) ? parsed_locale  : nil
   end
   
+  def what_locale
+    extract_locale_from_tld
+  end
+    
   
   # def set_locale
   #   I18n.locale = params[:locale] || I18n.default_locale
