@@ -43,9 +43,12 @@
 </div>
 <p class="shadow"></p>
 
-<%= mylocale = I18n.locale %>
+<% mylocale = I18n.locale %>
 
 <%= render 'home/portfolio' %>
+
+<%= mylocale %>
+<%= I18n.locale %>
 
 <% if  mylocale == "es"%>
 	<%=  render 'home/aboutme_es'%>
