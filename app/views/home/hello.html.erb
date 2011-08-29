@@ -8,8 +8,10 @@
 			<li id="lang_menu">
 				<ul>
 					<li>
-						<%= link_to(image_tag("/assets/flags/us.png", :alt => "change to english", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'en' )) %>
-						<%= link_to 'en', url_for(:action => 'hello', :controller => 'home', :locale => 'en' )%>
+						<%=link_to("Español", "#{"http://www.helenamoreno.es"}")%>
+						
+						<!-- <%= link_to(image_tag("/assets/flags/us.png", :alt => "change to english", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'en' )) %> -->
+						<!-- <%= link_to 'en', url_for(:action => 'hello', :controller => 'home', :locale => 'en' )%> -->
 					</li>
 					<li>
 						<%= link_to(image_tag("/assets/flags/es.png", :alt => "cambiar a español", :class => 'flag_images'), url_for(:action => 'hello', :controller => 'home', :locale => 'es' )) %>
