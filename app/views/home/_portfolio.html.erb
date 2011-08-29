@@ -8,7 +8,8 @@
 
 			<li class="projects_list">
 				<div class="project_container">
-					<% if params[:locale] == 'es'%>
+					<%= I18n.locale  "en portafolio"%>
+					<% if  I18n.locale == 'es'%>
 
 					<div class="tv">
 						<h2><%= link_to  project.nombre, project.url, :target =>"_blank" %></h2>
