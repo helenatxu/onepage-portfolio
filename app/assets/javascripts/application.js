@@ -17,7 +17,9 @@ $(document).ready(function() {
 			minScale:0.2, 
 			easing: 'easeOutInCirc', 
 			duration: 1200, 
-			tilt: -1.5
+			tilt: -1.5,
+			btnNext: '.button_next',
+			btnPrev: '.button_prev'
 		});
 	});
 
@@ -31,5 +33,6 @@ $(document).ready(function() {
 			transitionOut: 'elastic'
 		});
 	});
+
 
 });
