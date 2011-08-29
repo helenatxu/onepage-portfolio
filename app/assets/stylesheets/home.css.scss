@@ -273,7 +273,8 @@ h1 {
 }
 
 #aboutme a:hover, #footer a:hover {
-	color:#6600cc;
+	color:#FF5E99;
+/*	color:#6600cc;*/
 }
 
 /* Contact form */
@@ -399,7 +400,8 @@ h1 {
 
 #contact_form #error_explanation p {
 	font: 200 0.9em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #60C;	
+/*	color: #60C;*/	
+	color: #FF5E99;
 	text-align: left;
 	margin: 0px auto 5px;
 }
@@ -412,7 +414,7 @@ h1 {
 }
 
 #contact_form .field_with_errors input, #contact_form .field_with_errors textarea, {
-	border: dotted 1px #60C;
+	border: dotted 1px #FF5E99;
 }
 
 #contact_form .field_with_errors textarea {
@@ -433,7 +435,7 @@ width: 517px;
 
 #contact_form .notice {
 	font-style: italic;
-	color:#6600cc;	
+	color:#FF5E99;	
 	text-shadow: white 1px 1px 0px;
 	float: right;
 	padding-right: 20px;
@@ -489,7 +491,7 @@ width: 517px;
 }
 
 #nav_bar a:hover {
-	color: #6600cc;
+	color: #FF5E99;
 }
 
 
