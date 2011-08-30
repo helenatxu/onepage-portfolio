@@ -1,7 +1,4 @@
 Myportfolio::Application.routes.draw do
-  
-  match "http://www.helenamoreno.es/", :to => redirect("http://www.helenamoreno.com/home/hello?locale=es")
-  match "http://helenamoreno.es/", :to => redirect("http://helenamoreno.com/home/hello?locale=es")
 
   scope "(:locale)", :locale => /en|es/ do
     resources :projects
@@ -71,6 +68,9 @@ Myportfolio::Application.routes.draw do
   #   end
 
    match '/:locale' => 'home#hello'
+   
+   match "/www.helenamoreno.es/", :to => redirect("/www.helenamoreno.com/home/hello?locale=es")
+   match "/helenamoreno.es/", :to => redirect("/helenamoreno.com/home/hello?locale=es")
 
 
 
