@@ -279,10 +279,7 @@ messages: &errors_messages
       even: "debe ser par"
 
 activerecord:
-    models:
-      supports:
-        attributes:
-          email: "jajaja"
+    errors:
       template:
         header:
           one:   "No se pudo guardar este/a %{model} porque se encontró 1 error"
