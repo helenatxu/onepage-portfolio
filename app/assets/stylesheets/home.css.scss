@@ -164,13 +164,13 @@ h1 {
 
 
  .thumbnail {
-	margin: auto 70px;
+	margin: auto 100px;
 	width: 450px;
 }
 
  .tv {
 	padding: 10px 10px;
-	width: 350px;
+	width: 320px;
 /*	height: 425px;*/
 }
 
@@ -553,6 +553,7 @@ width: 517px;
 #contact .button input :hover {
 	background: -moz-linear-gradient(19% 75% 90deg,#D6D6D6, #FAFAFA);
 	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D6D6D6));
+	cursor: pointer !important; 
 }
 
 #portfolio .button {
@@ -574,6 +575,7 @@ width: 517px;
 
 #portfolio .button a:hover {
 	background-position:0 -37px;
+	cursor: pointer !important; 
 }
 
 
@@ -587,10 +589,10 @@ width: 517px;
 }
 
 .roundabout-moveable-item {
-	font-size: 12px!important;
+/*	font-size: 12px!important;*/
 	height: 300px; 
 	width: 500px;
-	cursor: pointer; 
+	cursor: pointer !important; 
 	padding: 5px;
 }
 
@@ -622,11 +624,12 @@ width: 517px;
 }
 
 .roundabout-in-focus .button_thumb{
-	opacity: 0.5 !important;
+	opacity: 0.9 !important;
 }
 
 .roundabout-in-focus img:hover {
 	border: 10px dashed #fb0f84;
+	cursor: pointer !important; 
 }
 
 .roundabout-holder span  {
@@ -661,23 +664,22 @@ width: 517px;
 
 .button_prev {
 	float: left;
-	margin: -5.5em auto auto -1em;
+	margin: -6.5em auto auto -2em;
 }
 
 .button_next {
 	float: right;
-	margin: -5.5em -1.5em auto auto;
+	margin: -6.5em -2.0em auto auto;
 }
 
-.button_next, .button_prev {
+.button_thumb {
 	z-index: 500;
 	/*width: 65px;
 		height: 45px;*/
 	position: relative;
 	padding: 15px;
-	
 	background: #42C2C2;
-	font-size: 35px !important;
+	font-size: 30px !important;
 	font-weight: bold !important;
 	color:#fff !important;
 	text-align: center !important;
