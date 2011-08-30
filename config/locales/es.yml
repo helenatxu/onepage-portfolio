@@ -255,7 +255,7 @@ helpers:
       submit: 'Guardar %{model}'
 
 errors:
-    format: "El campo de %{attribute} %{message}"
+    format: "%{attribute} %{message}"
 
 messages: &errors_messages
       inclusion: "no está incluido en la lista"
@@ -279,7 +279,10 @@ messages: &errors_messages
       even: "debe ser par"
 
 activerecord:
-    errors:
+    models:
+      supports:
+        attributes:
+          email: "jajaja"
       template:
         header:
           one:   "No se pudo guardar este/a %{model} porque se encontró 1 error"
@@ -293,4 +296,4 @@ activerecord:
         <<: *errors_messages
 
       full_messages:
-        format: "El campo de %{attribute} %{message}"
+        format: "%{attribute} %{message}"
