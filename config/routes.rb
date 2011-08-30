@@ -5,13 +5,13 @@ Myportfolio::Application.routes.draw do
 
   constraints(:host => /helenamoreno.es/) do
     root :to => redirect("http://helenamoreno.com")
-    match => redirect {"http://helenamoreno.com/?locale=es"}
+    match '/*path', :to => redirect {|params| "http://helenamoreno.com/?locale=es"}
     # match '/*path', :to => redirect {|params| "http://helenamoreno.com/#{params[:path]}"}
   end
   
   constraints(:host => /www.helenamoreno.es/) do
     root :to => redirect("http://www.helenamoreno.com")
-    match => redirect {"http://www.helenamoreno.com/?locale=es"}
+    match '/*path', :to => redirect {|params| "http://www.helenamoreno.com/?locale=es"}
   end
   
   
