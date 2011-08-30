@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   def set_locale
-    I18n.locale = session[:locale] = params[:locale] || session[:locale] || extract_locale_from_tld || I18n.default_locale
+    I18n.locale = session[:locale] = params[:locale] || session[:locale] || I18n.default_locale || extract_locale_from_tld
   end
 
   # def set_locale
