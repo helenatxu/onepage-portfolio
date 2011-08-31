@@ -165,7 +165,7 @@ h1 {
 
  .thumbnail {
 	margin: auto 100px;
-/*	width: 450px;*/
+	width: 450px;
 }
 
  .tv {
@@ -597,27 +597,16 @@ width: 517px;
 }
 
 .roundabout-moveable-item img {
-/*	height:100%;*/
-	display: block;
-	height: 300px; 
-	width: 500px;
+	height:100%;
+	width:100%;
 	margin:0;
 	border: 10px solid #fff;
 	box-shadow: 1px 3px 1px #251D1B;
 	-webkit-box-shadow: 1px 3px 1px #251D1B;
-	
-	overflow: hidden;
-	position: relative; 
-	left:0; 
-	top:0;
+
 }
 
 .roundabout-moveable-item img:hover {
-/*	position:0 -300px !important;*/
-/*	position: relative; 
-	left:0; 
-	top:-300px;
-	overflow: hidden;*/
 }
 
 .roundabout-in-focus img{

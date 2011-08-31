@@ -33,12 +33,47 @@ $(document).ready(function() {
 			transitionOut: 'elastic'
 		});
 	});
+	
+	$('ul.myRoundabout li').hover(
+	function () {
+	$('img', this).fadeTo('normal', 0);
+	},
+	function () {
+	$('img', this).fadeTo('normal', 1);
+	}
+	);
 
+	// $(this).find(“a.thumb”).css({‘background-position’ : ‘center bottom’});
+
+	// $('ul.myRoundabout li').hover(function() { //On hover...
+	// 	var thumbOver = $(this).find("img").attr("src"); //Get image url and assign it to 'thumbOver'
+	// 	//Set a background image(thumbOver) on the <a> tag - Set position to bottom
+	// 	$(this).find("a.thumb").css({'background' : 'url(' + thumbOver + ') no-repeat center bottom'});
+	// 
+	// 	//Animate the image to 0 opacity (fade it out)
+	// 	$(this).find("span").stop().fadeTo('normal', 0 , function() {
+	// 		$(this).hide() //Hide the image after fade
+	// 	});
+	// } , function() { //on hover out...
+	// 	//Fade the image to full opacity 
+	// 	$(this).find("span").stop().fadeTo('normal', 1).show();
+	// });
 	
 	// $(".button_thumb")
 	// 	.css("opacity","0.0 !important")
 	// 	.hover(function(){ $(this).css("opacity","1 !important"); }, 
 	// 		function() { $(this).css("opacity","0.1 !important"); }
 	// 		);
+	
+	// $('ul.myRoundabout .roundabout-in-focus a').live('click',function(event){
+	// 	event.preventDefault();
+	// 	$.fancybox({
+	// 		'href':$(this).attr('href'), 
+	// 		opacity: 0.9, 
+	// 		overlayColor: '#000', 
+	// 		transitionIn: 'elastic', 
+	// 		transitionOut: 'elastic'
+	// 	});
+	// });
 
 	});
