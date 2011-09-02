@@ -28,22 +28,40 @@ $(document).ready(function() {
 		$.fancybox({
 			'href':$(this).attr('href'), 
 			opacity: 0.9, 
-			overlayColor: '#000', 
-			transitionIn: 'elastic', 
-			transitionOut: 'elastic'
+			overlayColor: '#000'
+			// transitionIn: 'elastic', 
+			// transitionOut: 'elastic'
 		});
 	});
 	
 	$('ul.myRoundabout li').hover(
 	function () {
-	$('img', this).fadeTo('normal', 0);
+	$('img', this).fadeTo('normal', 0.5);
 	},
 	function () {
 	$('img', this).fadeTo('normal', 1);
 	}
 	);
-
-	// $(this).find(“a.thumb”).css({‘background-position’ : ‘center bottom’});
+	
+	// $(this).find('.roundabout-in-focus img').hover(
+	// function () {
+	// $('img', this).fadeTo('normal', 0.5);
+	// },
+	// function () {
+	// $('img', this).fadeTo('normal', 1);
+	// }
+	// );
+	// 
+	
+	
+	// $(this).find('ul.myRoundabout .roundabout-in-focus').css({'background-color' : 'black'});
+	
+	// $(this).find('ul.myRoundabout .roundabout-in-focus').css({'background-color' : 'black'});
+	// $(".roundabout-in-focus")
+	// 	.css("opacity","0.0 !important")
+	// 	.hover(function(){ $(this).css("opacity","1 !important"); }, 
+	// 		function() { $(this).css("opacity","0.1 !important"); }
+	// 		);
 
 	// $('ul.myRoundabout li').hover(function() { //On hover...
 	// 	var thumbOver = $(this).find("img").attr("src"); //Get image url and assign it to 'thumbOver'

@@ -612,7 +612,7 @@ width: 517px;
 .roundabout-in-focus img{
 	cursor:auto;
 	opacity: 1 !important;
-
+/*	background-color: black;*/
 }
 
 .roundabout-moveable-item .button_thumb{
@@ -629,7 +629,8 @@ width: 517px;
 
 .roundabout-in-focus img:hover {
 	border: 10px dashed #fb0f84;
-	cursor: pointer !important; 
+	cursor: pointer !important;
+	opacity: 0.9 !important;
 }
 
 .roundabout-holder span  {
