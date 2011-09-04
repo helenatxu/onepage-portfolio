@@ -237,6 +237,10 @@ h1 {
 	text-shadow: white 0px 2px 1px;
 }
 
+#aboutme p:hover { 
+	text-shadow:white 0px -2px 1px;
+}
+
 #aboutme p.eng {
 	margin: 0 auto;
 	padding: 8px;
