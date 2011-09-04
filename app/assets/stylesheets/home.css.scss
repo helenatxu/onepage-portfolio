@@ -95,8 +95,8 @@ h1 {
 /*	width: 400px; */
 }
 
-#portfolio h1 { 
-	margin: 10px auto 60px;
+#portfolio h1, #aboutme h1 { 
+	margin: 0.4em auto 0.20em;
 }
 
 #portfolio h2 { 
@@ -119,11 +119,6 @@ h1 {
 	color: #ffffff;
 }
 
-#portfolio p:hover { 
-	color: #fff;
-}
-
-
 #portfolio .h3 { 
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 400 !important;
@@ -133,6 +128,10 @@ h1 {
 	color: #179595;
 	text-shadow: #000000 0px 1px 1px;
 	margin: 0 auto auto;
+}
+
+#portfolio p:hover { 
+	color: #fff;
 }
 
 #portfolio p { 
@@ -161,7 +160,7 @@ h1 {
 }
 
 .project_container {
-	margin: 1.5em auto;
+	margin: 2em auto;
 	display: block;
 }
 
@@ -378,6 +377,10 @@ h1 {
 	margin: 15px auto;
 }
 
+#textbubble p:hover { 
+	color: #fff;
+}
+
 
 #contact_form {
 	background: url(/assets/elements/contactbox2.png) no-repeat top left;
@@ -537,10 +540,17 @@ width: 517px;
 
 /* Buttons ----------------------------------- */
 
+#contact .button:hover {
+	display: block;
+	cursor: pointer !important;
+}
+	
 #contact .button input {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	display: block;
+	
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
 
 	-moz-box-shadow:0 1px 0 rgba(0,0,0,0.3);
 	-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.3);
@@ -559,9 +569,10 @@ width: 517px;
 }
 
 #contact .button input :hover {
+	cursor: pointer !important;
 	background: -moz-linear-gradient(19% 75% 90deg,#D6D6D6, #FAFAFA);
 	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#D6D6D6));
-	cursor: pointer !important; 
+	color: #ff006c !important;
 }
 
 #portfolio .button {
