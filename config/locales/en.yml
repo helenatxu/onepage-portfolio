@@ -47,7 +47,8 @@ en:
     hello_section : "Hello"
     portfolio_section : "Portfolio"
     aboutme_section : "About Me"
-    contact_section : "Contact"
+    contact_section : "Contact Me"
+    findme_section : "...or Find Me"
     
 # Portfolio section
     what : "My work: "
@@ -65,6 +66,9 @@ en:
     text2: "Even if you only want to report a bug, I would be happy to read your message."
     getintounch: "Get in touch!"
     accepting : "Currently accepting new projects"
+    
+# Find me section
+    vcard : "Scan my Vcard"
 
 
 date:

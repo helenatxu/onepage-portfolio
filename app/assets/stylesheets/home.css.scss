@@ -18,6 +18,22 @@ footer {
 	padding: 20px;
 }
 
+#main_container {
+	margin: 0 auto;
+	display: block;
+	clear: both;
+}
+
+#home, #aboutme {
+	background: url(/assets/bg/pixel_beige.png) repeat top left;
+}
+
+#portfolio, #contact {
+	background: url(/assets/bg/pixel_negro.png) repeat top left;
+	margin-top: -12px;
+	padding: 10px;
+}
+
 h1 {
 	font-family: 'Dancing Script', cursive;
 	font-size: 9em;
@@ -25,19 +41,21 @@ h1 {
 	text-align: center;
 }
 
-#hello h1, #aboutme h1 { 
+#hello h1, #aboutme h1, #findme h1 { 
 	color: #0f8498;
-	}
-	
+}
+
 #portfolio, #contact { 
 	color: #039c9c;
-/*	color: #5fabaf;*/
-	}
+	/*	color: #5fabaf;*/
+}
 
-#main_container {
-	margin: 0 auto;
-	display: block;
-	clear: both;
+
+#findme {
+/*	background: black;*/
+	background: url(/assets/bg/pixel_negro.png) repeat top left;
+/*	margin-top: -12px;*/
+	padding: 10px;
 }
 
 #hello {
@@ -77,15 +95,6 @@ h1 {
 	margin-top: 20px;	
 }
 
-#home, #aboutme {
-	background: url(/assets/bg/pixel_beige.png) repeat top left;
-}
-
-#portfolio, #contact {
-	background: url(/assets/bg/pixel_negro.png) repeat top left;
-	margin-top: -12px;
-	padding: 10px;
-}
 
 #portfolio {
 	display: block;
@@ -291,7 +300,7 @@ h1 {
 /* Contact form */
 
 #contact {
-	height: 625px;
+/*	height: 625px;*/
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -343,7 +352,13 @@ h1 {
 /* Contact Bubble  -------------------------- */
 
 #textbubble {
+	width: 185px;
+	height: 270px;
+	margin: 1em 2.1em 1em;
+	border: 4px dotted #2f2726;
+	padding: 15px 25px;
 	position:relative;
+	
 	color:#fff;
 	background: #3A2E2B;
 	/* css3 */
@@ -355,16 +370,7 @@ h1 {
 	-webkit-box-shadow: 0px 3px 3px #000;
 }
 
-
-#textbubble {
-	width: 185px;
-	height: 270px;
-	margin: 1em 2.1em 1em;
-	border: 4px dotted #2f2726;
-	padding: 15px 25px;
-}
-
-#textbubble h2 { 
+#textbubble h2, #findme_content h2 { 
 	font: italic 400 1.3em/1.9em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align:left;
 	color: #179595;
@@ -458,7 +464,53 @@ width: 517px;
 }
 
 
+/* ---------- Find me section ---------*/
+
+#findme_content{
+	margin: 1.5em auto;
+	width: 960px;
+/*	height: 490px;*/
+	display: block;
+	border: dotted red 1px;
+}
+
+#findme_content #findme_bubble {
+/*	width: 185px;*/
+/*	height: 270px;*/
+	margin: 1em 2.1em 1em;
+	border: 4px dotted #2f2726;
+	padding: 15px 25px;
+	position:relative;
+	
+	color:#fff;
+	background: #3A2E2B;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+
+	box-shadow: 0px 3px 3px #000;
+	-webkit-box-shadow: 0px 3px 3px #000;
+}
+
+#findme_bubble li {
+	display: inline;
+/*	float: left;*/
+/*	display: block;*/
+}
+
+#findme_bubble li a {
+/*	display: block;*/
+}
+	
 /* Some elements ----------------------------- */
+
+#vcard {
+/*	background: url(/assets/elements/code_web_helena_moreno.png) no-repeat 0 0;*/
+	display: block;
+	width: 9em;
+/*	width: 50%;*/
+}
 
 .notices {
 	float:right;
