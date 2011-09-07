@@ -41,7 +41,7 @@ h1 {
 	text-align: center;
 }
 
-#hello h1, #aboutme h1, #findme h1 { 
+#hello h1, #aboutme h1 { 
 	color: #0f8498;
 }
 
@@ -50,13 +50,6 @@ h1 {
 	/*	color: #5fabaf;*/
 }
 
-
-#findme {
-/*	background: black;*/
-	background: url(/assets/bg/pixel_negro.png) repeat top left;
-/*	margin-top: -12px;*/
-	padding: 10px;
-}
 
 #hello {
 	margin: 0 auto;
@@ -104,8 +97,8 @@ h1 {
 /*	width: 400px; */
 }
 
-#portfolio h1, #aboutme h1 { 
-	margin: 0.4em auto 0.20em;
+#portfolio h1, #aboutme h1, #contact h1 { 
+	margin: 0.3em auto 0.25em;
 }
 
 #portfolio h2 { 
@@ -338,9 +331,9 @@ h1 {
 }
 
 #contact_content{
-	margin: 1.5em auto;
+	margin: 1.5em auto 0.5em;
 	width: 960px;
-	height: 490px;
+	height: 400px;
 	display: block;
 }
 
@@ -467,16 +460,16 @@ width: 517px;
 /* ---------- Find me section ---------*/
 
 #findme_content{
-	margin: 1.5em auto;
-	width: 960px;
-/*	height: 490px;*/
+	margin: 0 auto 2em;
 	display: block;
 	border: dotted red 1px;
+	display: block;
+    width: 960px;
 }
 
 #findme_content #findme_bubble {
-/*	width: 185px;*/
-/*	height: 270px;*/
+	height: 9em;
+	width: 53em;
 	margin: 1em 2.1em 1em;
 	border: 4px dotted #2f2726;
 	padding: 15px 25px;
@@ -493,23 +486,37 @@ width: 517px;
 	-webkit-box-shadow: 0px 3px 3px #000;
 }
 
-#findme_bubble li {
+#findme_content h2 { 
+	margin: 0 auto;
+	display: block;
+	text-align: left;
+}
+
+#findme_bubble ul {
+	padding: 0;
+}
+
+#findme_bubble h2, #findme_bubble li {
 	display: inline;
-/*	float: left;*/
-/*	display: block;*/
 }
 
 #findme_bubble li a {
-/*	display: block;*/
+	float:left;
+	padding: 10px;
+	/*	background-color: #2175bc;*/
 }
-	
+
+#findme_bubble li a:hover {
+/*	background-color: #2586d7;*/
+	margin-top:-4px;
+	padding-bottom:14px;
+}
+
 /* Some elements ----------------------------- */
 
 #vcard {
-/*	background: url(/assets/elements/code_web_helena_moreno.png) no-repeat 0 0;*/
 	display: block;
 	width: 9em;
-/*	width: 50%;*/
 }
 
 .notices {

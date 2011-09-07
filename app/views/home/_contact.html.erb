@@ -1,16 +1,16 @@
 <section id="contact">
-	
+
 	<h1><%=t :contact_section %></h1>
 
 	<div id="contact_content">
 		<div id="getintouch">
-			
+
 			<div id="textbubble">
 				<h2><%=t :getintounch %></h2>
 				<p><%=t :text1 %></p> 
 				<p><%=t :text2 %></p>
 			</div>
-			
+
 			<div id="stickybubble">
 				<h2><strong><%=t :accepting %></strong></h2> 
 			</div>
@@ -53,23 +53,20 @@
 				<%= f.submit t(:send) %>			
 			</p>
 			<% end %>
-
 		</div>
 	</div>
-	
+
 	<div id="findme_content">
-		
 		<div id="findme_bubble">
-			
 			<h2><%=t :findme_section %></h2>
 			<ul>
-				<li><a class="link" target ="_blank" href="http://helenaenred.tumblr.com/"><%= image_tag "/assets/icons/Tumblr-48.png", :class => 'icon', :alt => t(:vcard) %></a></li>
-				<li><a target ="_blank" href="http://www.linkedin.com/pub/helena-moreno-chacon/b/361/500/es"><%= image_tag "/assets/icons/linkedin_48.png", :class => 'icon', :alt => t(:vcard) %></a></li>
-				<li><a class="link" target ="_blank" href="http://twitter.com/helenatxu"><%= image_tag "/assets/icons/twitter_48.png", :class => 'icon', :alt => t(:vcard) %></a></li>
-				<li><%= image_tag "/assets/elements/code_web_helena_moreno.png", :id => 'vcard', :alt => t(:vcard) %></li>
+				<li><a target ="_blank" href="http://helenaenred.tumblr.com/"><%= image_tag "/assets/icons/Tumblr-48.png", :class => 'icon', :alt => t(:tumblr) %></a></li>
+				<li><a target ="_blank" href="http://www.linkedin.com/pub/helena-moreno-chacon/b/361/500/es"><%= image_tag "/assets/icons/linkedin_48.png", :class => 'icon', :alt => t(:linkedin) %></a></li>
+				<li><a target ="_blank" href="http://twitter.com/helenatxu"><%= image_tag "/assets/icons/twitter_48.png", :class => 'icon', :alt => t(:twitter) %></a></li>
+				<li><a target = "_blank" href="http://es.wikipedia.org/wiki/QR_code"><%= image_tag "/assets/elements/code_web_helena_moreno.png", :id => 'vcard', :alt => t(:vcard) %></a></li>
 			</ul>
 		</div>
 	</div>
-	
+
 </section>
 <p class="line"></p>

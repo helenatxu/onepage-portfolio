@@ -48,7 +48,6 @@ es:
     portfolio_section : "Portafolio"
     aboutme_section : "Sobre Mí"
     contact_section : "Contáctame"
-    findme_section : "...o Encuéntrame"
     
 
 # Portfolio section
@@ -68,10 +67,11 @@ es:
     text2: "Incluso si solo quieres avisarme de algún fallo en la web, me encantará leer tu mensaje."
     getintounch: "¡Contacta conmigo!"
     accepting : "Actualmente acepto nuevos proyectos"
-    
-# Find me section
-    vcard : "Escanea mi Vcard"
-
+    findme_section : "...o encuéntrame en las redes sociales"
+    tumblr : "lee mi blog en tumblr"
+    linkedin : "encuentra mi perfil en linkedin"
+    twitter : "sígueme en twitter"
+    vcard : "escanea con tu móvil mi Vcard"
 
 
 # Spanish translations for Rails
