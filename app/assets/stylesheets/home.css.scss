@@ -333,11 +333,11 @@ h1 {
 #contact_content{
 	margin: 1.5em auto 0.5em;
 	width: 960px;
-	height: 400px;
+	height: 700px;
 	display: block;
 }
 
-#getintouch, #contact_form {
+#getintouch, #contact_form, #findme_content {
 	display: inline;
 	float: left;
 }
@@ -346,7 +346,7 @@ h1 {
 
 #textbubble {
 	width: 185px;
-	height: 270px;
+	height: 310px;
 	margin: 1em 2.1em 1em;
 	border: 4px dotted #2f2726;
 	padding: 15px 25px;
@@ -459,21 +459,22 @@ width: 517px;
 
 /* ---------- Find me section ---------*/
 
-#findme_content{
+#contact #findme_content{
 	margin: 0 auto 2em;
 	display: block;
 	border: dotted red 1px;
 	display: block;
-    width: 960px;
+/*    width: 45em;*/
 }
 
-#findme_content #findme_bubble {
+#contact #findme_content #findme_bubble {
 	height: 9em;
-	width: 53em;
-	margin: 1em 2.1em 1em;
+	width: 35em;
+/*	margin: 1em 2.1em 1em;*/
+/*	margin: -3em auto 2em 18em;*/
 	border: 4px dotted #2f2726;
-	padding: 15px 25px;
-	position:relative;
+	padding: 0 20px;
+/*	position:relative;*/
 	
 	color:#fff;
 	background: #3A2E2B;
@@ -486,37 +487,41 @@ width: 517px;
 	-webkit-box-shadow: 0px 3px 3px #000;
 }
 
-#findme_content h2 { 
+#contact #findme_content h2 { 
 	margin: 0 auto;
 	display: block;
 	text-align: left;
+	width: 100px;
+	padding: 20px;
+	border: none;
 }
 
-#findme_bubble ul {
+#contact #findme_bubble ul {
 	padding: 0;
+	margin-left: 20px;
 }
 
-#findme_bubble h2, #findme_bubble li {
+#contact #findme_bubble h2, #findme_bubble li {
 	display: inline;
 }
 
-#findme_bubble li a {
+#contact #findme_bubble li a {
 	float:left;
-	padding: 10px;
-	/*	background-color: #2175bc;*/
+	padding: 0 20px;
 }
 
-#findme_bubble li a:hover {
-/*	background-color: #2586d7;*/
+#contact #findme_bubble li a:hover {
 	margin-top:-4px;
 	padding-bottom:14px;
 }
+
 
 /* Some elements ----------------------------- */
 
 #vcard {
 	display: block;
-	width: 9em;
+	width: 5.5em;
+	margin: 0 30px;
 }
 
 .notices {
