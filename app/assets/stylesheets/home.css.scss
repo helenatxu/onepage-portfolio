@@ -302,7 +302,7 @@ h1 {
 
 #stickybubble {
 	padding: 5px 15px;
-	margin: 0.1em 2.1em 1em;
+	margin: 0.3em 2.1em 1em;
 	float: left;
 	position: relative;
 	width: 205px;
@@ -322,7 +322,7 @@ h1 {
 }
 
 #stickybubble h2 {
-
+	padding: 5px;
 	font: 1.1em "Helvetica Neue Regular","HelveticaNeue-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-style: italic;
 	color: white;
@@ -330,10 +330,10 @@ h1 {
 	text-shadow: 1px 1px 1px black;
 }
 
-#contact_content{
+#contact_content {
 	margin: 1.5em auto 0.5em;
 	width: 960px;
-	height: 700px;
+	height: 580px;
 	display: block;
 }
 
@@ -363,7 +363,7 @@ h1 {
 	-webkit-box-shadow: 0px 3px 3px #000;
 }
 
-#textbubble h2, #findme_content h2 { 
+#textbubble h2 { 
 	font: italic 400 1.3em/1.9em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	text-align:left;
 	color: #179595;
@@ -387,7 +387,7 @@ h1 {
 
 #contact_form {
 	background: url(/assets/elements/contactbox2.png) no-repeat top left;
-	margin: 1em auto 1em;
+	margin: 0.5em auto 1em;
 	padding: 20px 45px 30px;
 	width: 540px;
 	height: 310px;
@@ -462,20 +462,16 @@ width: 517px;
 #contact #findme_content{
 	margin: 0 auto 2em;
 	display: block;
-	border: dotted red 1px;
-	display: block;
+/*	border: dotted red 1px;*/
 /*    width: 45em;*/
 }
 
 #contact #findme_content #findme_bubble {
-	height: 9em;
-	width: 35em;
-/*	margin: 1em 2.1em 1em;*/
-/*	margin: -3em auto 2em 18em;*/
+	height: 3em;
+	width: 34em;
 	border: 4px dotted #2f2726;
-	padding: 0 20px;
-/*	position:relative;*/
-	
+	padding: 5px 20px;
+	margin-left: 20px;
 	color:#fff;
 	background: #3A2E2B;
 	/* css3 */
@@ -488,17 +484,16 @@ width: 517px;
 }
 
 #contact #findme_content h2 { 
-	margin: 0 auto;
-	display: block;
-	text-align: left;
-	width: 100px;
-	padding: 20px;
-	border: none;
+	font: italic 400 1.2em/1.0em 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	float:left;
+	color: #179595;
+	text-shadow: #000000 0px 1px 1px;
+	padding: 15px;
 }
 
 #contact #findme_bubble ul {
 	padding: 0;
-	margin-left: 20px;
+	float: right;
 }
 
 #contact #findme_bubble h2, #findme_bubble li {
@@ -507,7 +502,7 @@ width: 517px;
 
 #contact #findme_bubble li a {
 	float:left;
-	padding: 0 20px;
+	padding: 0 5px;
 }
 
 #contact #findme_bubble li a:hover {
@@ -516,12 +511,14 @@ width: 517px;
 }
 
 
+
 /* Some elements ----------------------------- */
 
 #vcard {
 	display: block;
 	width: 5.5em;
-	margin: 0 30px;
+	margin: 0 5px;
+	float: right;
 }
 
 .notices {
