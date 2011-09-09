@@ -60,10 +60,10 @@
 		<div id="findme_bubble">
 			<h2><%=t :findme_section %></h2>
 			<ul>
-				<li><a id="tumblr" target ="_blank" href="http://helenaenred.tumblr.com/"><%= image_tag "/assets/icons/Tumblr-48.png", :class => 'icon', :alt => t(:tumblr) %></a></li>
-				<li><a target ="_blank" href="http://www.linkedin.com/pub/helena-moreno-chacon/b/361/500/es"><%= image_tag "/assets/icons/linkedin_48.png", :class => 'icon', :alt => t(:linkedin) %></a></li>
-				<li><a target ="_blank" href="http://twitter.com/helenatxu"><%= image_tag "/assets/icons/twitter_48.png", :class => 'icon', :alt => t(:twitter) %></a></li>
-				<!-- <li><a target = "_blank" href="http://es.wikipedia.org/wiki/QR_code"><%= image_tag "/assets/elements/code_web_helena_moreno.png", :id => 'vcard', :alt => t(:vcard) %></a></li> -->
+				<li>
+<%= link_to(image_tag("/assets/icons/Tumblr-48.png", :class => 'icon', :alt => t(:tumblr)), 'http://helenaenred.tumblr.com/', :title =>t(:tumblr), :target =>'_blank', :id => 'tumblr') %></li>
+				<li><%= link_to(image_tag("/assets/icons/linkedin_48.png", :class => 'icon', :alt => t(:linkedin)), 'http://www.linkedin.com/pub/helena-moreno-chacon/b/361/500/es', :title =>t(:linkedin), :target =>'_blank', :id => 'linkedin') %></li>
+				<li><%= link_to(image_tag("/assets/icons/twitter_48.png", :class => 'icon', :alt => t(:twitter)), 'http://twitter.com/helenatxu', :title =>t(:twitter), :target =>'_blank', :id => 'twitter') %></li>
 			</ul>
 		</div>
 	</div>
