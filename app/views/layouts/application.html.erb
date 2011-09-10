@@ -11,12 +11,10 @@
 	<meta name="keywords" content="<%= t :keywords %>" />
 	<meta name="author" content="Helena Moreno Chacon" />
 	<% if locale.to_s == 'es'%>
-		<meta name="language" content="en" />
+		<meta name="content-language" content="en" />
 		<% else %>
-			<meta name="language" content="es" />
+			<meta name="content-language" content="es" />
 	<% end %>
-	
-	<meta name="language" content="english / español" />
 	<meta charset="UTF-8" />
 	<%= stylesheet_link_tag    "application" %>
 	<%= javascript_include_tag "application" %>	
