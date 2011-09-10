@@ -572,9 +572,9 @@ width: 517px;
 
 
 #navigation{
-	background: url(/assets/elements/bg_menu6.png) no-repeat top left;
-	height: 32px;
-	width: 535px;
+	background: url(/assets/elements/bg_menu.png) no-repeat top left;
+	height: 34px;
+	width: 638px;
 	text-align: center;
 	margin: 0 10px 0px auto;
 	position: fixed;
@@ -583,9 +583,10 @@ width: 517px;
 
 
 #navigation li{
+	width: 132px;
 	display: block;
 	float: left;
-	padding: 8px 31px;
+	padding: 8px 0;
 	font-family: 'Helvetica Neue Light', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: normal;
@@ -594,12 +595,14 @@ width: 517px;
 }
 
 #navigation #lang_menu {
-	padding: 1px 10px;
+	padding: 1px 0;
+	width: 104px;
 }
 
 #navigation #lang_menu li {
+	width: 104px;
 	float: none;
-	padding: 1px 5px;
+	padding: 1px 0;
 	font-size: 0.8em;
 }
 
