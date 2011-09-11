@@ -54,7 +54,10 @@ es:
     what : "Mi trabajo: "
     tools : "Herramientas y tecnologías: "
     nextproject : "↓ Siguiente proyecto"
+    gonextproject : "Saltar al siguiente proyecto"
     back : "↑ Volver arriba"
+    backproject : "Volver al primer proyecto"
+    demo : "Ver demostración del projecto"
  
         
 # Contact section

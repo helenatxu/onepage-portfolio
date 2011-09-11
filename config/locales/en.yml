@@ -53,7 +53,10 @@ en:
     what : "My work: "
     tools : "Tools & technologies: "
     nextproject : "↓ Next project"
+    gonextproject : "Skip to the next project"
     back : "↑ Back to top"
+    backproject : "Skip to the first project"
+    demo : "View a demo live"
 
 # Contact section
     send_me : "Send me a message!"

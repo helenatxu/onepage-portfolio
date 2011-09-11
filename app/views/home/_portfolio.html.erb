@@ -20,9 +20,9 @@
 							</p>
 						</div>
 						<p class="button">
-							<%= link_to  'Ver demo', project.url, :target =>"_blank" %>			
+							<%= link_to  'Ver demo', project.url, :target =>"_blank", :title => t(:demo) %>			
 						</p>	
-											
+
 					</div>
 
 					<div class="thumbnail">
@@ -70,7 +70,7 @@
 							</p>
 						</div>
 						<p class="button">
-							<%= link_to  'View demo', project.url, :target =>"_blank" %>			
+							<%= link_to  'View demo', project.url, :target =>"_blank", :title => t(:demo) %>			
 						</p>
 					</div>
 
@@ -110,9 +110,9 @@
 					<% end %>
 				</div>
 				<% if counter == total %>
-				<%= link_to  t(:back), '#project1', :class => 'anchorLink nextproject' %>
+				<%= link_to  t(:back), '#project1', :class => 'anchorLink nextproject', :title => t(:backproject) %>
 				<% else %>
-				<%= link_to  t(:nextproject), '#project'+(counter+1).to_s, :class => 'anchorLink nextproject' %>
+				<%= link_to  t(:nextproject), '#project'+(counter+1).to_s, :class => 'anchorLink nextproject', :title => t(:gonextproject) %>
 				<% end %>
 			</li>
 			<% end %>
