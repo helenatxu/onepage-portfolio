@@ -51,7 +51,9 @@ en:
     
 # Portfolio section
     what : "My work: "
-    tools : "Tools & technologies: "    
+    tools : "Tools & technologies: "
+    nextproject : "↓ Next project"
+    back : "↑ Back to top"
 
 # Contact section
     send_me : "Send me a message!"

@@ -53,6 +53,8 @@ es:
 # Portfolio section
     what : "Mi trabajo: "
     tools : "Herramientas y tecnologías: "
+    nextproject : "↓ Siguiente proyecto"
+    back : "↑ Volver arriba"
  
         
 # Contact section

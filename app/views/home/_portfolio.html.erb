@@ -2,11 +2,12 @@
 	<h1><%=t :portfolio_section %></h1>
 	<div class="portfolio_container">
 		<ul>
-			<% count = 0 %>
+			<% counter = 0 %>
+			<% total = @projects.count %>
 			<% @projects.each do |project| %>
-			<% count = count + 1 %>
+			<% counter = counter + 1 %>
 
-			<li class="projects_list">
+			<li class="projects_list" id="<%='project'+counter.to_s%>">
 				<div class="project_container">
 					<% if locale.to_s == "es" %>
 					<div class="tv">
@@ -20,7 +21,8 @@
 						</div>
 						<p class="button">
 							<%= link_to  'Ver demo', project.url, :target =>"_blank" %>			
-						</p>
+						</p>	
+											
 					</div>
 
 					<div class="thumbnail">
@@ -107,6 +109,11 @@
 					<p class="clear"></p>
 					<% end %>
 				</div>
+				<% if counter == total %>
+				<%= link_to  t(:back), '#project1', :class => 'anchorLink nextproject' %>
+				<% else %>
+				<%= link_to  t(:nextproject), '#project'+(counter+1).to_s, :class => 'anchorLink nextproject' %>
+				<% end %>
 			</li>
 			<% end %>
 		</ul>
