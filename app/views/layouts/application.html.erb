@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+<% if locale.to_s == 'es'%>
+	<html lang="en" />
+	<% else %>
+	<html lang="es-e" />
+<% end %>
 <head>
 	<title><%=t :title %></title>
 	<link rel="shortcut icon" href="/assets/elements/favicon.ico">
@@ -10,11 +14,6 @@
 	<meta name="description" content="<%= t :description %>" />
 	<meta name="keywords" content="<%= t :keywords %>" />
 	<meta name="author" content="Helena Moreno Chacon" />
-	<% if locale.to_s == 'es'%>
-		<meta name="lang" content="en" />
-		<% else %>
-			<meta name="lang" content="es-es" />
-	<% end %>
 	<meta charset="UTF-8" />
 	<%= stylesheet_link_tag    "application" %>
 	<%= javascript_include_tag "application" %>	
