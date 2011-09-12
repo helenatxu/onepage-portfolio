@@ -13,6 +13,7 @@ group :production do
 end
 group :development, :test do
   gem 'sqlite3'
+  gem 'rails-dev-boost', :git => 'git://github.com/thedarkone/rails-dev-boost.git', :require => 'rails_development_boost'
 end 
 
 gem 'mail'
