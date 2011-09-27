@@ -26,99 +26,75 @@
 					</div>
 
 					<div class="thumbnail">
-						<ul class="myRoundabout">
-							<li class="portfolio-item">
+						<div class="slider-wrapper theme-orman">
+							<div class="ribbon">
+							</div>
+
+							<div id="slider" class="nivoSlider">
 								<%= link_to(image_tag(project.thumb1), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1_es , :alt => "Proyecto: "+project.nombre) %>
-								<p class="button_prev button_thumb">
-									anterior			
-								</p>
-								<p class="button_next button_thumb">
-									siguiente			
-								</p>
-							</li>
-							<li class="portfolio-item">
+
 								<%= link_to(image_tag(project.thumb2), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2_es, :alt => "Proyecto: "+project.nombre) %>
-								<p class="button_prev button_thumb">
-									anterior			
-								</p>
-								<p class="button_next button_thumb">
-									siguiente			
-								</p>
-							</li>
-							<li class="portfolio-item">
+
 								<%= link_to(image_tag(project.thumb3), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3_es, :alt => "Proyecto: "+project.nombre) %>
-								<p class="button_prev button_thumb">
-									anterior			
-								</p>
-								<p class="button_next button_thumb">
-									siguiente			
-								</p>
-							</li>
-						</ul>
-					</div>
-
-					<p class="clear"></p>
-
-					<% else %>
-					<div class="tv">
-						<h2><%= link_to  project.name, project.url, :target =>"_blank" %></h2>
-						<p><%= project.description %></p>
-						<div class="bubble">
-							<p><span class="h3"><%=t :what %></span><%= project.work %>
-							</p>
-							<p><span class="h3"><%=t :tools %></span><%= project.tools %>
-							</p>
+							</div>
+							
+							<div id="htmlcaption" class="nivo-html-caption">
+								<em>Click</em> on the image to enlarge.
+							</div>
+							
 						</div>
-						<p class="button">
-							<%= link_to  'View demo', project.url, :target =>"_blank", :title => t(:demo) %>			
-						</p>
 					</div>
 
-					<div class="thumbnail">
-						<ul class="myRoundabout">
-							<li class="portfolio-item">
-								<%= link_to(image_tag(project.thumb1, :alt => "Project: "+project.name), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1) %>
-								<p class="button_prev button_thumb">
-									previous			
+							<p class="clear"></p>
+
+							<% else %>
+							<div class="tv">
+								<h2><%= link_to  project.name, project.url, :target =>"_blank" %></h2>
+								<p><%= project.description %></p>
+								<div class="bubble">
+									<p><span class="h3"><%=t :what %></span><%= project.work %>
+									</p>
+									<p><span class="h3"><%=t :tools %></span><%= project.tools %>
+									</p>
+								</div>
+								<p class="button">
+									<%= link_to  'View demo', project.url, :target =>"_blank", :title => t(:demo) %>			
 								</p>
-								<p class="button_next button_thumb">
-									next			
-								</p>
+							</div>
+
+							<div class="thumbnail">
+								<div class="slider-wrapper theme-orman">
+									<div class="ribbon">
+									</div>
+
+									<div id="slider" class="nivoSlider">
+										<%= link_to(image_tag(project.thumb1, :alt => "Project: "+project.name), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1) %>
+
+										<%= link_to(image_tag(project.thumb2, :alt => "Project: "+project.name), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2) %>
+
+										<%= link_to(image_tag(project.thumb3, :alt => "Project: "+project.name), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3) %>
+									</div>
+									
+									<div id="htmlcaption" class="nivo-html-caption">
+										<em>Click</em> on the image to enlarge.
+									</div>
+
+								</div>
+							</div>
+
+									<p class="clear"></p>
+									<% end %>
+								</div>
+								<% if counter == total %>
+								<%= link_to  t(:back), '#project1', :class => 'anchorLink nextproject', :title => t(:backproject) %>
+								<% else %>
+								<%= link_to  t(:nextproject), '#project'+(counter+1).to_s, :class => 'anchorLink nextproject', :title => t(:gonextproject) %>
+								<% end %>
 							</li>
-							<li class="portfolio-item">
-								<%= link_to(image_tag(project.thumb2, :alt => "Project: "+project.name), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2) %>
-								<p class="button_prev button_thumb">
-									previous			
-								</p>
-								<p class="button_next button_thumb">
-									next			
-								</p>
-							</li>
-							<li class="portfolio-item">
-								<%= link_to(image_tag(project.thumb3, :alt => "Project: "+project.name), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3) %>
-								<p class="button_prev button_thumb">
-									previous			
-								</p>
-								<p class="button_next button_thumb">
-									next			
-								</p>
-							</li>
+							<% end %>
 						</ul>
+						<p class="clear"></p>
 					</div>
-
-					<p class="clear"></p>
-					<% end %>
-				</div>
-				<% if counter == total %>
-				<%= link_to  t(:back), '#project1', :class => 'anchorLink nextproject', :title => t(:backproject) %>
-				<% else %>
-				<%= link_to  t(:nextproject), '#project'+(counter+1).to_s, :class => 'anchorLink nextproject', :title => t(:gonextproject) %>
-				<% end %>
-			</li>
-			<% end %>
-		</ul>
-		<p class="clear"></p>
-	</div>
-</section>
-<div class="clear"></div>
-<p class="shadow_up"></p>
+				</section>
+				<div class="clear"></div>
+				<p class="shadow_up"></p>

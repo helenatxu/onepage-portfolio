@@ -149,10 +149,11 @@ h1 {
 
 .projects_list {
 	background: none repeat scroll 0 0 #3A2E2B;
-	margin: 40px 20px;
-	padding: 20px;
+	margin: 40px 30px;
+	padding: 30px;
 	box-shadow: 1px 1px 3px #000000;	
 	-webkit-box-shadow: 1px 1px 3px #000000; /* Safari */
+	list-style-type: none;
 }
 
 .portfolio_container {
@@ -680,93 +681,7 @@ width: 517px;
 
 /* Roundabut CSS  ----------------------------------- */ 
 
-.roundabout-holder {
-	list-style:none; 
-	width:530px; 
-	height:350px; 
-	margin:0px auto;
-}
 
-.roundabout-moveable-item {
-/*	font-size: 12px!important;*/
-	height: 300px; 
-	width: 500px;
-	cursor: pointer !important; 
-	padding: 5px;
-}
-
-.roundabout-moveable-item img {
-	height:100%;
-	width:100%;
-	margin:0;
-	border: 10px solid #fff;
-	box-shadow: 1px 3px 1px #251D1B;
-	-webkit-box-shadow: 1px 3px 1px #251D1B;
-}
-
-.roundabout-moveable-item img:hover {
-	border: 10px inset #ff006c;  
-/*	box-shadow: 1px 3px 1px #ff006c;
-	-webkit-box-shadow: 1px 3px 1px #ff006c;*/
-}
-
-.roundabout-in-focus img{
-	cursor:auto;
-	opacity: 1 !important;
-}
-
-.roundabout-moveable-item .button_thumb{
-	opacity: 0 !important;
-	z-index: -10000;
-}
-
-.roundabout-in-focus .button_thumb:hover{
-	cursor: pointer !important;
-	border: 1px inset #6DD1D1;
-	color: #ff006c !important;
-	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.7);
-}
-
-.roundabout-in-focus .button_thumb{
-	opacity: 1 !important;
-	z-index: 10000;
-}
-
-.roundabout-in-focus img:hover {
-/*	border: 10px dashed #fb0f84; */
-	border: 9px inset #ff006c;
-	cursor: pointer !important;
-}
-
-.roundabout-holder span  {
-	display:none;
-	font-size:11px;
-}
-
-.roundabout-in-focus:hover span {
-	display: inline;
-	position: absolute;
-	bottom: 60px;
-	right: 33px;
-	padding: 8px 20px;
-	background: #ececec;
-	color: #638694;
-	z-index:450;
-	-webkit-border-top-left-radius: 5px;
-	-moz-border-radius-topLeft: 5px;
-	font-size : 11px;
-	border-left:1px solid #aaaaaa;
-	border-top:1px solid #aaaaaa;
-}
-
-.roundabout a:active, .roundabout a:focus, .roundabout a:visited {
-	outline:none;
-	text-decoration:none;
-}
-
-.roundabout li {
-	margin:0
-}
 
 .button_prev {
 	float: left;
