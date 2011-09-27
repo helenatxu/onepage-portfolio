@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+a#vlb{display:none}
 
 body {
 	background: url(/assets/bg/bg_hindi_pattern_white.png) repeat top left;
@@ -172,12 +173,12 @@ h1 {
 }
 
 
- .thumbnail {
+.thumbnail {
 	margin: auto 100px;
 	width: 450px;
 }
 
- .tv {
+.tv {
 	padding: 10px 10px;
 	width: 320px;
 /*	height: 425px;*/
