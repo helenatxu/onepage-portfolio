@@ -44,6 +44,7 @@ Author URI: http://dev7studios.com
 	margin-right:10px;
 	width:70px;
 	height:50px;
+	box-shadow: 1px 1px 4px 0 #000000;
 }
 
 .theme-orman .nivo-controlNav {
@@ -67,7 +68,8 @@ Author URI: http://dev7studios.com
 	text-indent: 0;
 }
 .theme-orman .nivo-controlNav a.active img {
-    box-shadow: 1px 1px 4px 0 #000000;
+    box-shadow: 1px 1px 4px 0 #179595 !important;
+
 }
 
 .theme-orman .nivo-directionNav a {
