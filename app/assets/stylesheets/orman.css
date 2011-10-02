@@ -38,7 +38,7 @@ Author URI: http://dev7studios.com
 }
 
 
-#slider .nivo-controlNav img {
+#slider1 .nivo-controlNav img, #slider2 .nivo-controlNav img, #slider3 .nivo-controlNav img, #slider4 .nivo-controlNav img  {
 	display:inline; /* Unhide the thumbnails */
 	position:relative;
 	margin-right:10px;
@@ -91,7 +91,7 @@ Author URI: http://dev7studios.com
 
 .theme-orman .nivo-caption {
 	font-family: Helvetica, Arial, sans-serif;
-	left: -13px;
+	left: -12px;
 }
 .theme-orman .nivo-caption a { 
 	color:#fff;

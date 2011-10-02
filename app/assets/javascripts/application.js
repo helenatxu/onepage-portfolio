@@ -12,8 +12,8 @@ $(document).ready(function() {
 	
 	$(window).load(function() {
 	    $('#slider1').nivoSlider({
-	        effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
-	        // slices: 15, // For slice animations
+	        effect: 'fold', // Specify sets like: 'fold,fade,sliceDown'
+	        slices: 1, // For slice animations
 	        boxCols: 8, // For box animations
 	        boxRows: 4, // For box animations
 	        animSpeed: 500, // Slide transition speed

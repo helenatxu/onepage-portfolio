@@ -30,12 +30,7 @@
 							<div class="ribbon">
 							</div>
 
-							<div id="slider<%=(counter+1).to_s%>" class="nivoSlider">
-								<!-- <%= link_to(image_tag(project.thumb1), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1_es , :alt => "Proyecto: "+project.nombre) %>
-
-															<%= link_to(image_tag(project.thumb2), project.image2, :class => 'project_gallery', :title =>project.desc_image_big2_es, :alt => "Proyecto: "+project.nombre) %>
-
-															<%= link_to(image_tag(project.thumb3), project.image3, :class => 'project_gallery', :title =>project.desc_image_big3_es, :alt => "Proyecto: "+project.nombre) %> -->
+							<div id="slider<%=(counter).to_s%>" class="nivoSlider">
 							<%= image_tag project.thumb1, :alt => "Proyecto: "+project.nombre, :title =>project.desc_image_big1_es %>
 							<%= image_tag project.thumb2, :alt => "Proyecto: "+project.nombre, :title =>project.desc_image_big2_es %>
 							<%= image_tag project.thumb3, :alt => "Proyecto: "+project.nombre, :title =>project.desc_image_big3_es %>
