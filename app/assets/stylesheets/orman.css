@@ -10,18 +10,27 @@ Author URI: http://dev7studios.com
 
 .theme-orman.slider-wrapper {
 	background:url(/assets/orman/slider.png) no-repeat;
-	width:544px;
-	height: 345px;
-	margin: 40px auto 20px;
+	width:528px;
+	height: 313px;
+	margin: 56px auto 20px;
 	padding-top:18px;
 	position:relative;
+	
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+	box-shadow: 0 1px 0 rgba(255,255,255,.2), inset 0 4px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(0,0,0,.6);
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 }
+
 
 .theme-orman .nivoSlider {
 	position:relative;
 	width:528px;
 	height:300px;
-	margin-left:19px;
+	margin-left:14px;
 	background:url(/assets/orman/loading.gif) no-repeat 50% 50%;
 }
 .theme-orman .nivoSlider img {
@@ -47,14 +56,9 @@ Author URI: http://dev7studios.com
 	box-shadow: 1px 1px 4px 0 #000000;
 }
 
-.theme-orman .nivo-controlNav {
-/*	position:absolute;
-	left:50%;
-	bottom:-60px;
-	margin-left:-30px; // Tweak this to center bullets */
-	
+.theme-orman .nivo-controlNav {	
 	bottom: -80px;
-    left: -12px;
+/*    left: -12px;*/
     margin: 0;
     position: absolute;
 }
@@ -93,7 +97,7 @@ Author URI: http://dev7studios.com
 
 .theme-orman .nivo-caption {
 	font-family: Helvetica, Arial, sans-serif;
-	left: -12px;
+	left: -14px;
 }
 .theme-orman .nivo-caption a { 
 	color:#fff;

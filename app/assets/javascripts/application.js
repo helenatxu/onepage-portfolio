@@ -29,7 +29,7 @@ $(document).ready(function() {
 	        keyboardNav: true, // Use left & right arrows
 	        pauseOnHover: true, // Stop animation while hovering
 	        manualAdvance: false, // Force manual transitions
-	        captionOpacity: 0.8, // Universal caption opacity
+	        captionOpacity: 0.84, // Universal caption opacity
 	        prevText: 'Prev', // Prev directionNav text
 	        nextText: 'Next', // Next directionNav text
 	        beforeChange: function(){}, // Triggers before a slide transition
