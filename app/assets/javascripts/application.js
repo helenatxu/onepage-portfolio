@@ -27,7 +27,7 @@ $(document).ready(function() {
 		controlNavThumbsReplace: '-small.png', // ...this in thumb Image src
 		keyboardNav: true, // Use left & right arrows
 		pauseOnHover: true, // Stop animation while hovering
-		manualAdvance: false, // Force manual transitions
+		manualAdvance: true, // Force manual transitions
 		captionOpacity: 0.84, // Universal caption opacity
 		prevText: 'Prev', // Prev directionNav text
 		nextText: 'Next', // Next directionNav text
