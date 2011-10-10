@@ -36,7 +36,7 @@
 <%= link_to(image_tag(project.thumb3, :alt => "Proyecto: "+project.nombre, :title =>project.desc_image_big3_es), project.image1, :class => 'project_gallery', :title =>project.desc_image_big3_es) %>
 							</div>
 							
-							<div id="htmlcaption" class="nivo-html-caption">
+							<div id="htmlcaptionslider<%=(counter).to_s%>" class="nivo-html-caption">
 								<em>Click</em> on the image to enlarge.
 							</div>
 							
@@ -65,13 +65,13 @@
 									<div class="ribbon">
 									</div>
 
-									<div id="slider" class="nivoSlider">
+									<div id="slider<%=(counter).to_s%>" class="nivoSlider">
 <%= link_to(image_tag(project.thumb1, :alt => "Project: "+project.name, :title =>project.desc_image_big1), project.image1, :class => 'project_gallery', :title =>project.desc_image_big1) %>
 <%= link_to(image_tag(project.thumb2, :alt => "Project: "+project.name, :title =>project.desc_image_big2), project.image1, :class => 'project_gallery', :title =>project.desc_image_big2) %>
 <%= link_to(image_tag(project.thumb3, :alt => "Project: "+project.name, :title =>project.desc_image_big3), project.image1, :class => 'project_gallery', :title =>project.desc_image_big3) %>
 									</div>
 									
-									<div id="htmlcaption" class="nivo-html-caption">
+									<div id="htmlcaptionslider<%=(counter).to_s%>" class="nivo-html-caption">
 										<em>Click</em> on the image to enlarge.
 									</div>
 								</div>
