@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <% if locale.to_s == 'es'%>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/LocalBusiness">
 <% else %>
-<html lang="es">
+<html lang="es" itemscope itemtype="http://schema.org/LocalBusiness">
 <% end %>
-<html itemscope itemtype="http://schema.org/LocalBusiness">
 
 <head>
 	<title><%=t :title %></title>
@@ -17,8 +16,6 @@
 	<![endif]-->
 
 	<meta charset="UTF-8" />
-	<meta itemprop="name" content="Helena Moreno Chacón. Web Design &amp; Development.">
-	<meta itemprop="description" content="Web Design &amp; Development. Helena Moreno Chacón Personal Portfolio.">
 	<meta name="description" content="<%= t :description %>" />
 	<meta name="keywords" content="<%= t :keywords %>" />
 	<meta name="author" content="Helena Moreno Chacon" />
