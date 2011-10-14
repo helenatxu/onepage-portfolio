@@ -8,6 +8,7 @@
 // require jquery_ujs
 //= require_tree .
 
+
 $(document).ready(function() {
 
 	$('#slider1, #slider2, #slider3, #slider4').nivoSlider({
@@ -49,22 +50,4 @@ $(document).ready(function() {
 	});
 
 
-	// $(document).ready(function() {
-		// 	$('.roundabout-in-focus a img').hover(function() {
-			// 		grayscale( $(this) );
-			// 	}, function() {
-				// 		grayscale.reset( $(this) );
-				// 	});
-				// 	grayscale.prepare( $('.roundabout-in-focus a img') );
-				// });
-
-				// $('ul.myRoundabout li').hover(
-					// function () {
-						// $('img', this).fadeTo('normal', 0.5);
-						// },
-						// function () {
-							// $('img', this).fadeTo('normal', 1);
-							// }
-							// );
-
-						});
+});
