@@ -473,16 +473,13 @@ width: 517px;
 #contact #findme_content{
 	margin: 0 auto 2em;
 	display: block;
-/*	border: dotted red 1px;*/
-/*    width: 45em;*/
 }
 
 #contact #findme_content #findme_bubble {
 	height: 3em;
-	width: 34em;
+	width: 39.5em;
 	border: 4px dotted #2f2726;
-	padding: 5px 25px;
-	margin-left: 20px;
+	padding: 5px 2px;
 	color:#fff;
 	background: #3A2E2B;
 	/* css3 */
@@ -499,7 +496,7 @@ width: 517px;
 	float:left;
 	color: #179595;
 	text-shadow: #000000 0px 1px 1px;
-	padding: 15px;
+	padding: 10px;
 }
 
 #contact #findme_bubble ul {
@@ -511,17 +508,24 @@ width: 517px;
 	display: inline;
 }
 
-#contact #findme_bubble li a {
+#contact #findme_bubble li a, #contact #findme_bubble #gplus {
 	float:left;
-	padding: 0 5px;
+	padding: 0 4px;
 }
 
 #contact #findme_bubble li a:hover {
-	margin-top:-4px;
+	margin-top:-3px;
 	padding-bottom:14px;
 }
 
+#gplus {
+	margin-top:15px;
+}
 
+#gplus:hover {
+	margin-top:11px;
+	padding-bottom:14px;
+}
 
 /* Some elements ----------------------------- */
 
