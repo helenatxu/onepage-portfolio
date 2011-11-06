@@ -5,9 +5,14 @@
 a#vlb{display:none}
 
 body {
-	background: url(/assets/bg/bg_hindi_pattern_white.png) repeat top left;
+/*	background: url(/assets/bg/bg_hindi_pattern_white.png) repeat top left;*/
+	background: none repeat scroll 0 0 #EDEAE4;
 }
 
+#main_container {
+	background: url(/assets/bg/bg_hindi_pattern_white.png) repeat top left;
+
+}
 
 footer {
 	background: url(/assets/bg/bg_hindi_pattern_invert.png) repeat top left;
@@ -24,6 +29,7 @@ footer {
 	display: block;
 	clear: both;
 }
+
 
 #home, #aboutme {
 	background: url(/assets/bg/pixel_beige.png) repeat top left;
@@ -92,6 +98,7 @@ h1 {
 
 #portfolio {
 	display: block;
+/*	width: 1200px;*/
 }
 
 #portfolio img {
