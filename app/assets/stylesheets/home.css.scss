@@ -512,11 +512,14 @@ width: 517px;
 
 #contact #findme_bubble ul {
 	padding: 0;
-	float: right;
+	float: left;
+	margin-left: 10px;
 }
 
 #contact #findme_bubble h2, #findme_bubble li {
 	display: inline;
+	font-size: 1.1em;
+	padding: 14px 6px;
 }
 
 #contact #findme_bubble li a, #contact #findme_bubble #gplus {
@@ -524,8 +527,12 @@ width: 517px;
 	padding: 0 4px;
 }
 
+#contact #findme_bubble #gplus {
+	width: 30px;
+}
+
 #contact #findme_bubble li a:hover {
-	margin-top:-3px;
+	margin-top:3px;
 	padding-bottom:14px;
 }
 
