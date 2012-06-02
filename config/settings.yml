@@ -1,15 +1,17 @@
+# Replace all the comment with your configuration
+
 mailer_config:
-  enable_starttls_auto: true
-  address: 'smtp.gmail.com'
-  port: 587
-  domain: "gmail.com"
-  user_name: 'no.reply.portfolio.system@gmail.com'
-  password: 'Hmc12345'
-  authentication: 'plain'
+  enable_starttls_auto: #true / false
+  address: #'smtp.example.com'
+  port: #port_number
+  domain: #"example.com"
+  user_name: #'my_emailerm@example.com'
+  password: #'my_password'
+  authentication: #'plain'
 
 web_page_config:
   google_analytics:
-    account: "'UA-26323505-1'"
-    domainName: "'helenamoreno.com'"
+    account: #"'your_analytics_code'"
+    domainName: #"'your_domain.com'"
     
-secret_token: '818289476586ddc60638aaa152e6a32b36ab8fc0ee8549ca0cd9f87912fea5cdf3132b72679727625e33b2627d0639368c995fbbcba4482a7ba446b5be61c52f'
+secret_token: #'your_generated_secret_token'
