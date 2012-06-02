@@ -13,4 +13,3 @@ web_page_config:
     domainName: "'helenamoreno.com'"
     
 secret_token: '818289476586ddc60638aaa152e6a32b36ab8fc0ee8549ca0cd9f87912fea5cdf3132b72679727625e33b2627d0639368c995fbbcba4482a7ba446b5be61c52f'
-
