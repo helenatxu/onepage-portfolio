@@ -15,3 +15,4 @@ web_page_config:
     domainName: #"'your_domain.com'"
     
 secret_token: #'your_generated_secret_token'
+mail_to: #'your_email@whatevermail.com'
