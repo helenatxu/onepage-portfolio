@@ -7,6 +7,8 @@ This is my repository of my one-page portfolio. You can navigate it by scrolling
 
 - It can be shown as in English as in Spanish.
 
+- It has a contact form that uses mailer to send you the messages.
+
 - It also has an admin side accessible online for the project management.
 
 To use it you should initialize your the settings.yml configuration file.
