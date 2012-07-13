@@ -4,13 +4,17 @@ mailer_config:
   port: 587
   domain: "gmail.com"
   user_name: 'no.reply.portfolio.system@gmail.com'
-  password: 'Hmc12345'
+  password: 'Hmc.1234'
   authentication: 'plain'
 
 web_page_config:
   google_analytics:
     account: "'UA-26323505-1'"
     domainName: "'helenamoreno.com'"
-    
+
 secret_token: '818289476586ddc60638aaa152e6a32b36ab8fc0ee8549ca0cd9f87912fea5cdf3132b72679727625e33b2627d0639368c995fbbcba4482a7ba446b5be61c52f'
 mail_to: 'hele.natxu@gmail.com'
+
+admin_config:
+  username: 'admin'
+  password: 'Hola.121'

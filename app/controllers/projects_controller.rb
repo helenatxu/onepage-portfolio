@@ -89,7 +89,8 @@ class ProjectsController < ApplicationController
 
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      username == "admin" && password == "Hola.1234"
+      username == Settings.admin_config[:username] &&
+      password == Settings.admin_config[:password]
     end
   end
 
