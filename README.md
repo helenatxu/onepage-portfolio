@@ -1,7 +1,6 @@
-rails-onepage-portfolio
-=======================
+# Ruby on Rails Onepage Portfolio
 
-This is my repository of my one-page portfolio. You can navigate it by scrolling down with your mouse, or by clicking in the Menu sction.
+## This is my repository of my one-page portfolio. You can navigate it by scrolling down with your mouse, or by clicking in the Menu section.
 
 - It is written in Ruby on Rails, HTML5, CSS3, and some jQuery javascript. 
 - It can be shown as in English as in Spanish.
